@@ -20,22 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-
-NOTE ON SOURCE MATERIALS
-
-The MIT license above covers the original work in this repository: the skill
-structure, router, topic index, README, and the distillation text as written
-here.
-
-It does not and cannot relicense the underlying sources, which remain under
-their own terms. Several are open educational resources with their own
-licenses (Open Neuroscience Initiative is CC BY-NC 4.0; CompCogNeuro ed4,
-Nipraxis, and Andy's Brain Book carry their own terms). Others are
-commercially published works (Springer, MIT Press, Oxford University Press,
-Academic Press) whose rights are held by their publishers.
-
-The reference files are structural summaries — frameworks, terminology, and
-decision rules restated in condensed form — not reproductions of the source
-texts. Anyone redistributing or building on this repository should check the
-terms of the individual source before doing so.
