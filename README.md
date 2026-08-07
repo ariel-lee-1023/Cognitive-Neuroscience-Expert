@@ -76,4 +76,6 @@ Built with [`books-to-skill-refs`](https://github.com/obra/superpowers), which d
 
 ## License
 
-The distillations are derivative summaries of their sources and follow those sources' terms — several are CC-licensed open educational resources (CompCogNeuro ed4, Open Neuroscience Initiative CC BY-NC 4.0, Nipraxis, Andy's Brain Book); others distill commercially published books (Springer, MIT Press, OUP, Academic Press) and are structural summaries for personal study, not reproductions. Check the individual source's license before redistributing.
+[MIT](LICENSE) — covering the original work here: the skill structure, router, topic index, README, and the distillation text as written.
+
+The underlying sources keep their own terms and are not relicensed by this. Several are open educational resources (Open Neuroscience Initiative is CC BY-NC 4.0; CompCogNeuro ed4, Nipraxis and Andy's Brain Book carry their own); others are commercially published (Springer, MIT Press, OUP, Academic Press). The reference files are structural summaries — frameworks, terminology and decision rules restated in condensed form — not reproductions. Check the individual source before redistributing or building on this.
