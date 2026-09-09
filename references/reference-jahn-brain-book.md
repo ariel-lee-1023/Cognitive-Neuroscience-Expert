@@ -177,7 +177,7 @@ The reasoning chain this book equips you to run on any paper or your own analysi
 ## Decision Rules & Judgment
 
 - **A cluster-defining threshold is not an alpha level.** Always ask what the corrected cluster extent was and how it was derived (simulation with an estimated ACF, or permutation with ≥5,000 permutations).
-- **Don't use Bonferroni on voxels** — voxels are spatially autocorrelated, so it is over-conservative and buys a high false-negative rate. Use cluster or permutation correction, and report the contiguity (NN1/NN2/NN3) and sidedness you used.
+- **Choose multiple-comparison control for the intended inference.** Bonferroni remains valid for valid voxelwise tests without independence, although it can be conservative. Cluster and permutation methods are alternatives with their own assumptions and inferential targets; document the selected method. See the [Nipraxis derivation](https://textbook.nipraxis.org/bonferroni_correction.html).
 - **Estimate smoothness from the residuals**, not from your smoothing kernel — the estimate will exceed the kernel because smoothness is already present in the data. Round required cluster sizes up.
 - **Define ROIs independently of the contrast being tested**: atlas, prior-study coordinates, meta-analysis map, or localizer. Anything drawn from the map under test is circular.
 - **Preselection only counts if it binds.** Abandoning a preselected ROI because the whole-brain map points elsewhere is a biased analysis, however reasonable it feels.
@@ -187,13 +187,13 @@ The reasoning chain this book equips you to run on any paper or your own analysi
 - **Selectivity requires all five double-dissociation criteria**, plus a control region with real signal. An interaction against a region with no activity (the ventricles) is trivially significant and evidentially empty.
 - **Necessity requires a lesion or a disruption method** (TMS as a virtual, temporary, reversible lesion). Activation, however strong, is not necessity.
 - **State that BOLD is several inference steps from neural firing** — stimulus → transduction → firing → oxygen demand → blood delivery → hydrogen signal — whenever the strength of the claim depends on it.
-- **Design for jitter.** Without it, conditions within ~10 s are confounded by overlapping HRFs, and no analysis recovers them.
-- **Chase the behavioral effect first.** A weak or absent behavioral effect predicts a null or noise-driven imaging result.
+- **Check whether the timing distinguishes the effects of interest.** Jitter can improve estimation in event-related designs, but is not a requirement for every design. Inspect design rank, regressor correlation, and recovery under the specified hemodynamic model.
+- **Check whether the intended behavioral manipulation worked when the inference depends on it.** A weak effect can undermine that interpretation; it does not automatically imply the absence of an informative neural result.
 - **When skull stripping, leave too much rather than too little** — extra skull rarely breaks downstream steps; removed cortex is unrecoverable.
 - **Justify slice-timing correction rather than defaulting to it**: worth it for TRs ≥2 s (especially dorsally); of little value below ~1 s; and often substitutable with a temporal derivative in the model. Prefer not interpolating when you don't need to.
 - **Skip or minimize smoothing for MVPA** — pattern information lives in the fine spatial structure smoothing removes.
 - **Match your template to your population.** MNI152 is 152 healthy adults; children and older adults warrant population-specific templates. And match mask resolution to data resolution.
-- **Extract ROI data from the 2nd level, not the 3rd** — you need one contrast estimate per subject.
+- **Extract the estimate at the level the analysis requires.** For a between-subject ROI comparison, obtain the relevant contrast estimate per subject; software-specific level numbers are not universal.
 - **Distinguish anatomical labels from functional units.** A large anatomical ROI may span several functional regions and wash out a real effect; a null from an anatomical mask is not a null for the function.
 - **In RSA, weight cross-run cells over within-run cells** — within-run correlations share run-level noise.
 - **Set the FIX threshold deliberately**: ~5–20 moderate, <5 liberal, >20 conservative — and hand-label components using the frequency/smoothness/anatomical-location heuristics rather than trusting defaults blindly.

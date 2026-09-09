@@ -108,7 +108,7 @@ The Ch 2 workflow plus the Ch 10 strategy, combined:
 5. **Before collecting data, generate artificial data and test parameter recovery and model recovery.** If parameters trade off under ML, switch to MAP with a soft prior or empirical Bayes. Adjust trial and subject counts based on what recovery requires.
 6. **Fit, then validate against real data** (e.g. do simulated learning curves match observed ones?), **then** compare models with the average likelihood (Bayes factor >3 substantial, >5 conclusive; or BIC).
 7. **Only now interpret parameters** — and only after confirming the winning model is adequate in absolute terms, since "even the best amongst a set of models may still be too poor."
-8. **Use hierarchical group modelling.** Fixed effects confounds inter- and intra-individual variability; pure random effects inflates noise.
+8. **Assess pooling for the group design.** Hierarchical modelling can balance individual noise and shared structure; compare its assumptions and recovery with the alternatives.
 9. **Check whether the effect is a group difference or an individual-differences result.** Group separation is the easy result; the clinically useful one is variation along symptom dimensions within patients — and it requires moderate-to-severe and treatment-resistant patients, not just mild cases.
 10. **Look for consilience beyond the fit** — Tourette's account explains the *pharmacology* of effective treatment, not just the behavioral data. That is what distinguishes a mechanism from a curve fit.
 
@@ -121,9 +121,9 @@ The Ch 2 workflow plus the Ch 10 strategy, combined:
 - **Choose the model family from the question**, not from familiarity: circuits for dynamics, DDM to decompose RT/accuracy, RL for reward learning and dopamine links, Bayesian for beliefs and optimality.
 - **Run parameter recovery before interpreting any parameter.** "This is an important step prior to interpreting any parameters" — and do it *before* data collection, since it constrains trial and sample size.
 - **Run model recovery too**: if two candidate models generate indistinguishable behavior in your design, no amount of fitting will adjudicate them.
-- **Prefer MAP to ML when parameters trade off** — overlapping parameter effects are the normal case, and ML recovery is "often very imperfect."
+- **When parameters trade off, evaluate regularization and recovery.** MAP can help under suitable priors; compare prior sensitivity, identifiability, and recovery for the actual model rather than treating MAP as uniformly superior to ML.
 - **Compare models by average likelihood, not best likelihood** (Bayes factor, BIC), and remember **model comparison is relative**: verify the winner is adequate in absolute terms before interpreting it.
-- **Use hierarchical group models.** Fixed effects is not recommended; consider also whether different individuals may be using *different models*.
+- **Consider hierarchical group models when partial pooling fits the study.** Assess individual variation, model heterogeneity, priors, and recovery before choosing pooled, separate, or hierarchical estimates.
 - **In predictive-coding accounts, precision is the parameter that does the work.** The learning rate is $\pi_{likelihood}/(\pi_{prior}+\pi_{likelihood})$, so aberrant precision produces over- *or* under-weighting of evidence from a single mechanism — but say which direction and at which hierarchical level.
 - **Do not conflate Bayesian inference with predictive coding.** They do not imply each other; Bayes is a computational-level description, predictive coding a candidate algorithm.
 - **Do not assume Bayesian models constrain implementation.** Whether the framework is useful below the computational level is explicitly unresolved.
@@ -140,6 +140,6 @@ The Ch 2 workflow plus the Ch 10 strategy, combined:
 3. **Precision-weighted prediction error unifies Bayes and predictive coding** — and makes aberrant precision a single mechanism able to produce over- or under-weighting of sensory evidence.
 4. **Parameter recovery and model recovery on simulated data come before real data**, and before any parameter is interpreted.
 5. **Model comparison is relative.** Winning a comparison does not make a model adequate.
-6. **Hierarchical group modelling is the default**; fixed effects confounds within- and between-subject variability.
+6. **Hierarchical group modelling is a useful default to test**, not a requirement independent of design, heterogeneity, priors, and recovery.
 7. **One mechanism can explain several symptom classes** — NMDA hypofunction → unstable attractors → both working-memory deficits and probabilistic-inference biases in schizophrenia.
 8. **The field's honest status: still in its infancy, still lab-bound**, and the key unsolved problem is moving from group separation to individual prediction.

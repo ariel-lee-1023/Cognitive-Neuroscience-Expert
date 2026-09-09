@@ -121,16 +121,16 @@ The chapter 11 reasoning, as a procedure. Run it on any group-difference network
 - **Treat any cross-sectional graph as a snapshot of a dynamic system**, and note that fMRI cannot access the fast timescales that EEG/MEG can.
 - **Density-matched thresholding manufactures apparent randomness in the lower-connectivity group.** Suspect it whenever "more random topology" co-occurs with reduced mean connectivity — the schizophrenia literature is the standing example.
 - **Weight-matched thresholding leaves densities unequal, and most measures are density-dependent.** There is no free choice here: decide explicitly whether a density difference is a confound or a finding, and say which.
-- **Show results across a range of thresholds under both schemes.** A single-threshold group comparison is not interpretable.
+- **Test sensitivity to consequential threshold choices.** Compare defensible thresholds and density/weight treatments when they could change a group result. Explain a prespecified single threshold and its limits rather than treating every single-threshold analysis as uninterpretable.
 - **Check node-connectedness before computing path-based measures.** Build from the minimum spanning tree if you need a guarantee.
 - **Group-level thresholds cannot suppress consistent false positives** — a reconstruction bias present in every subject will be declared significant by a one-sample *t*-test.
-- **Use local thresholding (disparity filter) when weight distributions are fat-tailed**, but know it is sensitive to *heterogeneity*, not magnitude: uniformly strong edges at a node can all be non-significant.
+- **Consider local thresholding (disparity filter) when heterogeneous weight distributions motivate it.** It tests local heterogeneity rather than absolute magnitude; compare that target with the scientific question before choosing it.
 - **Every topological claim is a claim against a null model. Name the null and what it preserves.** Small-world, rich club, modularity, motif frequency — none has meaning as a raw number.
 - **Use a correlation-appropriate null for functional networks**; edge-swapping randomization ignores the constraints on correlation matrices.
 - **Treat a generative model as a hypothesis about wiring constraints, and report the models that failed.** Vértes et al.'s finding that distance and preferential attachment were *insufficient* is what makes the clustering term informative.
 - **Module partitions are unstable**: report the resolution parameter, run the detection many times, and aggregate or compare partitions rather than reporting one.
 - **Distinguish global from localized effects before choosing a test.** Omnibus tests on global measures miss effects confined to a few nodes; mass univariate localizes but costs you $J \approx N^2$ comparisons.
-- **Prefer connectome-specific FWER procedures to Bonferroni for edge-level families**, and consider constraining the family a priori — the network analogue of a confirmatory ROI.
+- **Choose edge-family error control for the hypothesis.** Topology-exploiting procedures can improve power under suitable assumptions but may change the unit of inference. Compare those requirements with valid edge-wise alternatives and define the family before testing.
 - **Shortest-path measures assume globally optimal routing.** If you interpret efficiency as communication capacity, state that assumption; diffusion and navigation models are the alternatives.
 - **A difference map is not a mechanism.** Ask which process — transneuronal degeneration, dedifferentiation, impaired synchronization — the pattern implies, and note that structural and functional changes frequently move in opposite directions within the same disorder.
 

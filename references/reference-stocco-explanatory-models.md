@@ -111,16 +111,16 @@ Stocco's implicit test, made explicit:
 - **Classify the model before interpreting it**: data modelling / explanatory (assumptions about the generating process, interpretable parameters) vs. algorithmic / machine learning (approximate $f$ from data). The same technique — regression, neural nets — can be either.
 - **Separate features from free parameters, and say which abstraction level the feature choice commits you to.** Choosing features *is* choosing the level of simplification.
 - **State whether you are using the model as a theory or as a measure.** Only the first treats fit as evidence; only the second licenses reading parameters as measurements — and it presupposes the model is right.
-- **Prefer optimization to grid search.** Grid search is infeasible at scale and its discretization can make the true optimum literally unreachable.
+- **Choose a search method for the parameter space.** Continuous optimization often scales better; small grids can be useful for bounded comparisons or diagnostics. Check resolution, convergence, and alternative optima rather than imposing one optimizer.
 - **Expect to transform data into the model's worldview** — and note the transformation, because it changes what the fitted parameters mean.
-- **Use "functional" rather than Marr's "computational" for the top level**, since every level is computational in the ordinary sense; and don't treat the levels as cleanly separable.
+- **Explain the terminology when it matters.** Stocco calls Marr's top level "functional" because computation occurs at several levels. Preserve the distinction without requiring the user to adopt that vocabulary.
 - **Distinguish learning from acting.** Value learning proceeds under any policy; the policy determines what gets sampled and therefore, for on-policy methods, what gets learned.
 - **On-policy (SARSA) vs. off-policy (Q-learning) is a substantive commitment, not a numerical detail.** On-policy learns the value of behaving as you actually behave — it learns to avoid risk near cliffs; off-policy learns the optimal path regardless. If your subjects behave cautiously near costly errors, an off-policy model may misfit for a principled reason.
 - **Use eligibility traces when credit must cross a temporal gap** (non-Markov structure), and remember they "decay over time but increase with re-use" — i.e. they implement recency and frequency.
 - **Model-free RL predicts habitual, outcome-insensitive behavior**; if your task involves devaluation, satiety, or goal change, a model-free account predicts the wrong thing, and a state-transition model is required.
 - **Fit the softmax temperature $\tau$ as a policy parameter, not a learning-rate**; confusing the two mislocates individual differences between exploration and learning.
 - **Test functional form on a log-log plot before assuming exponential decay.** Power and exponential curves "look almost identical to the naked eye" and have very different properties (fixed half-life vs. scale invariance).
-- **Express memory availability as log odds (activation)** so that zero means "equally likely retrieved or forgotten" — a meaningful zero makes thresholds interpretable.
+- **In the source's activation-based memory model, express availability as log odds** so zero has the model's defined interpretation. Do not impose that representation on every memory model.
 - **When a model cannot produce a known effect, diagnose the structural reason before adding parameters.** ACT-R's spacing failure was traced to additivity, and the fix added one interpretable mechanism rather than free parameters.
 - **Weight out-of-sample and cross-domain validation over fit quality**: environmental statistics matching the model's law, and person-specific parameters that are stable across materials and predict real outcomes.
 

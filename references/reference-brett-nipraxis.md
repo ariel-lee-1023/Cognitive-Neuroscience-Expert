@@ -45,7 +45,7 @@ The remedy is to build every method from primitives — read the raw bytes of a 
 - **Coding style** — PEP8, with **Pylint** as a checker. The stated benefit is cognitive, not aesthetic: "Once you have learned the guidelines, you will spend less time thinking about formatting and more time thinking about **the algorithm and code structure**."
 - **Docstrings** — the **numpy docstring standard**. Four reasons given, and the first is the important one: **"the process of writing the docstring forces you to explain the function to yourself, and therefore write clearer code with better design."** The others: others can read it; `help()` / `func?` retrieve it; Sphinx renders it. **Write the documentation *as* you write the code**, to help you find the cleanest design.
 - **Testing** (`on_testing`) and **data validation** (`validating_data`) — verifying that the data you have is the data you think you have, before analyzing it.
-- **Floating point** (`allclose`): computers cannot represent every float exactly, so **never test computed results for exact equality** — use `np.allclose`. *A small point with large consequences for anyone comparing pipeline outputs.*
+- **Floating point** (`allclose`): rounding can make mathematically equal computed results differ. Use a tolerance appropriate to the scale and computation when approximate equality is intended; reserve exact comparison for values whose representation or identity is the property being checked.
 
 ### Part IV: Detecting activation — the model, built from primitives
 - **Voxel time courses** (`voxel_time_courses`): the signal at one voxel across the run, the unit the whole model operates on.
@@ -60,7 +60,7 @@ The remedy is to build every method from primitives — read the raw bytes of a 
   - **Degrees of freedom** are $n - \textrm{rank}(\boldsymbol{X})$ — note it is the *rank*, not the column count, so collinear regressors do not buy you what they appear to.
   - **The contrast vector $\vec{c}$** selects the combination of parameters being tested (e.g. the second row of the parameter array to test a slope against zero).
 - **Whole-image estimation** (`whole_image_statistics`, `multi_multiply`): reshape 4D data to **time × voxels** and fit every voxel in one matrix operation. *This is the mass-univariate analysis made mechanically explicit.*
-- **`nan` handling as a diagnostic, not a nuisance**: white edges in a t-map are voxels where "all the scans have 0 at this voxel, so the numerator and denominator of the t statistic are both 0." **These out-of-brain voxels have p-value 0 and therefore *always survive* correction, appearing as spurious white.** The fix is a brain mask (e.g. **Otsu's method**), applied *before* the GLM so both estimation and correction operate on in-brain voxels only. **A concrete case where an artifact of the pipeline masquerades as a maximally significant result.**
+- **`nan` handling as a diagnostic, not a nuisance**: zero-valued out-of-brain time series can produce undefined t-statistics. Inspect how the specific pipeline converts and displays invalid values; do not treat `nan` as a significant p-value. Use an appropriate brain mask and validate finite, in-range p-values before correction and visualization.
 - **Hypothesis testing** (`hypothesis_tests`, `mean_test_example`, `numpy_random`) — including simulation-based reasoning about null distributions.
 
 ### Part V: Multiple comparisons — the mathematics, derived
@@ -73,7 +73,7 @@ The remedy is to build every method from primitives — read the raw bytes of a 
 - **Bonferroni** rests on **Boole's inequality**: the probability of one or more events is no greater than the sum of their individual probabilities,
   $$\mathbb{P}\Bigl(\bigcup_i A_i\Bigr) \le \sum_i \mathbb{P}(A_i)$$
   from which the threshold is simply $\alpha_{fwe}/n$ — "the desired family-wise error rate divided by the number of voxels."
-- **The independence assumption is stated at the point where it enters**, which is what makes this treatment useful: the Šidák derivation says *"assuming tests are independent"* in the same breath as the formula. **Voxels are spatially autocorrelated, so both corrections are conservative for imaging** — this is the mathematical basis for the cluster and permutation methods in [[reference-jahn-brain-book]].
+- **Keep the derivations distinct.** The Šidák product formula above uses independence. Bonferroni follows from Boole's inequality without independence and controls family-wise error for valid individual tests under arbitrary dependence. Dependence affects conservatism; it does not make either cluster or permutation inference automatically appropriate. See the [source derivation](https://textbook.nipraxis.org/bonferroni_correction.html).
 
 ### Part VI: Space, registration, and its limits
 - **The anterior cingulate exercise** — the book's most instructive assignment, and a genuine test of a step everyone performs automatically (see the Worked Example below).
@@ -105,15 +105,15 @@ This is the single most transferable exercise in the book: it converts an unexam
 - **Treat your paper as advertising and your code+data+instructions as the scholarship.** If a reader cannot regenerate the figures, you have not communicated the result.
 - **Apply Feynman's leaning-over-backwards standard**: report the information that lets others judge your contribution, *including* what cuts against you — not only what points one way.
 - **Expect error everywhere and design to catch it.** The relevant expertise signal is worrying more about your own mistakes as you get more experienced, not less.
-- **Mask before you model.** Out-of-brain voxels produce `nan` t-statistics with p-value 0, so they survive *any* correction and appear maximally significant. Build a brain mask (e.g. Otsu) and run the GLM on in-mask voxels only.
+- **Mask before you model.** Define an appropriate analysis mask and check undefined statistics from constant or invalid time series. Verify invalid-value handling before multiple-comparison correction; a display artifact is not evidence of significance.
 - **Read the header separately from the data.** Datatype, dimensions, TR, orientation, and the affine live in metadata that can disagree with your assumptions; verify rather than trust.
 - **Know the two halves of your t-denominator.** Estimated variance comes from the residuals; the design covariance $\vec{c}^T(\boldsymbol{X}^T\boldsymbol{X})^{+}\vec{c}$ depends only on the design and contrast. **You can improve half your statistic before scanning anyone — that is what design optimization buys.**
 - **Use rank, not column count, for degrees of freedom.** Adding collinear regressors does not add information.
-- **State the independence assumption whenever you use Bonferroni or Šidák.** Both derive from it; voxels violate it; that is why they are conservative here and why cluster/permutation methods exist.
+- **State the assumptions of the correction actually used.** Bonferroni uses a union bound and does not require independence; the Šidák product derivation does. Evaluate dependence, the testing family, and the assumptions of any proposed alternative.
 - **Never `assert` for runtime error handling** — assertions are stripped under optimization and you do not control how your code is run. Raise exceptions for expected error conditions; reserve `assert` for development and tests.
-- **Never test floating-point results for exact equality** — use tolerance-based comparison.
-- **Write the docstring while writing the function**, because the act of explaining it to yourself improves the design. Documentation written afterward documents whatever you happened to build.
-- **Move analysis out of ad-hoc cells into modules you can test.** If a step exists only as notebook state, it is neither reproducible nor checkable.
+- **Choose comparisons for the intended property.** Use justified absolute/relative tolerances for approximate numerical agreement; exact equality remains appropriate when exact representation is the requirement.
+- **Document the function's purpose and assumptions as its design becomes clear.** Explain inputs, outputs, and non-obvious behavior; update the documentation when the implementation changes.
+- **Make the analysis reproducible from a clean execution.** Extract reused or complex steps into testable modules when useful; a notebook can also be reproducible if dependencies and execution order are explicit.
 - **Before trusting a normalization, verify it against the anatomy your hypothesis depends on.** Population-level alignment does not guarantee alignment of the specific structure you will make a claim about — especially where sulcal patterns vary (cingulate: ~65% single, ~35% double) and cytoarchitecture follows the sulci.
 
 ## Key Takeaways
@@ -123,5 +123,5 @@ This is the single most transferable exercise in the book: it converts an unexam
 4. **An image is an array plus an affine plus a header.** Every spatial claim you make depends on metadata you should verify rather than assume.
 5. **Build the GLM from primitives once** — convolution, design matrix, contrast, t-statistic — so you know what your software is computing and where its assumptions live.
 6. **Half the t-statistic is fixed by the design**, which is why experimental design is the highest-leverage statistical decision you make.
-7. **Bonferroni and Šidák both assume independent tests**, and imaging violates that assumption — know the derivation so you know why cluster and permutation methods are the right response.
+7. **Bonferroni and Šidák have different derivations.** Bonferroni does not require independent tests; the Šidák product formula does. Choose error control for the design and intended inference.
 8. **Mask before modeling**: the most "significant" voxels in an uncorrected whole-image map may be outside the brain entirely.

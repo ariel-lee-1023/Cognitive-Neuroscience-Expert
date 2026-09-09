@@ -1,6 +1,8 @@
 # Computational Cognitive Neuroscience, 4th Edition — O'Reilly, Munakata, Hazy, Frank et al.
 **Format**: md (CompCogNeuro/ed4) | **Pages**: ~316 | **Sections**: 10 chapters, 2 parts | **Depth**: study
 
+**Application boundary:** Necessity claims and parameter defaults below belong to the source's implemented models and stated assumptions. Use them to generate and test mechanisms; they do not establish that every biological system must use the same architecture.
+
 ## Mental Model (read first)
 Higher cognition is not a set of separate faculties — it is **one small set of neural mechanisms** (point-neuron integration, bidirectional attractor dynamics, inhibitory competition, XCAL learning) reused across every cognitive domain, with functional differences arising from **connectivity and parameters, not different algorithms**. The one thing to take from the whole book: *if you cannot state which mechanism produces a phenomenon, and simulate it, you have a redescription, not an explanation.* The authors' standard of evidence is a running model that reproduces both intact and lesioned behavior from the same parameters.
 
@@ -176,11 +178,11 @@ The generalizable move: two theories that fit the standard finding equally well 
 
 - **When someone names a cognitive function (attention, inhibition, executive control), ask which mechanism implements it** — otherwise the term is a homunculus. The book's own test: "you don't have a little guy in a pinstripe suit sitting in there."
 - **When a task is described as "requiring inhibition of a prepotent response," suspect the real mechanism is excitatory support for the competitor.** Stroop and A-not-B both work this way. Directed inhibition is rare; lateral inhibitory competition plus top-down excitation is the default.
-- **When a phenomenon requires fast one-shot learning AND generalization, expect two systems, not one.** The parameters that buy episodic memory (sparse, separated, fast) are exactly the ones that destroy semantic integration. If a single-system model claims both, look for what it gave up.
+- **When a phenomenon requires fast one-shot learning AND generalization, test the CLS tradeoff.** In the source framework, sparse fast learning and overlapping gradual learning make competing demands. Ask how a proposed single-system model handles both, and compare its assumptions and predictions rather than declaring it impossible by definition.
 - **Use separator vs. integrator as the first question about any brain area.** BG/cerebellum/hippocampus separate (robust, memorizing, poor transfer); neocortex integrates (generalizes, risks wrong generalizations).
 - **When choosing a learning rate, remember slow ≠ worse.** Learning rate sets the averaging window; a fast rate tracks only the most recent outcome. If a system must estimate a probability or extract statistics, it *needs* a slow rate. Default ε ≈ 0.04, decreasing.
 - **Sparse activity ≈ 15–25% in cortex, ~1–5% in DG/CA3.** If a model runs much denser, expect interference; much sparser, expect failure to generalize. In Leabra, tune **Gi** (default 1.8, up to ~3.5 for very sparse layers) and generally nothing else.
-- **Never infer a rate from a membrane potential**, and never infer absence of memory from failure of recall — probe structure determines retrievability.
+- **Within this rate-code approximation, membrane potential alone does not identify firing rate.** Check the model's conductance and threshold assumptions. Separately, failure of recall need not mean absence of memory; probe conditions affect retrieval.
 - **Treat STDP as a constraint to satisfy, not a learning rule to implement.** It does not survive realistic spike trains.
 - **A dopamine signal is a prediction error, not a reward signal.** If an account has DA tracking reward magnitude, it predicts the wrong thing at CS onset and at omission. Bursts → Go/D1; dips → NoGo/D2. Tonic level shifts risk preference.
 - **Gating separates enabling from specifying.** BG decides *whether*; cortex supplies *what*. Any account where BG specifies action content is mixing levels.
@@ -191,7 +193,7 @@ The generalizable move: two theories that fit the standard finding equally well 
 ## Key Takeaways
 1. **One mechanism set, many functions.** Point-neuron integration + bidirectional attractors + inhibitory competition + XCAL explains perception, memory, RL, executive function and language — differences come from connectivity and parameters.
 2. **The floating threshold unifies self-organizing and error-driven learning** by changing only its time scale: long-term average (BCM/homeostatic) vs. medium-term average (expectation vs. outcome ≈ delta rule).
-3. **Complementary Learning Systems is a necessity argument, not a taxonomy.** Episodic and semantic learning make directly conflicting parameter demands, so two systems must exist.
+3. **Complementary Learning Systems argues for complementary learning dynamics under its assumptions.** Test how competing architectures handle the episodic/generalization tradeoff rather than treating two systems as a universal logical necessity.
 4. **Cognitive control is excitatory biasing of the weak pathway, not inhibition of the strong one** — with lateral inhibition doing the competing.
 5. **Basal ganglia gate; they do not specify.** The same disinhibitory Go/NoGo circuit that gates motor actions gates working-memory updating in PFC, trained by the same dopaminergic RPE.
 6. **Adjudicate theories by finding where they diverge** (bilateral lesions, graded parameters), and demand that a model reproduce intact and lesioned behavior together.

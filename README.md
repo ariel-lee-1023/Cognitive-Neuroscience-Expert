@@ -12,7 +12,7 @@ references/
   reference-<slug>.md     # one dense, standalone distillation per source (loaded on demand)
 ```
 
-`SKILL.md` is the only file an agent loads automatically. It establishes the expert’s reasoning stance, then routes tasks to reference files that load only when needed.
+`SKILL.md` is the expert entrypoint; root `AGENTS.md` also guides work when this repository is opened as a project. It establishes the expert’s reasoning stance, then routes tasks to reference files that load only when needed.
 
 ## Sources
 
@@ -46,17 +46,17 @@ Clone into your agent's skill directory. For Claude Code:
 git clone https://github.com/ariel-lee-1023/Cognitive-Neuroscience-Expert.git ~/.claude/skills/cognitive-neuroscience
 ```
 
-Other hosts use different roots — e.g. `~/.copilot/skills/`, `~/.agents/skills/`, `.claude/skills/` for project scope. The directory name becomes the skill name, so keep it `cognitive-neuroscience` to match the `name:` in `SKILL.md`.
+For another host, use its configured skill directory and keep the complete `SKILL.md` and `references/` tree together. Match the installed folder name to the `name:` field in `SKILL.md`.
 
 ## Usage
 
 ```
-cognitive-neuroscience                          # router — pick the right source
-cognitive-neuroscience about <topic>            # topic index → the relevant reference file(s)
+cognitive-neuroscience                          # reason from the expert core
+cognitive-neuroscience about <topic>            # answer using relevant source depth
 cognitive-neuroscience for <book>               # open one distillation directly
 ```
 
-Most substantive questions pull **two or three** files: one for the mechanism, one for the formal model, one for the method or evidence that constrains them.
+Load the smallest set of references that can support the question. Combine mechanism, formal-model, and method sources when the claim crosses those levels; a narrow question may need only one module.
 
 ## What kind of distillation this is
 
@@ -72,10 +72,10 @@ Thinner on MEG source modelling, naturalistic/large-scale datasets, deep-learnin
 
 ## Provenance
 
-Built with [`books-to-skill-refs`](https://github.com/obra/superpowers), which distills multiple sources in one pass into a single shared, cross-referenced library. Web-hosted sources were fetched and consolidated before extraction; every reference file was checked against the skill's own contract validator and injected-instruction scanner.
+Built with [`books-to-skill-refs`](https://github.com/ariel-lee-1023/Books-to-Skill-Refs), which distills multiple sources in one pass into a single shared, cross-referenced library. Web-hosted sources were fetched and consolidated before extraction; every reference file was checked against the skill's own contract validator and injected-instruction scanner.
 
 ## License
 
-[MIT](LICENSE) — covering the original work here: the skill structure, router, topic index, README, and the distillation text as written.
+[MIT](LICENSE) — covering the original work here: the skill structure, expert core, loading guidance, README, and the distillation text as written.
 
 The underlying sources keep their own terms and are not relicensed by this. Several are open educational resources (Open Neuroscience Initiative is CC BY-NC 4.0; CompCogNeuro ed4, Nipraxis and Andy's Brain Book carry their own); others are commercially published (Springer, MIT Press, OUP, Academic Press). The reference files are structural summaries — frameworks, terminology and decision rules restated in condensed form — not reproductions. Check the individual source before redistributing or building on this.
