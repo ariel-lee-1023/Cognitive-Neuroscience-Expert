@@ -7,12 +7,12 @@ It is a distillation of **ten open or standard sources** across three layers: ho
 ## Layout
 
 ```
-SKILL.md                  # router + operating stance + cross-book topic index (always loaded)
+SKILL.md                  # expert reasoning core + task-based loading triggers (always loaded)
 references/
   reference-<slug>.md     # one dense, standalone distillation per source (loaded on demand)
 ```
 
-`SKILL.md` is the only file an agent loads automatically. It routes to the reference files, which cost nothing until opened.
+`SKILL.md` is the only file an agent loads automatically. It establishes the expert’s reasoning stance, then routes tasks to reference files that load only when needed.
 
 ## Sources
 
