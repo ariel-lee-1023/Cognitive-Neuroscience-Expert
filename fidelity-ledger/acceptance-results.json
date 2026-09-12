@@ -8,5 +8,6 @@
   "prior_evidence": "Existing maintenance/evaluations records are preserved unchanged; their contexts and task format are not a controlled pre/post comparison with this new suite.",
   "claim": "Structural validation and source review only; no measured baseline/core/reference gain or behavioral non-regression claimed.",
   "content_hash": "sha256:63fd47fe1e95ad263cd84d4550daeddea859790f5bae64477ceef0d71f127f16",
-  "publication_content_hash": "sha256:4ed09dd9485e96ea2a264713362e9d139810b93eb0e50dfcddd0bbdf811ca040"
+  "publication_content_hash": "sha256:63fd47fe1e95ad263cd84d4550daeddea859790f5bae64477ceef0d71f127f16",
+  "initial_publication_content_hash": "sha256:4ed09dd9485e96ea2a264713362e9d139810b93eb0e50dfcddd0bbdf811ca040"
 }

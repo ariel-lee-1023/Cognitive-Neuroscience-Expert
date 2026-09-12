@@ -1,0 +1,508 @@
+[
+  {
+    "id": "timing-01",
+    "group": "timing",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 92,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Jitter is not decoration in fMRI, it is required.** In a behavioral study, variable inter-trial intervals are optional flavor. In fMRI, because the BOLD response peaks ~4–6 s and returns to baseline ~12 s, **trials within ~10 s of each other produce overlapping, convolved responses** — jitter is what makes the individual conditions separable. In the example study: 2000 ms trial, then a jittered 8,000–14,000 ms interval (incrementing in 1-second steps).",
+    "source_locator": "Andy's Brain Book, fMRI Short Course experimental design; Appendix D: DesignOptimization, introduction and Evaluating Design Efficiency",
+    "verification_status": "Original Appendix D inspected; categorical jitter wording is present in source. Revision is methodological synthesis.",
+    "revised": "- **Timing serves the specified contrast and response model.** Jahn uses jittered event timing to help separate responses, but jitter is not universally required. With an assumed HRF, construct and sample the convolved design, include nuisance regressors, then assess contrast estimability and expected precision. Overlapping HRFs can remain separable. Fixed block or event schedules can support useful contrasts; jitter may help response-shape estimation or reduce particular correlations. The source example uses a 2 s trial and an 8–14 s interval; these are example settings, not timing requirements. See [design and contrast analysis](https://pubmed.ncbi.nlm.nih.gov/17070706/).",
+    "reason": "Overlap alone does not determine contrast estimability; distinguish exact confounding from variance inflation.",
+    "evidence": [
+      "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html",
+      "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "timing-02",
+    "group": "timing",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 165,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "2. **Is the design capable of separating the conditions?** Was there jitter? With trials <10 s apart and no jitter, the conditions' HRFs are confounded by construction.",
+    "source_locator": "Andy's Brain Book, fMRI Short Course experimental design; Appendix D: DesignOptimization, introduction and Evaluating Design Efficiency",
+    "verification_status": "Original Appendix D inspected; categorical jitter wording is present in source. Revision is methodological synthesis.",
+    "revised": "2. **Is the intended contrast estimable with adequate precision?** Inspect the sampled, convolved design under the assumed HRF, nuisance regressors, and noise model. Close or overlapping responses do not by themselves imply confounding. Fixed timing may be sufficient; evaluate jitter against the actual detection or response-estimation objective.",
+    "reason": "Overlap alone does not determine contrast estimability; distinguish exact confounding from variance inflation.",
+    "evidence": [
+      "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html",
+      "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "timing-03",
+    "group": "timing",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 209,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "7. **BOLD is an indirect measure several steps from firing**, and the design (jitter, behavioral effect, motion-condition independence) determines whether any analysis can recover the signal you want.",
+    "source_locator": "Andy's Brain Book, fMRI Short Course experimental design; Appendix D: DesignOptimization, introduction and Evaluating Design Efficiency",
+    "verification_status": "Original Appendix D inspected; categorical jitter wording is present in source. Revision is methodological synthesis.",
+    "revised": "7. **BOLD is an indirect hemodynamic measure.** Assess the intended contrast using the response model, sampling, task manipulation, nuisance regressors, and noise assumptions. Jitter is one timing option; HRF overlap alone does not establish non-estimability, and mathematical estimability does not guarantee useful precision.",
+    "reason": "Overlap alone does not determine contrast estimability; distinguish exact confounding from variance inflation.",
+    "evidence": [
+      "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html",
+      "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "timing-04",
+    "group": "timing",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 190,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Check whether the timing distinguishes the effects of interest.** Jitter can improve estimation in event-related designs, but is not a requirement for every design. Inspect design rank, regressor correlation, and recovery under the specified hemodynamic model.",
+    "source_locator": "Andy's Brain Book, fMRI Short Course experimental design; Appendix D: DesignOptimization, introduction and Evaluating Design Efficiency",
+    "verification_status": "Original Appendix D inspected; categorical jitter wording is present in source. Revision is methodological synthesis.",
+    "revised": "- **Check whether timing supports the intended contrast.** Under the chosen HRF, sampling, nuisance model, and noise covariance, examine contrast estimability and precision. Correlated regressors may yield an estimable but imprecise contrast; exact dependence may leave some contrasts unidentifiable. Jitter can help particular designs and objectives, but is not a universal requirement.",
+    "reason": "Overlap alone does not determine contrast estimability; distinguish exact confounding from variance inflation.",
+    "evidence": [
+      "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html",
+      "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "timing-05",
+    "group": "timing",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 166,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "3. **Could motion be the effect?** If subjects move *in response to* the condition, motion-driven and stimulus-driven signal are inseparable — realignment does not fix a confound.",
+    "source_locator": "Andy's Brain Book, fMRI Short Course experimental design; Appendix D: DesignOptimization, introduction and Evaluating Design Efficiency",
+    "verification_status": "Original Appendix D inspected; categorical jitter wording is present in source. Revision is methodological synthesis.",
+    "revised": "3. **Could motion explain the effect?** Task-correlated motion can bias or inflate uncertainty in the contrast. Exact dependence between modeled task and motion effects prevents separating them; imperfect correlation need not. Realignment alone does not remove all motion-induced signal or establish causal attribution.",
+    "reason": "Overlap alone does not determine contrast estimability; distinguish exact confounding from variance inflation.",
+    "evidence": [
+      "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html",
+      "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "timing-06",
+    "group": "timing",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 104,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Motion correction** — via **rigid-body transformations**: 3 **translations** (x, y, z) + 3 **rotations** (**pitch** about x, **roll** about y, **yaw** about z) = 6 degrees of freedom. All volumes are **realigned** to a **reference volume** (typically first, middle, or last). **Three distinct harms from motion, and they are different problems**: (1) blur; (2) a **moving voxel** — you measure one region for part of the run and a different region or tissue type after the movement; (3) **motion generates signal**, so if the subject moves in response to the stimulus (jerking at each shock), stimulus-driven and motion-driven signal become inseparable. *(3) is a confound, not noise — no amount of realignment fixes it.*",
+    "source_locator": "Andy's Brain Book, fMRI Short Course experimental design; Appendix D: DesignOptimization, introduction and Evaluating Design Efficiency",
+    "verification_status": "Original Appendix D inspected; categorical jitter wording is present in source. Revision is methodological synthesis.",
+    "revised": "- **Motion correction** — via **rigid-body transformations**: 3 **translations** (x, y, z) + 3 **rotations** (**pitch** about x, **roll** about y, **yaw** about z) = 6 degrees of freedom. All volumes are **realigned** to a **reference volume** (typically first, middle, or last). **Motion can blur images, change the tissue sampled at a voxel, and alter measured signal.** Task-correlated motion threatens attribution and precision; exact confounding prevents separating specified effects, whereas partial correlation need not. Realignment alone cannot guarantee removal of these effects.",
+    "reason": "Overlap alone does not determine contrast estimability; distinguish exact confounding from variance inflation.",
+    "evidence": [
+      "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html",
+      "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "bonferroni-01",
+    "group": "bonferroni",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 22,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **The deeper reason Bonferroni is wrong here, not just harsh**: it **assumes each test is independent**. Voxels are not — bright voxels are surrounded by brighter voxels, dark by darker, and the same autocorrelation holds in the timecourse. Because you can estimate a voxel from its neighbors, the tests are dependent. **Bonferroni is therefore too severe: it protects the false-positive rate at the cost of a high false-negative rate.**",
+    "source_locator": "Appendix A: Cluster Correction; compare Nipraxis bonferroni_correction",
+    "verification_status": "Mathematical correction verified by union bound; exact original Appendix A wording not rechecked.",
+    "revised": "- **Bonferroni remains valid under dependence.** For valid individual tests, the union bound controls family-wise error without an independence assumption. Spatial dependence can make it conservative; it does not make Bonferroni invalid or automatically validate cluster inference. See [Nipraxis derivation](https://textbook.nipraxis.org/bonferroni_correction.html).",
+    "reason": "Remove an incorrect independence requirement.",
+    "evidence": [
+      "https://itl.nist.gov/div898/handbook/prc/section4/prc473.htm"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "bonferroni-02",
+    "group": "bonferroni",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 18,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Core idea**: Group-level maps come from a **mass univariate analysis** — \"we carry out as many statistical tests as there are voxels.\" With hundreds of thousands of voxels, uncorrected testing guarantees false positives.",
+    "source_locator": "Appendix A: Cluster Correction",
+    "verification_status": "Analytical correction; original wording not rechecked.",
+    "revised": "- **Core idea**: Mass-univariate imaging tests many voxels. Without appropriate multiplicity control, the probability of one or more false positives can be high; it is not a logical certainty. Under independent true nulls, that probability is $1-(1-\\alpha)^m$ for $m$ tests at level $\\alpha$. Dependence changes this expression.",
+    "reason": "A high probability is not a guarantee.",
+    "evidence": [
+      "https://itl.nist.gov/div898/handbook/prc/section4/prc473.htm"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "ocular-01",
+    "group": "ocular",
+    "location": "references/reference-forstmann-model-based-cogneuro.md",
+    "original_line": 42,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Process tracing** (eye tracking, cursor position). **The practical incompatibility worth knowing**: the eyeball is a **dipole**, so saccades create large electrical artifacts in EEG and fMRI; MRI-compatible eye trackers are hard to obtain. Consequence — in cognitive neuroscience eye tracking is \"often used as a **data cleaning mechanism**\" to detect broken fixation rather than as a modeling input. Cursor trajectories are movement, and movement creates artifacts.",
+    "source_locator": "Forstmann & Turner (eds.), 2e, Ch 1, Behavioral and neural measures / process tracing (page not verified)",
+    "verification_status": "Original 2024 chapter inaccessible in this review; external primary evidence supports correction.",
+    "revised": "- **Process tracing** (eye tracking, cursor position) measures behavior and can supply model inputs as well as fixation checks. Eye movements and the act of recording them are distinct. In **EEG**, corneo-retinal dipole rotation, eyelid activity, and extraocular muscle potentials can contaminate scalp voltages; simultaneous tracking can help characterize these artifacts ([Plöchl et al., 2012](https://pubmed.ncbi.nlm.nih.gov/23087632/)). In **fMRI**, consider motion and image artifacts plus genuine visual and oculomotor BOLD activity that may covary with the task. This is not the EEG electrical-dipole mechanism. MR-compatible eye tracking can be combined with imaging; assess the actual apparatus, synchronization, calibration, and artifact controls. These measurement distinctions are editorial corrections supported by external studies, not verified quotations from Ch 1.",
+    "reason": "Do not transfer EEG voltage artifacts to MRI or confuse behavior with recording.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/23087632/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3706575/",
+      "https://academic.oup.com/scan/article/2/1/31/2362786"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "ocular-02",
+    "group": "ocular",
+    "location": "references/reference-forstmann-model-based-cogneuro.md",
+    "original_line": 142,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Watch for measurement incompatibilities that silently shape designs**: the eye is a dipole, so eye tracking contaminates EEG/fMRI and is usually relegated to fixation checking; movement-based measures (cursor trajectories) create artifacts too.",
+    "source_locator": "Forstmann & Turner (eds.), 2e, Ch 1, Behavioral and neural measures / process tracing (page not verified)",
+    "verification_status": "Original 2024 chapter inaccessible in this review; external primary evidence supports correction.",
+    "revised": "- **Separate eye movements, recording equipment, and measurement mechanisms.** Eye and eyelid movements generate ocular electrical artifacts in EEG; fMRI has motion/image-artifact and task-related visual/oculomotor BOLD concerns. Eye tracking can provide behavioral model inputs and artifact checks with either modality. Verify compatibility for the actual apparatus rather than assuming blanket incompatibility or equipment scarcity.",
+    "reason": "Do not transfer EEG voltage artifacts to MRI or confuse behavior with recording.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/23087632/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3706575/",
+      "https://academic.oup.com/scan/article/2/1/31/2362786"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-01",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 7,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "The proposed remedy — aligned with NIMH's **RDoC** — is to replace symptom lists with **formal models whose parameters are the thing you measure**, so that a patient group differs not merely in a score but in a *learning rate*, a *decision threshold*, or a *prior precision*.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "The research program, aligned with NIMH's **RDoC**, uses formal models to generate candidate research measures such as learning rate, decision threshold, and prior precision. A group difference can motivate a mechanistic hypothesis, but clinical use requires evidence of reliable measurement, predictive validity, and usefulness in the intended population. **RDoC is a research framework, not a diagnostic guide or a replacement for current diagnostic systems** ([NIMH](https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc)). This distinction is an editorial clarification, not a claim that the book established clinical validation.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-02",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 9,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "**Reach for this book when you need**: how a cognitive model becomes a clinical measure; the correct model-fitting workflow (parameter recovery, model recovery, model comparison, group treatments); or the current computational accounts of schizophrenia, depression, anxiety, addiction, and Tourette syndrome.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "**Reach for this book when you need**: how cognitive models generate candidate research measures; parameter and model recovery, comparison, and group modelling; or the computational hypotheses about psychiatric disorders covered by this source. Whether a measure supports clinical decisions requires separate validation.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-03",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 19,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **RDoC's two commitments** that computational modelling serves: organize research around **the function of specific neural circuits and other biological processes** rather than diagnostic categories, and treat psychopathology as lying on **continua \"from illness to health, without specific clinical break points.\"** The RDoC matrix is \"a framework for investigations across multiple **units of biological and behavioral analysis**.\"",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **RDoC research framing**: study dimensions of psychological and biological functioning across health and illness and across units of analysis. This research strategy does not establish individual diagnostic thresholds or replace clinical diagnostic systems; evaluate any proposed clinical measure separately.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-04",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 27,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Drift-diffusion models** — \"**dissect the origin** of differences in performance and reaction times between groups in tasks involving choices between two alternatives.\" *The clinical value is decomposition: a group difference in accuracy or RT becomes a difference in drift, threshold, or non-decision time.*",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **Drift-diffusion models** decompose choice and RT differences into candidate drift, boundary, or non-decision-time differences under the model. Such group-level decompositions are research hypotheses; recoverability, measurement reliability, and clinical validity must be established before individual clinical interpretation.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-05",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 112,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "9. **Check whether the effect is a group difference or an individual-differences result.** Group separation is the easy result; the clinically useful one is variation along symptom dimensions within patients — and it requires moderate-to-severe and treatment-resistant patients, not just mild cases.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "9. **Distinguish group differences, individual prediction, and clinical utility.** Associations with symptom dimensions can be informative but do not establish diagnostic or treatment value. Match the severity spectrum and treatment history of the sample to the intended inference; severe or treatment-resistant cases are not a universal study requirement.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-06",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 131,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Expect group separation to be the easy result.** The clinically meaningful finding is individual variation along symptom dimensions — and it requires studying severe and treatment-resistant patients, not only mild cases.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **Validate the intended individual-level use.** A group difference or symptom correlation does not establish reliable diagnosis, prognosis, or treatment selection. Sampling across severity and treatment histories may improve coverage when relevant to the target population; no single severity stratum is mandatory for every study.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-07",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 134,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Treat RDoC continua seriously**: if the account requires a categorical break point that RDoC denies, that is a substantive commitment needing defence.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **Treat RDoC as a dimensional research framework.** It does not itself provide clinical break points or prove that no useful categorical distinction can exist. A proposed threshold requires evidence appropriate to its intended use.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-08",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 138,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "1. **DSM categories are heterogeneous and atheoretical**; computational parameters (learning rate, threshold, precision) are candidate measures that cut across them, which is why RDoC and computational psychiatry are natural partners.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "1. **Computational parameters are candidate research measures across heterogeneous symptom categories.** RDoC is a research framework, not a diagnostic replacement. Parameter recoverability, reliability, predictive validity, and clinical usefulness remain separate questions.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "recovery-01",
+    "group": "recovery",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 62,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Fitting**: **maximum likelihood** $\\hat\\theta_{ML} = \\arg\\max_\\theta \\log p(a_1,\\ldots,a_T|\\theta)$, computable because \"once we condition on the values, the choices become **independent of the previous choices**.\" **But: \"Parameter recovery using ML is often very imperfect… particularly true in situations where parameters have overlapping effects and therefore can trade off each other.\"** The fix: impose a soft prior and use **maximum a posteriori (MAP)**; the prior can be inferred from the data itself (**empirical Bayes**).",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **Fitting**: maximum likelihood maximizes $\\log p(a_{1:T}\\mid\\theta)$ with trial history represented by the model. If parameters trade off, inspect the likelihood, identifiability, and recovery under the actual task. MAP adds a log prior and may stabilize estimates with justified priors, but can bias them and cannot create missing information. Evaluate prior sensitivity and recovery; empirical Bayes also introduces assumptions and uncertainty.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/PMC6879303"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "recovery-02",
+    "group": "recovery",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 108,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "5. **Before collecting data, generate artificial data and test parameter recovery and model recovery.** If parameters trade off under ML, switch to MAP with a soft prior or empirical Bayes. Adjust trial and subject counts based on what recovery requires.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "5. **Simulate the proposed design and test parameter and model recovery before interpretation, preferably before collection.** If ML estimates trade off, evaluate task information, identifiability, parameterization, and sample size. Consider MAP or hierarchical regularization with justified priors, then test bias, prior sensitivity, and recovery again. A stable MAP estimate alone does not show the data identify the parameter.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/PMC6879303"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "bayes-factor-01",
+    "group": "bayes-factor",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 63,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Model comparison**: \"Simply looking at how closely the model fits the data is not sufficient: a model that is too flexible could fit the data perfectly, but would lead to poor prediction of new data. This issue is known as **overfitting**.\" Bayesian model comparison uses the **average likelihood over all parameter settings**, not the best likelihood: $P(A|M) = \\int P(A|\\theta,M)p(\\theta)d\\theta$. The **Bayes factor** $BF = P(A|M_1)/P(A|M_2)$ is \"considered **substantial if greater than 3, and conclusive if greater than 5**.\" Approximations: **BIC** $= -2\\log p(A|\\hat\\theta_{ML}) + d\\log(n)$, AIC, Laplace approximation.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **Model comparison**: the marginal likelihood $p(A\\mid M)=\\int p(A\\mid\\theta,M)p(\\theta\\mid M)d\\theta$ averages likelihood with respect to the parameter prior. $BF_{12}=p(A\\mid M_1)/p(A\\mid M_2)$ compares specified models and priors. Report the direction, numeric value, estimation method, and prior sensitivity. Verbal evidence scales are conventions; a raw BF above 5 is not universally conclusive. Do not confuse BF, log BF, and twice log BF. The old threshold attribution to this book remains unverified. BIC is an asymptotic approximation under regularity conditions; AIC targets a different predictive criterion. Relative preference still requires absolute predictive checks.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/PMC6879303",
+      "https://www.stat.cmu.edu/~kass/papers/bayesfactors.pdf"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "bayes-factor-02",
+    "group": "bayes-factor",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 109,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "6. **Fit, then validate against real data** (e.g. do simulated learning curves match observed ones?), **then** compare models with the average likelihood (Bayes factor >3 substantial, >5 conclusive; or BIC).",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "6. **Check predictions against observed data and compare candidate models using a justified criterion.** For a Bayes factor, report its direction, numerical scale, priors, and estimation uncertainty; qualitative thresholds are conventions, not universal conclusions. Evaluate prior sensitivity and predictive adequacy. BIC approximations and predictive criteria have different assumptions.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/PMC6879303",
+      "https://www.stat.cmu.edu/~kass/papers/bayesfactors.pdf"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "bayes-factor-03",
+    "group": "bayes-factor",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 125,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Compare models by average likelihood, not best likelihood** (Bayes factor, BIC), and remember **model comparison is relative**: verify the winner is adequate in absolute terms before interpreting it.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "- **Choose a comparison criterion for the inferential goal.** Bayes factors compare prior-weighted marginal likelihoods; BIC is an approximation under regularity conditions, and predictive criteria address other goals. Report priors and sensitivity for Bayesian evidence. Relative superiority does not establish absolute adequacy.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/PMC6879303",
+      "https://www.stat.cmu.edu/~kass/papers/bayesfactors.pdf"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "scope-01",
+    "group": "scope",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 140,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "3. **Precision-weighted prediction error unifies Bayes and predictive coding** — and makes aberrant precision a single mechanism able to produce over- or under-weighting of sensory evidence.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "3. **In the Gaussian belief-update example, precision weighting determines the influence of prediction error.** Predictive coding can implement related updates under particular assumptions; Bayesian inference does not imply that algorithm or identify a neural implementation.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/PMC6879303"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "clinical-09",
+    "group": "clinical",
+    "location": "references/reference-series-computational-psychiatry.md",
+    "original_line": 145,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "8. **The field's honest status: still in its infancy, still lab-bound**, and the key unsolved problem is moving from group separation to individual prediction.",
+    "source_locator": "Seriès (ed.), Computational Psychiatry: A Primer, Ch 1 RDoC framing; Ch 2 model fitting and model comparison (exact pages unverified)",
+    "verification_status": "Original chapter text unavailable; editorial qualification supported by external sources.",
+    "revised": "8. **Translation from research parameters to individual clinical decisions requires separate evidence.** This 2020 source cannot establish the current validation status of any particular measure; check the intended population, endpoint, and external validation.",
+    "reason": "Keep research, measurement validation, clinical use, and model-dependent inference distinct.",
+    "evidence": [
+      "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "control-01",
+    "group": "control",
+    "location": "references/reference-oreilly-comp-cog-neuro.md",
+    "original_line": 144,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Stroop model** (Cohen, Dunbar & McClelland 1990) — **the single most important conceptual correction in the chapter.** Word reading dominates color naming purely as a function of *amount of training*. PFC provides top-down support that lets the weaker pathway compete. **The PFC does *not* send directed inhibition to the word-reading pathway.** It provides **excitatory top-down support to the weaker (color) pathway**, which then out-competes the dominant pathway via *lateral* inhibition. **Inhibition is a collateral, automatic cortical process; control is excitatory biasing of the relevant, not inhibition of the irrelevant.** The same correction applies to A-not-B (Morton & Munakata 2002; Stedron et al. 2005). *Whenever a task is described as \"requiring inhibition,\" check whether the mechanism is actually excitatory support for a competitor.*",
+    "source_locator": "O'Reilly et al., Computational Cognitive Neuroscience 4e, Ch 9 Executive Function, Stroop / A-not-B models",
+    "verification_status": "Repository model documentation located; exact 4e chapter text and historical revision not fully verified.",
+    "revised": "- **Stroop model** (Cohen, Dunbar & McClelland 1990, as developed in this chapter): with greater word-reading training and a weaker color pathway, maintained task activity supplies top-down excitation to color processing; lateral competition then reduces the competing response. In this implementation, directed PFC inhibition of word reading is not required. The chapter uses related active-maintenance accounts for A-not-B. These are model- and task-specific mechanisms, not evidence that all cognitive control is excitatory or that direct inhibitory control is absent elsewhere.",
+    "reason": "Attach training, architecture, and task scope to every standalone claim.",
+    "evidence": [
+      "https://github.com/compcogneuro/sims/blob/main/ch9/stroop/README.md"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "control-02",
+    "group": "control",
+    "location": "references/reference-oreilly-comp-cog-neuro.md",
+    "original_line": 180,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **When a task is described as \"requiring inhibition of a prepotent response,\" suspect the real mechanism is excitatory support for the competitor.** Stroop and A-not-B both work this way. Directed inhibition is rare; lateral inhibitory competition plus top-down excitation is the default.",
+    "source_locator": "O'Reilly et al., Computational Cognitive Neuroscience 4e, Ch 9 Executive Function, Stroop / A-not-B models",
+    "verification_status": "Repository model documentation located; exact 4e chapter text and historical revision not fully verified.",
+    "revised": "- **For the chapter's Stroop model, compare excitatory support with directed inhibition.** Under its asymmetric training and lateral-competition assumptions, PFC task support boosts the weaker color pathway. Related A-not-B models use active maintenance. Ask which mechanism fits the task and discriminating evidence; these examples do not establish a universal control mechanism.",
+    "reason": "Attach training, architecture, and task scope to every standalone claim.",
+    "evidence": [
+      "https://github.com/compcogneuro/sims/blob/main/ch9/stroop/README.md"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "control-03",
+    "group": "control",
+    "location": "references/reference-oreilly-comp-cog-neuro.md",
+    "original_line": 197,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "4. **Cognitive control is excitatory biasing of the weak pathway, not inhibition of the strong one** — with lateral inhibition doing the competing.",
+    "source_locator": "O'Reilly et al., Computational Cognitive Neuroscience 4e, Ch 9 Executive Function, Stroop / A-not-B models",
+    "verification_status": "Repository model documentation located; exact 4e chapter text and historical revision not fully verified.",
+    "revised": "4. **In the chapter's Stroop implementation, task-related excitation supports the weaker color pathway under asymmetric training, and lateral inhibition mediates competition.** That demonstrates one route to controlled responding, not that all cognitive control uses this mechanism.",
+    "reason": "Attach training, architecture, and task scope to every standalone claim.",
+    "evidence": [
+      "https://github.com/compcogneuro/sims/blob/main/ch9/stroop/README.md"
+    ],
+    "attribution": "Editorial correction or scoped synthesis; external evidence is not attributed to the book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "convolution-01",
+    "group": "convolution",
+    "location": "references/reference-jahn-brain-book.md",
+    "original_line": 120,
+    "base_commit": "5fd533711d5357f7ab8c84dbf675ba6fb45a6658",
+    "original": "- **Three stimulus cases**: **impulse stimulus** (no duration; a **stick function**) → a plain gamma shape. **Boxcar stimulus** (e.g. 15 s checkerboard) → the gamma is **convolved** with the boxcar, broadening with a sustained peak proportional to duration and descending only after offset. **Overlapping stimuli** → individual HRFs **sum**, producing a moving average that grows more complex as stimuli come closer together. **Convolution defined**: the averaging of two functions over time.",
+    "source_locator": "Jahn, fMRI Short Course: BOLD signal and HRF; mathematical convolution definition",
+    "verification_status": "Editorial mathematical correction; exact original source paragraph not rechecked.",
+    "revised": "- **Convolution under a linear, time-invariant HRF model**: an ideal unit impulse produces the assumed response function; a boxcar produces its integral over the stimulus duration; multiple inputs superpose. In continuous time, $x(t)=\\int u(\\tau)h(t-\\tau)d\\tau$, where $u$ is input and $h$ is the response kernel. This is a weighted integral of shifted responses, not necessarily an average: kernel normalization and input units determine scaling. Overlap alone does not establish non-estimability. The linear HRF model is an assumption to assess, especially when response shape or linearity may vary.",
+    "reason": "A convolution need not average or preserve amplitude. Specify linearity, normalization, input units, and superposition conditions.",
+    "evidence": [
+      "https://textbook.nipraxis.org/on_convolution.html"
+    ],
+    "attribution": "Editorial clarification, not a verified author quotation.",
+    "reviewed_on": "2026-09-12"
+  }
+]

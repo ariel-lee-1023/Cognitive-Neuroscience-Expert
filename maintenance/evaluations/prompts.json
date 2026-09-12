@@ -1,0 +1,10 @@
+[
+{"id":"timing","reference":"reference-jahn-brain-book.md","prompt":"Our two-condition fMRI study uses fixed 10-second blocks and has overlapping hemodynamic responses. A reviewer says jitter is compulsory and the contrast is impossible. Assess this claim and explain how you would check it."},
+{"id":"ocular","reference":"reference-forstmann-model-based-cogneuro.md","prompt":"Does simultaneous eye tracking create the same ocular electrical artifact in EEG and fMRI? Can we use gaze as an input to a cognitive model?"},
+{"id":"rdoc","reference":"reference-series-computational-psychiatry.md","prompt":"RDoC uses computational parameters instead of symptom categories. Can our lab now diagnose an individual with a fitted learning rate?"},
+{"id":"stroop","reference":"reference-oreilly-comp-cog-neuro.md","prompt":"The Stroop model explains control through excitation of color processing. Does this establish that cognitive control never directly inhibits a competing response?"},
+{"id":"recovery","reference":"reference-series-computational-psychiatry.md","prompt":"Our learning-rate likelihood is flat, but MAP produces stable individual estimates. Does this mean we recovered the participants' learning rates? A Bayes factor of 6 favors the model. Is that conclusive?"},
+{"id":"simulation","reference":"reference-forstmann-model-based-cogneuro.md","prompt":"We simulated wider decision boundaries and got slower, more accurate choices. Have we established that a patient's slowing is caused by a neural threshold increase? What does the simulation establish?"},
+{"id":"representation","reference":"reference-jahn-brain-book.md","prompt":"Use an equation and a useful figure to explain why two similar fMRI regressors can yield an estimable but imprecise A-B contrast. Execute a calculation if possible and label the result."},
+{"id":"simple","reference":"reference-oreilly-comp-cog-neuro.md","prompt":"In one or two sentences, what is a reward prediction error?"}
+]

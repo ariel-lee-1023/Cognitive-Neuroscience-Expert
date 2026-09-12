@@ -24,10 +24,12 @@ The generic validator also warns about the pre-existing optional guide and requi
 
 ## Publication scope
 
-Only this task's four source references, core/README additions, discovery-alias correction, and new fidelity ledger are committed. Pre-existing local edits and untracked demonstrations remain in the destination checkout. Their behavior is included in the saved-local integration validation above, but they are not silently included in this task's commit. The committed runtime is separately checked as a publication projection of the existing HEAD plus this task's edits. This projection is a temporary validation artifact, not a second repository checkout.
+The initial commit published the four-book additions separately. The user subsequently explicitly requested publication of **all saved local changes**, including the existing demonstrations, reference corrections, core and README revisions, and maintenance records. The complete non-ignored working tree is therefore included in the follow-up publication. The saved-local integration checks above apply to that complete runtime. Generated `outputs/`, virtual environments, and caches remain governed by the repository's existing ignore rules.
+
+The publication-projection report records the narrower initial commit only; it is historical evidence, not a clean generic-layout result for the complete repository. The complete publication retains the existing architecture and its documented validator exceptions.
 
 See the raw JSON and test logs in this directory. The final checkout and publication projection checks are recorded in `delivery-checks.json`; remote commit/tree identity is verified after pushing.
 
 ## Final location check
 
-Final reference check: 0 errors. All 36 retained baseline files and all new runtime files match the validated staging content. The generic final-location validator additionally flags the pre-existing ignored `outputs/` directory (five architecture diagnostics total); no generated output was moved or committed. The scoped publication projection passes with **zero errors** and three unchanged baseline warnings.
+Final reference check: 0 errors. All 36 retained baseline files and all new runtime files match the validated staging content. The generic final-location validator additionally flags the pre-existing ignored `outputs/` directory (five architecture diagnostics total); no generated output was moved or committed. The initial scoped publication projection passed with **zero errors** and three unchanged baseline warnings; the full saved-local publication uses the existing-architecture audit above.

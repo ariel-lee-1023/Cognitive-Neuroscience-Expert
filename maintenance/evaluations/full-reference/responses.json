@@ -1,0 +1,174 @@
+[
+  {
+    "id": "timing",
+    "prompt": "Our two-condition fMRI study uses fixed 10-second blocks and has overlapping hemodynamic responses. A reviewer says jitter is compulsory and the contrast is impossible. Assess this claim and explain how you would check it.",
+    "context_condition": "full-reference",
+    "answer": "The reviewer has not established that the contrast is impossible. Fixed 10-second blocks and overlapping hemodynamic responses can support an estimable A-B contrast; jitter is useful for some objectives, but it is not compulsory. The decisive question is whether the sampled responses retain information about the particular difference you want to estimate.\n\nI would check the actual design as follows:\n\n1. Reconstruct each condition's onsets and durations, convolve its boxcars with the assumed HRF, and sample at the acquisition times. Include the intercept, run effects, drift terms, motion terms, censoring, and any other nuisance columns used in the analysis. Apply the planned temporal filtering consistently to the data and design.\n2. Define the contrast explicitly, for example c = (1, -1, 0, ...) for A-B. Inspect the design and its singular values, then check that c lies in its row space. Rank deficiency alone does not make every contrast impossible: identical A and B columns lose A-B, whereas a dependency involving their sum and an intercept may still preserve A-B.\n3. Evaluate contrast precision under the intended noise model. With covariance sigma² V, whiten the data and design and compute the contrast variance. Highly similar columns can leave A-B mathematically identifiable but too noisy to answer the scientific question. A condition number or pairwise correlation is a diagnostic, not the final contrast-specific result.\n4. Simulate plausible effect sizes, temporal noise, and HRF variations through the planned pipeline. Compare the current schedule with feasible alternatives, including jitter, for the actual objective: detecting an amplitude difference and estimating an unknown response shape need not favor the same timing. These are proposed checks, not calculations I have run on your design.\n\nThis follows the supplied Jahn reference's design-and-GLM framework, with the linear-algebra checks made explicit here. The block order, TR, baseline periods, nuisance design, and noise estimates are missing, so I can reject the reviewer's universal rule but cannot yet certify your contrast's precision. External sources were not checked in this evaluation.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/timing.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "No actual timing file, TR, nuisance matrix, HRF estimate, or noise data were provided.",
+      "Design checks were proposed, not executed on the study.",
+      "No internet verification."
+    ]
+  },
+  {
+    "id": "ocular",
+    "prompt": "Does simultaneous eye tracking create the same ocular electrical artifact in EEG and fMRI? Can we use gaze as an input to a cognitive model?",
+    "context_condition": "full-reference",
+    "answer": "No. Eye movements and the equipment that records them are different sources of concern, and EEG and fMRI measure different physical signals.\n\nIn EEG, rotating the corneo-retinal dipole, blinking, and extraocular muscle activity can contaminate scalp voltages. Those artifacts arise from the eyes and surrounding tissues even without an eye tracker; simultaneous tracking can help identify their timing and character. Equipment can add its own interference, which should be checked separately.\n\nIn fMRI, the relevant concerns include motion and image artifacts, apparatus compatibility, and genuine visual or oculomotor BOLD activity that covaries with the task. That genuine brain response may complicate attribution, but it is not the same ocular electrical artifact measured in EEG. Use an MR-compatible setup and verify synchronization, calibration, and its artifact behavior for the acquisition you actually use.\n\nYes, gaze can be a behavioral input to a cognitive model. For example, a specified accumulation model could let fixation determine the weight given to each option's evidence over time. Define that transformation and its timing, handle blinks and missing samples, and test whether it improves held-out choice and response-time predictions over a model without gaze. Because preferences and emerging decisions can also direct gaze, predictive improvement alone would not establish that gaze causes the decision; a gaze manipulation would help separate those accounts.\n\nThe model-input framing comes from the supplied Forstmann–Turner reference. Its modality-specific ocular distinction is explicitly an editorial correction supported by external studies, rather than a verified quotation from the book; I have not independently checked those external studies here.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/ocular.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "No apparatus or acquisition details were supplied.",
+      "Source distinguishes editorial correction from verified chapter content; external supporting studies were not fetched.",
+      "Gaze-model example is a synthesis rather than a tested implementation."
+    ]
+  },
+  {
+    "id": "rdoc",
+    "prompt": "RDoC uses computational parameters instead of symptom categories. Can our lab now diagnose an individual with a fitted learning rate?",
+    "context_condition": "full-reference",
+    "answer": "No. RDoC is a dimensional research framework spanning psychological and biological measurements, not a system that replaces symptoms with fitted parameters or supplies individual diagnostic cutoffs.\n\nA fitted learning rate describes updating within a particular task and model. A low estimate could reflect a participant's updating, limited information in the task, tradeoffs with other parameters, or a model that misses their strategy. Even a reliably recovered group difference does not tell you how accurately that estimate classifies a new individual.\n\nBefore proposing an individual clinical use, establish that the task can recover the parameter, that estimates are reliable across repeated measurements, and that the model adequately predicts behavior. Then validate the intended diagnostic rule in independent participants from the target population, assessing discrimination, calibration, sensitivity and specificity, the consequences of errors, and added value beyond existing assessment. Recoverability, predictive validity, and clinical usefulness are separate requirements.\n\nThis distinction is explicit in the supplied Seriès reference, including its editorial clarification linked to NIMH. Current external validation of your model or a particular clinical application was not available for verification here, so the fitted rate supports a research hypothesis rather than the proposed diagnosis.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/rdoc.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "No individual data or clinical-validation study supplied.",
+      "External NIMH link and current clinical-validation evidence were not fetched."
+    ]
+  },
+  {
+    "id": "stroop",
+    "prompt": "The Stroop model explains control through excitation of color processing. Does this establish that cognitive control never directly inhibits a competing response?",
+    "context_condition": "full-reference",
+    "answer": "No. It demonstrates one mechanism that can produce controlled responding under that model's assumptions; it does not establish that direct inhibition never contributes to cognitive control.\n\nIn the chapter's Stroop implementation, stronger training makes word reading dominate a weaker color pathway. Maintained task activity boosts color processing, and lateral competition then reduces the competing response. Directed PFC inhibition of word reading is unnecessary for this implementation, but inhibition is still present in its competitive dynamics. An excitatory control signal and an inhibitory consequence are compatible.\n\nTo compare this mechanism with directed suppression, specify a rival model and seek a manipulation on which their predictions diverge. For example, manipulate color evidence and word strength independently and measure both target enhancement and competitor suppression over time. Reduced competitor activity alone will not decide the issue, because indirect competition also predicts it; the accounts need quantitative predictions about when suppression occurs and how it depends on target support, ideally tested with a targeted perturbation.\n\nThe mechanism is from O'Reilly's presentation of the Cohen, Dunbar, and McClelland Stroop model. The proposed comparison is my synthesis, not a claim that the source already performed that discriminating experiment. No new literature was verified here.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/stroop.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "Mechanism applies to the described Stroop implementation.",
+      "Proposed discriminating experiment has not been implemented or externally verified."
+    ]
+  },
+  {
+    "id": "recovery",
+    "prompt": "Our learning-rate likelihood is flat, but MAP produces stable individual estimates. Does this mean we recovered the participants' learning rates? A Bayes factor of 6 favors the model. Is that conclusive?",
+    "context_condition": "full-reference",
+    "answer": "No. Stable MAP estimates can be stable because the prior supplies curvature that the likelihood lacks. They do not show that the participants' data identify their learning rates.\n\nMAP maximizes log p(data | alpha) + log p(alpha), where alpha is the learning rate and the second term is its prior. If the likelihood is exactly flat over alpha, the posterior has the same shape as the prior over that range; its maximum reveals the prior mode rather than an individually measured rate. With an approximately flat likelihood or parameter tradeoffs, inspect the joint likelihood and posterior, since a single slice or a stable optimizer output can conceal uncertainty.\n\nRun a recovery study using the actual task, trial counts, observation model, plausible learning rates, and other free parameters. Generate many datasets with known parameters, refit them with your procedure, and examine bias, error, interval coverage, and shrinkage across the parameter range. Test sensitivity to justified alternative priors and whether simulated individuals with different rates remain distinguishable. A shrinkage estimator can improve average error while erasing individual differences; a recovery correlation alone is insufficient. These are proposed checks, not evidence that recovery has already succeeded.\n\nA raw BF12 = 6 means the observed data have six times the prior-averaged likelihood under model 1 as under the specified model 2. It multiplies prior model odds by six; with equal prior odds and only those two models, the posterior probability for model 1 would be 6/7, about 0.86. It does not mean the model is conclusively true or that alpha is recoverable. Report the direction, whether 6 is a raw or transformed Bayes factor, priors, computation method and uncertainty, and prior sensitivity. Also check absolute predictive fit: both candidates could be poor.\n\nThis follows the supplied Seriès workflow. The reference specifically treats verbal Bayes-factor thresholds as conventions and flags its former threshold attribution as unverified. I have not independently checked external sources or inspected your likelihood and model-comparison computation.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/recovery.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "No likelihood surface, priors, datasets, or Bayes-factor calculation supplied.",
+      "No recovery computation executed.",
+      "External verification unavailable."
+    ]
+  },
+  {
+    "id": "simulation",
+    "prompt": "We simulated wider decision boundaries and got slower, more accurate choices. Have we established that a patient's slowing is caused by a neural threshold increase? What does the simulation establish?",
+    "context_condition": "full-reference",
+    "answer": "The simulation establishes a conditional consequence of your model: under its fixed assumptions, widening the decision boundaries can produce slower, more accurate choices. It does not establish that the patient's slowing was caused by a neural threshold increase.\n\nIn a standard diffusion model with positive drift toward the correct response and a centered starting point, wider boundaries require more accumulated evidence. Holding drift, diffusion noise, starting-point position relative to the boundaries, and non-decision time fixed, this generally increases decision time while reducing errors. These conditions matter: for example, zero drift at a centered start keeps accuracy at chance even when boundaries widen.\n\nThere are two additional bridges to test. First, does a boundary change explain this patient's full choice and response-time distributions better than changes in evidence quality, encoding or motor time, response bias, or mixtures of processes? Test recovery, compare meaningful alternatives, and check predictions beyond mean slowing. A non-decision-time increase can slow responses without the accuracy benefit; a drift reduction can slow responses while worsening accuracy, although combinations can mimic other patterns.\n\nSecond, what measured neural quantity implements the fitted boundary? A behavioral boundary parameter has model-dependent units and is not automatically a firing-rate threshold. Specify the linking proposition, propagate fitting and measurement uncertainty, and test neural predictions with an appropriate recording or intervention. A correlation with BOLD alone would support association under that link, not prove the patient's causal mechanism.\n\nThis distinction follows the supplied Forstmann–Turner DDM and model-linking framework. I have not inspected your code or patient data, rerun your simulation, or verified external clinical evidence; even implementation correctness remains to be checked for the simulation you described.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/simulation.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "User-reported simulation was not rerun and its code was unavailable.",
+      "No patient data or neural linking evidence supplied.",
+      "No external clinical verification."
+    ]
+  },
+  {
+    "id": "representation",
+    "prompt": "Use an equation and a useful figure to explain why two similar fMRI regressors can yield an estimable but imprecise A-B contrast. Execute a calculation if possible and label the result.",
+    "context_condition": "full-reference",
+    "answer": "Two similar regressors can have slightly different time courses, so their effects are distinguishable in principle, while noise overwhelms the small difference that separates them.\n\nStart with the GLM y = X beta + epsilon. For a teaching example, let X contain centered A and B regressors plus an intercept, assume independent noise with variance sigma², and scale both condition columns to squared length L. If their correlation is r, their cross-product matrix is\n\n$$X_{AB}^{T}X_{AB}=L\\begin{pmatrix}1&r\\\\r&1\\end{pmatrix},\\qquad\n\\operatorname{Var}(\\hat\\beta_A-\\hat\\beta_B)=\\frac{2\\sigma^2}{L(1-r)},\\quad |r|<1.$$\n\nHere beta_A - beta_B is the contrast of the coefficients on the scaled regressors, and L measures their total squared magnitude. The A-B direction has information proportional to L(1-r): when the columns nearly match, increasing one coefficient and decreasing the other changes the predicted signal only slightly. For r below 1 the variance is finite; as r approaches 1 it grows. At exactly r = 1, identical columns allow only their sum to be identified, so A-B is non-estimable. A pseudoinverse returning coefficient values does not restore that missing information.\n\n![Executed illustrative fMRI design and contrast precision](representation.png)\n\nI executed this calculation in Python. A consists of 10-second blocks starting at 20, 60, 100, 140, and 180 seconds; B repeats that schedule delayed by 1 second. Both inputs were convolved with a unit-area double-gamma HRF on a 0.1-second grid and sampled every second for 240 seconds, then centered and scaled to unit RMS, giving L = 240. With assumed independent noise SD = 1, the design has rank 3 and r = 0.9754. The A-B standard error is 0.582, compared with 0.091 for equal-norm orthogonal columns. The computed pseudoinverse variance agrees with the equation. Duplicating A exactly instead gives rank 2, loses A-B estimability, and retains A+B estimability.\n\nThe figure is an illustrative calculation, not observed BOLD, an empirical fit, or a realistic comparison of mutually exclusive task conditions: the two teaching schedules substantially overlap. Its right-hand curve evaluates the equation over r from 0 to 0.999 with the same L and noise level. No noise realization was sampled, so there is no random seed or Monte Carlo error. The convolution uses a finite grid and a 32-second HRF window; no grid-convergence study was performed.\n\nThis makes the supplied Jahn reference's estimability-versus-precision distinction concrete using the optional demonstration guide. An actual fMRI analysis must include its HRF basis, nuisance columns, filtering, and temporal covariance, then assess the intended contrast in that effective design. Good precision and causal attribution require further evidence; this figure alone establishes neither. External sources were not verified here.\n\n[Executed code](representation.py) · [Settings and numerical results](representation-metrics.json)",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/representation.md",
+        "context/guide.md",
+        "representation.py",
+        "representation.png",
+        "representation-metrics.json"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg.",
+        "Executed python representation.py.",
+        "Checked analytic variance against pseudoinverse, full-rank case, and exact-duplicate contrast estimability in executed assertions.",
+        "Visually inspected representation.png with view_image."
+      ]
+    },
+    "limitations": [
+      "Synthetic overlapping schedules are an algebraic illustration, not empirical BOLD or mutually exclusive conditions.",
+      "Known iid noise, fixed HRF, standardized columns, and intercept only; no nuisance regressors or temporal autocorrelation.",
+      "Numerical convolution grid was not convergence-tested.",
+      "No external verification."
+    ]
+  },
+  {
+    "id": "simple",
+    "prompt": "In one or two sentences, what is a reward prediction error?",
+    "context_condition": "full-reference",
+    "answer": "A reward prediction error is the difference between what a reward-related outcome tells you to expect and what you previously expected: positive when things are better than expected, negative when worse. In the simplest immediate-reward model it is received reward minus predicted reward; temporal-difference models also include the updated expectation of future reward.",
+    "executed_tools_or_files": {
+      "files": [
+        "context/SKILL.md",
+        "../prompts.json",
+        "context/simple.md"
+      ],
+      "actions": [
+        "Read supplied skill and preserved prompt; read relevant source sections with exec_command cat/sed/rg."
+      ]
+    },
+    "limitations": [
+      "Short conceptual definition based on supplied source; no empirical or clinical claim."
+    ]
+  }
+]

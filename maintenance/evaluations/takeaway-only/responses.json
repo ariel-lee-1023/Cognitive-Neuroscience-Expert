@@ -1,0 +1,102 @@
+[
+  {
+    "id": "timing",
+    "prompt": "Our two-condition fMRI study uses fixed 10-second blocks and has overlapping hemodynamic responses. A reviewer says jitter is compulsory and the contrast is impossible. Assess this claim and explain how you would check it.",
+    "context_condition": "takeaway-only",
+    "answer": "The reviewer’s blanket claim is too strong. Fixed 10-second blocks and overlapping hemodynamic responses do not by themselves make A−B impossible to estimate. Jitter is one design option; its value depends on the contrast and response model. The supplied Jahn takeaway specifically distinguishes estimability from useful precision.\n\nI would reconstruct the actual sampled design matrix: convolve each condition’s block sequence with the intended HRF or basis, add the actual nuisance regressors, and apply the intended filtering and noise treatment. For y = Xβ + ε, the A−B contrast c is estimable if it lies in the row space of X. Examine that contrast directly; rank alone can be misleading because some contrasts can survive dependence elsewhere in the design. Under a specified noise covariance Σ and a full-rank model, its variance is cᵀ(XᵀΣ⁻¹X)⁻¹c. A large variance means poor precision even when estimation is mathematically possible. This formula is my linear-model elaboration of the supplied takeaway.\n\nCheck the condition schedule, baseline/intercept relationships, nuisance confounds, plausible HRF variation, temporal noise, and expected contrast size. Simulate the actual design under plausible effects and noise, then compare timing alternatives if precision is inadequate. The actual onsets, TR, model and noise assumptions are needed to judge this study; no design calculation has been run here.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/timing.md"
+    ],
+    "limitations": "Only the specified takeaway supplied domain material; no actual design or data were available and no empirical estimability calculation was executed. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "ocular",
+    "prompt": "Does simultaneous eye tracking create the same ocular electrical artifact in EEG and fMRI? Can we use gaze as an input to a cognitive model?",
+    "context_condition": "takeaway-only",
+    "answer": "No. Eye and eyelid movements generate electrical potentials that can contaminate EEG. fMRI measures a different signal, so that same ocular electrical artifact is not the appropriate account of its contamination. In fMRI, consider motion or image artifacts, apparatus compatibility, and BOLD responses associated with visual input and oculomotor activity. The latter may be real neural effects that complicate the intended contrast. Recording the eyes is also distinct from the eye movements themselves; check the actual apparatus rather than assuming eye tracking is incompatible with either modality.\n\nYes, gaze can enter a cognitive model as measured behavior. For example, a stated linking assumption might let fixation determine which option supplies evidence at a given time. That is a proposed model, not a fact established by recording gaze. Synchronize gaze and neural/behavioral data, account for missing or noisy eye samples, compare the gaze-linked model with plausible alternatives, and test prediction and recovery. Because gaze can itself depend on the decision process, using it as an input does not establish that gaze caused the choice. The measurement distinction comes from the supplied Forstmann takeaway; the example and checks are my modelling synthesis.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/ocular.md"
+    ],
+    "limitations": "Only the specified takeaway supplied domain material; apparatus-specific compatibility and the proposed gaze model were not verified. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "rdoc",
+    "prompt": "RDoC uses computational parameters instead of symptom categories. Can our lab now diagnose an individual with a fitted learning rate?",
+    "context_condition": "takeaway-only",
+    "answer": "No. RDoC is a research framework, and describing it as simply replacing symptom categories with computational parameters overstates its role. A fitted learning rate can be a candidate research measure across heterogeneous symptom groups; it does not become an individual diagnostic test by being computational.\n\nYou would first need evidence that the task and model can recover the parameter, that the estimate is reliable, and that it predicts the relevant clinical outcome in new individuals. Clinical usefulness is a further question: what decision improves when the measure is added to existing assessment, with what error rates and consequences? Even a reproducible group difference can leave substantial overlap between individuals. The supplied Seriès takeaway explicitly separates recoverability, reliability, predictive validity and clinical usefulness. It supplies no validated diagnostic cutoff or evidence for your lab’s task, so individual diagnosis is not warranted by these premises.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/rdoc.md"
+    ],
+    "limitations": "Only the specified takeaway supplied domain material; no clinical validation evidence or current clinical guidance was retrieved. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "stroop",
+    "prompt": "The Stroop model explains control through excitation of color processing. Does this establish that cognitive control never directly inhibits a competing response?",
+    "context_condition": "takeaway-only",
+    "answer": "No. In the chapter’s particular Stroop implementation, asymmetric training makes color processing weaker than word processing. Task-related excitation strengthens that weaker color pathway, while lateral inhibition mediates competition. This shows how that architecture can produce controlled responding; it does not establish that cognitive control never directly inhibits a competitor.\n\nThe useful distinction is between the task signal’s excitatory influence in this implementation and the inhibitory competition within the network. Calling the account “excitation” should not erase the latter. A universal claim would require evidence beyond this model. To compare mechanisms, specify a rival with direct task-driven inhibition and seek a manipulation that yields different behavioral or neural predictions under the two implementations. The mechanism description is from the supplied O’Reilly takeaway; the proposed comparison is my synthesis.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/stroop.md"
+    ],
+    "limitations": "Only the specified takeaway supplied domain material; no full architecture, implementation or discriminating experiment was inspected. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "recovery",
+    "prompt": "Our learning-rate likelihood is flat, but MAP produces stable individual estimates. Does this mean we recovered the participants' learning rates? A Bayes factor of 6 favors the model. Is that conclusive?",
+    "context_condition": "takeaway-only",
+    "answer": "No. Stable MAP estimates need not be recovered learning rates. MAP maximizes likelihood times prior: p(α|y) ∝ p(y|α)p(α). If the likelihood is exactly flat over the relevant parameter range, the data do not distinguish learning rates there, and the posterior shape comes from the prior. With a nearly flat likelihood, apparently stable estimates may still be largely prior-driven. Regularization can be useful, but numerical stability and identification by the participant’s data are different properties.\n\nVary defensible priors, inspect likelihood and posterior profiles, check tradeoffs with other parameters, and perform recovery using known generating learning rates under the actual task, sample size and observation model. Evaluate bias, uncertainty and whether individual differences can be recovered across the range that matters. A recovery exercise drawing only from a narrow prior could make shrinkage look successful, so report that dependency. The supplied Seriès takeaway supports these identifiability and prior-sensitivity checks.\n\nA Bayes factor of 6 is not conclusive. Assuming it is defined in favor of this model against one specified rival, it multiplies their prior model odds by six; with equal prior odds and only those two models, that yields posterior probability 6/7, about 0.86. It does not establish absolute model adequacy, an individual parameter’s recoverability, or a biological mechanism. Check the model set, priors and predictive fit. This Bayes-factor interpretation is general statistical reasoning, not a claim documented in the supplied short excerpt; I have not inspected your model evidence calculation.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/recovery.md"
+    ],
+    "limitations": "The short takeaway covers MAP/identifiability but does not document Bayes factors. The answer labels that part as general statistical reasoning. No recovery or model evidence calculation was run. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "simulation",
+    "prompt": "We simulated wider decision boundaries and got slower, more accurate choices. Have we established that a patient's slowing is caused by a neural threshold increase? What does the simulation establish?",
+    "context_condition": "takeaway-only",
+    "answer": "The simulation establishes a conditional consequence of your implemented accumulation model: under its other assumptions and parameter settings, widening the boundaries produces slower and more accurate choices. Provided the implementation is correct, that makes boundary widening one candidate explanation for this behavioral pattern. It does not establish what caused a patient’s slowing or identify a neural threshold.\n\nFor the patient, fit and check both choice and the response-time distribution, as the supplied Forstmann takeaway recommends. Mean slowing alone usually leaves several accounts open. Compare plausible changes in evidence accumulation, non-decision processes and decision criteria within explicitly specified models, and test whether the actual task can recover their parameters and distinguish those models. Examine predictive adequacy rather than relying only on a relative model winner.\n\nA fitted boundary is an abstract parameter. Interpreting it as a neural threshold requires a linking proposition, relevant neural measurements and evidence that competing mechanisms do not account for the relationship; a causal assertion needs additional intervention or otherwise justified causal evidence. These interpretation steps are my synthesis from the skill’s modelling stance. I have not inspected the simulator, patient data or a neural measurement.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/simulation.md"
+    ],
+    "limitations": "Only the specified takeaway supplied domain material; alternative parameters and neural linking are reasoning from the core skill stance, not detailed evidence in this excerpt. No patient data or simulator was inspected. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "representation",
+    "prompt": "Use an equation and a useful figure to explain why two similar fMRI regressors can yield an estimable but imprecise A-B contrast. Execute a calculation if possible and label the result.",
+    "context_condition": "takeaway-only",
+    "answer": "Yes: two regressors can be different enough to identify A−B but too similar to estimate it precisely. In the GLM y = Xβ + ε, let ε have covariance σ²I, include an intercept, and take centered condition columns x_A and x_B with x_Aᵀx_A = x_Bᵀx_B = n and correlation ρ. These are teaching assumptions, including independent noise and equal column norms.\n\nFor c = (1, −1, 0),\nVar(β̂_A − β̂_B) = σ²cᵀ(XᵀX)⁻¹c = 2σ²/[n(1 − ρ)], for |ρ| < 1.\n\nHere n is the sample count, σ is the noise standard deviation, and ρ measures how similar the two condition columns are. Their difference has squared length 2n(1−ρ): as that distinguishing direction shrinks, noise has a larger effect on its coefficient. At ρ = 1 the columns coincide, so only their sum is determined and A−B is not estimable. A pseudoinverse must not be used to claim finite uncertainty for that unidentified contrast.\n\n![Executed illustrative calculation: similar regressors and contrast standard error](representation.png)\n\nI executed a deterministic linear-algebra calculation using n = 100 and σ = 1. The standard error of A−B is approximately 0.141 at ρ = 0, 0.447 at 0.9, 1.414 at 0.99, and 4.472 at 0.999. All four cases have full column rank; the duplicated-column case at 1 fails the contrast row-space check. The curve and numbers use the same calculated results, verified against the equation.\n\nThis is an illustrative calculation with synthetic sinusoidal columns, not observed fMRI data, a fitted result, or an HRF simulation. The supplied Jahn takeaway motivates contrast-specific estimability and precision checks; the permitted computational guide supplies the GLM/row-space framework, and the equal-norm construction is my teaching choice. Real fMRI evaluation must use the sampled HRF-convolved regressors, nuisance terms, filtering and noise covariance. The calculation shows why correlation can harm precision before exact dependence; it does not decide whether any actual study has adequate sensitivity. The code and software/version record are saved beside the figure; no random seed or numerical time step applies to this deterministic calculation.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/representation.md",
+      "context/guide.md",
+      "representation.py (executed with python)",
+      "representation-numbers.json",
+      "representation.png (rendered and visually inspected)"
+    ],
+    "limitations": "Permitted guide was used in addition to the corresponding takeaway. Calculation uses a synthetic iid-noise GLM and does not model actual fMRI timing or HRFs. Cases share evaluator context: arm isolation, not fresh context per case."
+  },
+  {
+    "id": "simple",
+    "prompt": "In one or two sentences, what is a reward prediction error?",
+    "context_condition": "takeaway-only",
+    "answer": "A reward prediction error is the difference between the reward received and the reward expected: δ = r − r̂. In the Rescorla–Wagner account, that error changes the cue’s predictive strength so future expectations can move toward the observed reward.",
+    "executed_tools_or_files": [
+      "context/SKILL.md",
+      "../prompts.json",
+      "context/simple.md"
+    ],
+    "limitations": "The supplied rule is Rescorla–Wagner; answer does not generalize it to a complete temporal-difference or dopamine firing account. Cases share evaluator context: arm isolation, not fresh context per case."
+  }
+]

@@ -17,5 +17,7 @@
   "git_diff_check": "passed",
   "demonstration_regression": "19 passed on identical staged files",
   "behavioral_acceptance": "unrun",
-  "remote_verification": "Performed after commit and push; see git commit and remote identity reported by delivery agent."
+  "remote_verification": "Performed after commit and push; see git commit and remote identity reported by delivery agent.",
+  "publication_projection_scope": "Historical initial four-book-only commit; not the complete saved-local publication.",
+  "publication_scope": "All saved non-ignored local changes, explicitly requested by the user, including demonstrations, reference corrections, core and README revisions, and maintenance records."
 }

@@ -1,0 +1,18 @@
+{
+  "condition": "full-reference",
+  "reference_correction_count": 28,
+  "core_sha256": "ec8753d8109676b1189d6eb9f6fe8d5a77bc296f70fac9dc09ea097c7e123ca6",
+  "guide_sha256": "a999c0f3f3e8ec3233a1c7343cdd31c38f9362cdab1a41215404668c00627aaa",
+  "case_context_sha256": {
+    "timing": "2ce863b1e4cf65fea88d03808e001f957446a29ae13421a3e067cc557bd63dfe",
+    "representation": "2ce863b1e4cf65fea88d03808e001f957446a29ae13421a3e067cc557bd63dfe",
+    "stroop": "6bccf866adc222362a807199d61e24eefda690fc499f677b039dc3f619e6792e",
+    "ocular": "af79427ffcdb6de14bf098f36ba4c23691c9cc35119ac194adf768afad408c12",
+    "rdoc": "f07b1e7cd6d25ac17b054a171c64b4917182e9b7b04e9e6059be4ab05c03617c",
+    "simple": "6bccf866adc222362a807199d61e24eefda690fc499f677b039dc3f619e6792e",
+    "recovery": "f07b1e7cd6d25ac17b054a171c64b4917182e9b7b04e9e6059be4ab05c03617c",
+    "simulation": "af79427ffcdb6de14bf098f36ba4c23691c9cc35119ac194adf768afad408c12"
+  },
+  "isolation": "Separate evaluator per arm, shared evaluator context across eight cases; not fresh per-case sessions.",
+  "path_normalization": "Local runtime and file prefixes normalized for portability; answer substance unchanged."
+}

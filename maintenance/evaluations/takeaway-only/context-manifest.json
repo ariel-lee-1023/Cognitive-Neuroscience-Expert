@@ -1,0 +1,28 @@
+{
+  "condition": "takeaway-only",
+  "reference_correction_count": 28,
+  "core_sha256": "ec8753d8109676b1189d6eb9f6fe8d5a77bc296f70fac9dc09ea097c7e123ca6",
+  "guide_sha256": "a999c0f3f3e8ec3233a1c7343cdd31c38f9362cdab1a41215404668c00627aaa",
+  "case_context_sha256": {
+    "timing": "d1f15ce1bc331cea59803ec08768b4aa53768e072bdb381adb8fd3e608863266",
+    "representation": "fd08e6fb7fac89c2af0da600c4402f1deb3a30920c5c6ba4b96c87935f8bf6e6",
+    "stroop": "19b764ec5b59444fb4acc0c31d8ffc70c733ee3b4f1d9b334a373214633655be",
+    "ocular": "bd13f875adbaed5d5327b2bb227ed6379a7ce25ef8e0329b1a3d8a4c6cd710a6",
+    "rdoc": "5de9348637041168c451fbf7ec5c3cea5439078076ac723846f04f4a2670f483",
+    "simple": "eb0590dc0ee3176a17108e581c70cc93e2268cd23aa5881e21d59717fa566069",
+    "recovery": "679c3abc20364805a49b1c794d99bdf76da4953ccb4385e169e5f0b97f7bef1c",
+    "simulation": "f6a3db2b56365aacd291660615ce047368e220550da0dc24db0b67dd48f0e555"
+  },
+  "isolation": "Separate evaluator per arm, shared evaluator context across eight cases; not fresh per-case sessions.",
+  "path_normalization": "Local runtime and file prefixes normalized for portability; answer substance unchanged.",
+  "case_excerpts": {
+    "timing": "7. **BOLD is an indirect hemodynamic measure.** Assess the intended contrast using the response model, sampling, task manipulation, nuisance regressors, and noise assumptions. Jitter is one timing option; HRF overlap alone does not establish non-estimability, and mathematical estimability does not guarantee useful precision.",
+    "representation": "- **Check whether timing supports the intended contrast.** Under the chosen HRF, sampling, nuisance model, and noise covariance, examine contrast estimability and precision. Correlated regressors may yield an estimable but imprecise contrast; exact dependence may leave some contrasts unidentifiable. Jitter can help particular designs and objectives, but is not a universal requirement.",
+    "stroop": "4. **In the chapter's Stroop implementation, task-related excitation supports the weaker color pathway under asymmetric training, and lateral inhibition mediates competition.** That demonstrates one route to controlled responding, not that all cognitive control uses this mechanism.",
+    "ocular": "- **Separate eye movements, recording equipment, and measurement mechanisms.** Eye and eyelid movements generate ocular electrical artifacts in EEG; fMRI has motion/image-artifact and task-related visual/oculomotor BOLD concerns. Eye tracking can provide behavioral model inputs and artifact checks with either modality. Verify compatibility for the actual apparatus rather than assuming blanket incompatibility or equipment scarcity.",
+    "rdoc": "1. **Computational parameters are candidate research measures across heterogeneous symptom categories.** RDoC is a research framework, not a diagnostic replacement. Parameter recoverability, reliability, predictive validity, and clinical usefulness remain separate questions.",
+    "simple": "- **Rescorla–Wagner** (1972) $\\delta = r - \\hat{r}$, $\\hat{r}=\\sum xw$, $\\Delta w = \\delta x$ — mathematically identical to the delta rule. **What it fails to explain**: the CS-onset burst.",
+    "recovery": "- **When parameters trade off, evaluate regularization and recovery.** MAP can help under suitable priors; compare prior sensitivity, identifiability, and recovery for the actual model rather than treating MAP as uniformly superior to ML.",
+    "simulation": "- **For accumulation-model inference, use choice and the RT distribution rather than relying on mean RT alone.** Means may describe a result but usually underconstrain the proposed mechanism; choose fitting summaries appropriate to the model and available data."
+  }
+}

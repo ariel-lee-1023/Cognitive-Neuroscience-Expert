@@ -9,8 +9,14 @@ It is a distillation of **fourteen open or standard sources** across three layer
 ```
 SKILL.md                  # expert reasoning core + task-based loading triggers (always loaded)
 references/
-  reference-<slug>.md     # one dense, standalone distillation per source (loaded on demand)
+  reference-<slug>.md     # fourteen source distillations, loaded on demand
+  computational-demonstrations.md  # optional numerical-work guide
 fidelity-ledger/          # four-book provenance, coverage, and validation records
+demos/                    # reusable Python models, plotting entrypoint, reward input
+tests/                    # analytical, numerical, and plotting-data checks
+scripts/check_references.py # links, provenance, known regressions, prose review flags
+maintenance/              # audit and evaluation records, not domain loading
+outputs/                  # ignored generated figures and settings
 ```
 
 `SKILL.md` is the expert entrypoint; root `AGENTS.md` also guides work when this repository is opened as a project. It establishes the expert’s reasoning stance, then routes tasks to reference files that load only when needed.
@@ -59,7 +65,7 @@ Clone into your agent's skill directory. For Claude Code:
 git clone https://github.com/ariel-lee-1023/Cognitive-Neuroscience-Expert.git ~/.claude/skills/cognitive-neuroscience
 ```
 
-For another host, use its configured skill directory and keep the complete `SKILL.md` and `references/` tree together. Match the installed folder name to the `name:` field in `SKILL.md`.
+For another host, use its configured skill directory and keep the complete `SKILL.md` and `references/` tree together; include `demos/` and `requirements-demo.txt` to run the optional examples. Match the installed folder name to the `name:` field in `SKILL.md`.
 
 ## Usage
 
@@ -73,7 +79,7 @@ Load the smallest set of references that can support the question. Combine mecha
 
 ## What kind of distillation this is
 
-Structure, not summary. Each reference file preserves the authors' own framework names and exact formulations, defines key terms inline, folds techniques in as procedures, and ends with a `Decision Rules & Judgment` section — the author's if/then judgment stated so it can be acted on without re-reading. Nothing is copied verbatim at length; everything is synthesized.
+Structure, not summary. Each reference preserves source framework names, defines terms inline, and condenses mechanisms and procedures into worked examples and decision rules. These are editorial syntheses, not authoritative transcriptions of an author's universal advice. Preserve task, model, and measurement conditions when reusing a passage. Corrections distinguish source-specific positions from added methodological evidence; exact source verification remains incomplete for some passages.
 
 Each file also carries an explicit **coverage note** recording what was compressed or dropped and why, so the gaps are visible rather than silent.
 
@@ -82,6 +88,48 @@ Each file also carries an explicit **coverage note** recording what was compress
 Strong on perception and attention, memory systems, PFC/BG executive function, language, reinforcement learning, sequential-sampling decision models, network/connectome analysis, ERP/EEG temporal dynamics, computational psychiatry, fMRI methodology, mechanistic explanation standards, neural encoding/decoding and information theory, causal identification, and ERP acquisition and measurement.
 
 Thinner on MEG source modelling, naturalistic/large-scale datasets, deep-learning models of cognition beyond classical connectionism, and post-2024 work (newest source is 2024). `SKILL.md` instructs the agent to **name the gap and search rather than extrapolate** when a question falls outside the corpus, and to mark which part of an answer rests on the library versus on retrieval.
+
+## Optional Python demonstrations
+
+The expert core has no Python dependency. For calculations, use Python 3.10 or later (tested with 3.12), create a virtual environment, and install the two pinned packages:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-demo.txt
+python -m demos.run all --out outputs
+```
+
+Individual entry points:
+
+```bash
+python -m demos.run reward --rewards demos/data/rewards.csv --out outputs
+python -m demos.run accumulation --out outputs
+python -m demos.run timing --out outputs
+```
+
+An external rewards file has a `reward` header and one finite numeric reward per row. Every learning rate receives the identical sequence. The included 120-trial sequence is fixed teaching input, not participant data. Replace it to inspect how recovery depends on task information.
+
+The commands generate five PNG figures, three JSON result/settings records, and three sampled design-matrix CSV files. Results record seeds, parameter values, numerical resolution, input values or settings, and runtime versions. `demos/models.py` contains reusable calculations; `demos/run.py` handles plotting and output. No notebooks are required.
+
+- **Reward:** delta-rule dynamics, alpha=0/1 limits, bounded one-parameter recovery under noisy Gaussian value reports, deteriorated recovery, and an exactly flat likelihood.
+- **Accumulation:** an illustrative Euler diffusion model showing drift, boundary, and starting-point effects on choice and RT distributions. It reports unfinished trials and checks time-step sensitivity against analytic no-deadline results.
+- **Timing:** a fixed block schedule, jittered events, and duplicate condition regressors. It displays convolved signals and actual design matrices, evaluates A-B and A+B, and separates non-estimability from large finite variance.
+
+Read the [optional guide](references/computational-demonstrations.md) for equations, assumptions, source locators, and limitations. These are illustrative calculations, not fitted empirical findings or clinical tools. A recovered teaching-model parameter does not establish an individual's biological mechanism. The diffusion implementation has discretization bias; the timing example assumes a known linear HRF and iid noise and does not prove jitter superiority.
+
+## Verification and maintenance
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/check_references.py --report outputs/reference-check.json
+# Optional HTTP reachability check, requiring network access:
+python scripts/check_references.py --external --report outputs/reference-check-external.json
+```
+
+Local checks validate links, required provenance fields, and known problematic formulations, and flag categorical language for substantive review. External HTTP failures are recorded as unverified; passing link checks does not establish source accuracy. Numerical tests cover analytical limits, identifiability, seed repeatability, sampling conventions, and figure/data consistency. Passing these tests is implementation evidence, not scientific validation.
+
+The [maintenance audit](maintenance/audit/README.md) explains the correction process and unresolved source checks. The [validation report](maintenance/validation.md) records executed checks and limitations; [conversation evaluations](maintenance/evaluations/README.md) retain prompts, actual responses, and reviewer assessments. These records are not part of routine domain loading.
 
 ## Provenance
 
