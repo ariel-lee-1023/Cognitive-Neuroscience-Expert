@@ -1,0 +1,29 @@
+{
+  "prompt": "A neural network predicts behavior accurately. One investigator calls this the biological mechanism; another rejects any idealized model. Compare both claims and propose discriminating evidence.",
+  "source_hashes": {
+    "SKILL.md": "sha256:01dc7902219b70eee96529c45235a79a6a8a3b0a9e0f6e3c20b7f03abb212aa9",
+    "references/reference-craver-explaining-brain.md": "sha256:0ef3e08861a501e80ab3694d302a323a23f247795c9cecb3db0ebbb05095159e",
+    "references/reference-stocco-explanatory-models.md": "sha256:e544e1cef9bfd860d09c33abf72729e487738dbc0f08ea3e109c4741f7659cb0",
+    "references/reference-hernan-robins-causal-inference.md": "sha256:a811b49b5c0078a0f95dafabcb83f7e065e5f04563d503b6b5bab40119ef4f11"
+  },
+  "available_references": [
+    "computational-demonstrations.md",
+    "reference-brett-nipraxis.md",
+    "reference-byrne-neuroscience-online.md",
+    "reference-craver-explaining-brain.md",
+    "reference-dayan-abbott-theoretical-neuroscience.md",
+    "reference-fornito-brain-network-analysis.md",
+    "reference-forstmann-model-based-cogneuro.md",
+    "reference-hernan-robins-causal-inference.md",
+    "reference-jahn-brain-book.md",
+    "reference-kappenman-luck-erp-components.md",
+    "reference-lim-open-neuroscience.md",
+    "reference-luck-erp-technique.md",
+    "reference-oreilly-comp-cog-neuro.md",
+    "reference-series-computational-psychiatry.md",
+    "reference-stocco-explanatory-models.md"
+  ],
+  "selection": "Curated task-relevant references; complete reference directory available for mechanism-fit after fixture repair. Core only for newest-trial. This tests supplied current content, not unrestricted automatic routing.",
+  "raw_answer_hash": "sha256:d5209120eff77cf4d5a4cd9c31b4f1cef1376c46e6daf295e51047b9e335f57f",
+  "normalization": "Markdown source links changed to repository-relative targets; case/runtime path prefixes normalized in execution record. No answer substance edited."
+}

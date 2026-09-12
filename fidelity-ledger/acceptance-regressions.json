@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "defined_before_extraction": false,
+  "notes": "Post-review regression cases; not held-out evidence. Original version-2 suite preserved byte-for-byte.",
+  "tasks": [
+    {
+      "id": "advantage-sign",
+      "kind": "regression",
+      "partition": "regression",
+      "group": "advantage-sign",
+      "prompt": "For a policy pi, V(s)=4 and Q(s,a)=6. Define the advantage, interpret its sign, and show how an on-policy actor and critic can use a TD error. Is adding each TD error to a stored A(s,a) necessarily learning the defined advantage?",
+      "criteria": {
+        "sign": "A=Q-V=+2, better than current-policy baseline.",
+        "updates": "Separate actor policy/preference update from critic value update; no unconditional A+=TD advantage-learning claim.",
+        "conditions": "State the exact-critic/on-policy conditions for the TD advantage identity and approximate-critic limitations."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "conditions"
+      ]
+    },
+    {
+      "id": "exponential-axis",
+      "kind": "regression",
+      "partition": "regression",
+      "group": "exponential-axis",
+      "prompt": "A forgetting model predicts P(t)=0.8*(0.9**t). Which axes make it a straight line? Compare with P(t)=0.8*t**(-0.9), derive the transformations, and explain whether a straight-looking plot alone establishes the better model.",
+      "criteria": {
+        "axes": "Exponential: log vertical response and linear time; power: log-log.",
+        "derivation": "Correct slopes/intercepts and positivity conditions.",
+        "scope": "Plot does not establish mechanism or best statistical model; account for observation error and transformation."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "scope"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "date": "2026-09-12",
+  "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
+  "scope": "Four focused acceptance follow-ups. Historical records retained; no new books or demo algorithms.",
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "matplotlib": "3.9.2",
+    "clean_install_tested": false
+  },
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests": 19,
+      "result": "all passed"
+    },
+    {
+      "command": "python fidelity-ledger/equation_checks.py",
+      "exit_code": 0,
+      "checks": 7,
+      "result": "all passed",
+      "artifact": "fidelity-ledger/equation-checks.json"
+    },
+    {
+      "command": "python fidelity-ledger/check_acceptance.py",
+      "exit_code": 0,
+      "result": "0 acceptance-record errors; 12 fresh-context cases recorded"
+    },
+    {
+      "command": "python scripts/check_references.py",
+      "exit_code": 0,
+      "errors": 0,
+      "corrections": 34,
+      "review_flags": 329,
+      "limit": "Review flags are screening cues, not confirmed mistakes. HTTP reachability is separate."
+    },
+    {
+      "command": "skill-creator/scripts/quick_validate.py <repo>",
+      "exit_code": 0,
+      "result": "Skill is valid!",
+      "limit": "Frontmatter/metadata check, not scientific validation."
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "result": "clean"
+    }
+  ],
+  "evidence_integrity_negative_checks": [
+    {
+      "case": "unaltered evidence",
+      "passed": true
+    },
+    {
+      "case": "changed runtime detected",
+      "passed": true
+    },
+    {
+      "case": "edited answer detected",
+      "passed": true
+    },
+    {
+      "case": "missing case detected",
+      "passed": true
+    },
+    {
+      "case": "reused context detected",
+      "passed": true
+    }
+  ],
+  "generic_structure_validation": {
+    "command": "tools/validate_library.py <repo> --layout published-repo --json",
+    "before_exit_code": 1,
+    "after_exit_code": 1,
+    "diagnostics_unchanged": true,
+    "errors": [
+      "demos/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+      "maintenance/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+      "outputs/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+      "scripts/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+      "tests/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)"
+    ],
+    "warnings": [
+      "requirements-demo.txt — unexpected file at the skill root; the contract is SKILL.md plus a references/ directory",
+      "references/computational-demonstrations.md — unexpected file; the contract is reference-<slug>.md, and optionally topic-index.md",
+      "reference-byrne-neuroscience-online.md is ~13,407 tokens against a computed budget of 6,300 for 4 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+      "reference-oreilly-comp-cog-neuro.md is ~12,515 tokens against a computed budget of 8,043 for 10 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+      "reference-stocco-explanatory-models.md has no `**Sections**: N` in its header line, so its Step 7 budget cannot be computed — only the 14,000 cap could be checked"
+    ],
+    "books": 14,
+    "core_body_tokens": 3529,
+    "limit": "Existing architecture exceptions preserved. This is not a clean generic-layout pass."
+  },
+  "strict_injection_scans": {
+    "command": "tools/scan_generated_skill.py <SKILL.md or references> --strict --json",
+    "core_findings": [],
+    "reference_findings": [
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/computational-demonstrations.md",
+        "line": 42,
+        "excerpt": "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-brett-nipraxis.md",
+        "line": 76,
+        "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-forstmann-model-based-cogneuro.md",
+        "line": 42,
+        "excerpt": "https://pubmed.ncbi.nlm.nih.gov/23087632/"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-jahn-brain-book.md",
+        "line": 22,
+        "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-jahn-brain-book.md",
+        "line": 92,
+        "excerpt": "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-jahn-brain-book.md",
+        "line": 180,
+        "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-series-computational-psychiatry.md",
+        "line": 7,
+        "excerpt": "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+      },
+      {
+        "severity": "LOW",
+        "rule": "external-link",
+        "why": "links off to a host the distillation did not need",
+        "file": "references/reference-stocco-explanatory-models.md",
+        "line": 63,
+        "excerpt": "https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#other-forms-of-the-policy-gradient"
+      }
+    ],
+    "interpretation": "Eight LOW external-link findings; no HIGH findings. One added policy-gradient documentation link was inspected as a primary mathematical source."
+  },
+  "behavioral_results": "fidelity-ledger/acceptance-results.json",
+  "limits": [
+    "One fresh answer per selected case; curator-selected references for most cases; maintaining-agent rubric review.",
+    "Baseline and core-only comparative arms unrun; no measured improvement or general reliability claim.",
+    "Original Stocco source attribution unresolved; equations corrected using primary policy-gradient documentation and algebra.",
+    "Python documentation narrowed to 3.10–3.12 without asserting a tested clean-install matrix."
+  ]
+}

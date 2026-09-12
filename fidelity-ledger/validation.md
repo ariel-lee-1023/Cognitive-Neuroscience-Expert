@@ -1,6 +1,6 @@
 # Executed validation — 2026-09-12
 
-## Integrated saved-local version
+## Historical integration checks (before the acceptance follow-up)
 
 Validation was performed in `/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert` before file-level integration into the existing checkout. The baseline was the saved local working version, including its uncommitted reference corrections, demonstration guide, programs, and maintenance records.
 
@@ -33,3 +33,11 @@ See the raw JSON and test logs in this directory. The final checkout and publica
 ## Final location check
 
 Final reference check: 0 errors. All 36 retained baseline files and all new runtime files match the validated staging content. The generic final-location validator additionally flags the pre-existing ignored `outputs/` directory (five architecture diagnostics total); no generated output was moved or committed. The initial scoped publication projection passed with **zero errors** and three unchanged baseline warnings; the full saved-local publication uses the existing-architecture audit above.
+
+## Acceptance follow-up on the corrected runtime
+
+The [current-version report](acceptance-report.md) supersedes the historical behavioral `unrun` status above for the core-plus-reference arm: 10 original cases and two mathematical regressions were executed in fresh contexts and passed substantive review. Comparative baseline and core-only arms remain unrun. Exact settings, inputs, answers and criterion-level assessments are retained in [acceptance-results.json](acceptance-results.json).
+
+The Stocco runtime now uses `A = Q - V`, separates policy/preference updates from advantage estimation, and places exponential decay on semilog-y axes. Adjacent biological mapping is explicitly an analogy. Five new correction records bring the audit to 34, with original-source attribution limits preserved. Installation documentation now targets Python 3.10–3.12. No dependency upgrade or clean-install matrix is claimed.
+
+All 19 existing tests and seven algebraic checks passed in the existing Python 3.12.7 environment. The reference checker returned zero errors and 329 review flags, which remain screening cues. The acceptance checker verifies 12 complete records and current source hashes. The generic structure validator reports the same five existing architecture errors and five warnings before and after these changes; it is not a clean generic-layout pass. The strict core scan has zero findings; the reference scan has eight LOW external-link findings and no HIGH findings, including the added primary policy-gradient documentation link. Detailed execution evidence is in [acceptance-validation.json](acceptance-validation.json).

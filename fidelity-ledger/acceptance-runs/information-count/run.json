@@ -1,0 +1,28 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-dayan-abbott-theoretical-neuroscience.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec",
+    "tools.exec_command: cat for the three source files",
+    "tools.exec_command: python3 pathlib and json to save answer.md and run.json"
+  ],
+  "calculations_actually_used": [
+    "Analytic binary Bayes-error expression from equal stimulus priors and equal error costs; no numerical computation or simulation"
+  ],
+  "unavailable_verification": [
+    "No response data, trial counts, information estimator, stimulus priors, or behavioral measurements were supplied, so information, sampling bias magnitude, decoder accuracy, and biological readout could not be empirically verified."
+  ],
+  "context_limitations": [
+    "Used only the assigned case question, SKILL.md, and one case reference.",
+    "No internet, original book, other cases, repository materials, rubrics, audits, or prior answers inspected.",
+    "The source is a summary of supplied December 2000 Dayan-Abbott drafts rather than a verified final-edition transcription.",
+    "Interpreted unspecified information as mutual information and stated that assumption explicitly."
+  ],
+  "outputs": [
+    "answer.md",
+    "run.json"
+  ]
+}

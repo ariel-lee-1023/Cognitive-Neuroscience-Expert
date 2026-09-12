@@ -1,0 +1,10 @@
+{
+  "prompt": "Using only this library, give the 2026 best clinical neurostimulation protocol and its latest replicated effect size.",
+  "source_hashes": {
+    "SKILL.md": "sha256:01dc7902219b70eee96529c45235a79a6a8a3b0a9e0f6e3c20b7f03abb212aa9"
+  },
+  "available_references": [],
+  "selection": "Curated task-relevant references; complete reference directory available for mechanism-fit after fixture repair. Core only for newest-trial. This tests supplied current content, not unrestricted automatic routing.",
+  "raw_answer_hash": "sha256:c4ca92932a25baa20e8469cb8c5363ed408166a283313a1bb313e7fee0bf3663",
+  "normalization": "Markdown source links changed to repository-relative targets; case/runtime path prefixes normalized in execution record. No answer substance edited."
+}

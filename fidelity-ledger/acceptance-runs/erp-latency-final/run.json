@@ -1,0 +1,27 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-luck-erp-technique.md",
+    "references/reference-kappenman-luck-erp-components.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec",
+    "exec_command: cat for supplied skill, question and reference text",
+    "exec_command: sed for an untruncated reread of component reference lines 1-90",
+    "exec_command: python3 pathlib/json to save answer.md and run.json"
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "No EEG data or participant-level waveforms supplied",
+    "No exact filter coefficients, preprocessing implementation, or acquisition/event-timing records supplied",
+    "No empirical onset estimates, uncertainty calculation, or filter simulation executed",
+    "Internet and original source books not inspected under the case restriction"
+  ],
+  "context_limitations": [
+    "Single case only; used supplied skill and two case-local reference summaries",
+    "Combined reference read was output-truncated; relevant Luck chapters 1-6 were visible and component reference lines 1-90 were reread separately",
+    "Luck technique reference describes the supplied 2005 first edition; second edition was not verified",
+    "Answer provides an assessment procedure and inference limits, not a finding from empirical data"
+  ]
+}

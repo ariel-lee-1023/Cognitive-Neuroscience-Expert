@@ -1,13 +1,334 @@
 {
-  "status": "unrun",
+  "schema_version": 3,
+  "status": "completed",
+  "completed_at": "2026-09-12T11:02:46Z",
+  "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
   "suite_hash": "sha256:692d5519039ecf4abdb13b3167df2e3e3d898f8fdaaf688a5046e2e08fc4b48f",
-  "reason": "No user-selected fresh-context model endpoint/settings were configured for the evaluation runner. Current-thread editorial review is not an independent baseline/core/core_references run.",
-  "model": null,
-  "settings": null,
-  "runs": {},
-  "prior_evidence": "Existing maintenance/evaluations records are preserved unchanged; their contexts and task format are not a controlled pre/post comparison with this new suite.",
-  "claim": "Structural validation and source review only; no measured baseline/core/reference gain or behavioral non-regression claimed.",
-  "content_hash": "sha256:63fd47fe1e95ad263cd84d4550daeddea859790f5bae64477ceef0d71f127f16",
-  "publication_content_hash": "sha256:63fd47fe1e95ad263cd84d4550daeddea859790f5bae64477ceef0d71f127f16",
-  "initial_publication_content_hash": "sha256:4ed09dd9485e96ea2a264713362e9d139810b93eb0e50dfcddd0bbdf811ca040"
+  "regression_suite_hash": "sha256:78caace3b63d63c90c543e2394547e913cbf819353adb938a83535f80d3145df",
+  "runtime_content_hash": "sha256:cbbdd9537af0d323a3b4f01f531ac1d2289fe171c4d0f1f6683c02c2b0f5cd24",
+  "hash_algorithm": "sha256 of raw suite/file bytes; runtime hash is sha256 of sorted JSON path-to-file-digest mapping for SKILL.md and references/*.md",
+  "model": "gpt-6-astra",
+  "settings": {
+    "reasoning_effort": "high",
+    "model_settings_source": "Parent session turn_context metadata: gpt-6-astra/high. All child calls omitted model and reasoning overrides and inherited these settings.",
+    "runner": "Codex collaboration.spawn_agent",
+    "fork_turns": "none",
+    "cases_per_context": 1,
+    "samples_per_case": 1,
+    "temperature": null,
+    "seed": null,
+    "max_output_tokens": null,
+    "unexposed_settings": "Temperature, seed, provider sampling defaults, and token limits were not exposed or overridden.",
+    "network": "Excluded for bounded source-fidelity tests; answers report verification limits.",
+    "tools": "Local file reads and writes; optional local calculations permitted; no cross-case reads, rubric access, internet or delegation."
+  },
+  "runs": {
+    "core_references": [
+      {
+        "id": "mechanism-fit",
+        "partition": "development",
+        "fresh_context_id": "fresh_mechanism_complete",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/mechanism-fit",
+        "answer_hash": "sha256:7fdaf52bc6b32d607ded7c1c19bb0beed49727d26c79bf3b471bab4357bcc67d",
+        "execution_record_hash": "sha256:6dd326d4f1a0c8639b4fc4f640c293f4dc3896031619808c823d29442b0038cc",
+        "input_manifest_hash": "sha256:65f785b0abf818cd6074b089bd355f04c3290afb13017a92f03e9f62988081d4",
+        "assessments": {
+          "distinction": {
+            "status": "pass",
+            "rationale": "Separates behavioral prediction, actual versus possible mechanism, and completeness; requires mappings to components, operations and organization."
+          },
+          "balance": {
+            "status": "pass",
+            "rationale": "Explains why population-rate idealization can preserve the relevant dependency without equating added detail with actuality."
+          },
+          "test": {
+            "status": "pass",
+            "rationale": "Proposes held-out predictions, neural mappings, timed suppression and rescue; addresses perturbation spread, alternative routes and selection."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Concrete delayed-memory comparison with conditional predictions; its length fits the request for competing claims and discriminating evidence."
+      },
+      {
+        "id": "poisson-decoding",
+        "partition": "development",
+        "fresh_context_id": "fresh_poisson",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/poisson-decoding",
+        "answer_hash": "sha256:f1ba80cf7f01f4f5dbf6255a780cf0c822d753ed5f342cbb80434822226f85f0",
+        "execution_record_hash": "sha256:84470e2ad928a07eb5e18be91cc72c23dd292d561940c3706dc0073cb7215917",
+        "input_manifest_hash": "sha256:b2a893a8158b552f131750c3784ba424967c75b86407cc500f5c5093bf453252",
+        "assessments": {
+          "method": {
+            "status": "pass",
+            "rationale": "Defines mu_i=T*f_i(s), product Poisson likelihood, log likelihood, ML score and derivative; retains the total-rate term unless stimulus independent; distinguishes MAP and loss-based decoding."
+          },
+          "condition": {
+            "status": "pass",
+            "rationale": "Specifies stimulus-conditional independence, noise versus signal covariance, joint response models and readout limits; Gaussian and latent-gain examples are explicitly approximations/extensions."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Derivation is detailed and correct, including zero-rate and finite-count caveats. Additional covariance/Fisher exposition is useful but longer than a minimal answer."
+      },
+      {
+        "id": "feedback-treatment",
+        "partition": "development",
+        "fresh_context_id": "fresh_feedback",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/feedback-treatment",
+        "answer_hash": "sha256:a8be08f268e65a1cfb29f06c0db093e9316c24102d28871efeaaa4f6aec89bd3",
+        "execution_record_hash": "sha256:c8bc7d4672fdd9d01938434d09d6fe77ac7ec063465052ee970514122524ef9d",
+        "input_manifest_hash": "sha256:42ff932d6bd94830162596d808da88eac1033249eeeb82f8abd3031215c3bd27",
+        "assessments": {
+          "method": {
+            "status": "pass",
+            "rationale": "Defines A0, L1, A1, Y; identifies L1 as mediator of early treatment and confounder of later treatment; targets treatment-strategy effects."
+          },
+          "condition": {
+            "status": "pass",
+            "rationale": "Distinguishes an ordinary adjusted coefficient from g-computation, permits regression inside a g-method, and states consistency, sequential exchangeability, positivity and censoring assumptions."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Actionable causal diagram logic and g-method choices without assuming the supplied study satisfies identification."
+      },
+      {
+        "id": "erp-measurement",
+        "partition": "development",
+        "fresh_context_id": "fresh_erp_measure",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/erp-measurement",
+        "answer_hash": "sha256:8b5be5bffccc143e4c72a3f305991d3872d5f0f93e85eb476fea4b8a525defc7",
+        "execution_record_hash": "sha256:0070bd5e8134c3b3f4cb6e28280992a942f4d086c431861e29d788382b312db7",
+        "input_manifest_hash": "sha256:88363ed3f8aab0340e99a06f986839018e3bffdcb0f7f9ab87067f36c8f73ccc",
+        "assessments": {
+          "method": {
+            "status": "pass",
+            "rationale": "Checks stimulus/task matching, event timing, references, baseline, filters, overlap, latency variability, artifact selection and retained-trial composition; proposes independent windows and uncertainty estimates."
+          },
+          "condition": {
+            "status": "pass",
+            "rationale": "Separates measured peak from cognition, notes unequal counts can inflate maxima rather than invariably lower them, and distinguishes fractional-area timing from onset."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Extensive but practical acquisition-to-measurement checks; simulations are proposed rather than falsely reported as executed."
+      },
+      {
+        "id": "edition-boundary",
+        "partition": "development",
+        "fresh_context_id": "fresh_edition",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/edition-boundary",
+        "answer_hash": "sha256:8a9fa5d7b5fa27e32073e390f54ea889ad1df41a9f610472cc15dd833d8b76f7",
+        "execution_record_hash": "sha256:a9110db76479a80e12cd312670d6a17cd47af593015e483365072ff13f4fe9ec",
+        "input_manifest_hash": "sha256:0cb407a08a9669ebaaf891316e13a4cc4f56220e08c7be546f13e428ef4f3244",
+        "assessments": {
+          "boundary": {
+            "status": "pass",
+            "rationale": "States supplied Luck source is the 2005 first edition, declines an unsupported second-edition comparison or current numerical hardware preset, and identifies missing sources."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Gives useful acquisition-selection principles without inventing current device settings."
+      },
+      {
+        "id": "lesion-necessity",
+        "partition": "final",
+        "fresh_context_id": "fresh_lesion",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/lesion-necessity",
+        "answer_hash": "sha256:f4512920e855e46b4a7c15fe482aeefb3d5b03ade4488cc7c8bdf4fd7d0fbd89",
+        "execution_record_hash": "sha256:885b51edc041fe132cafaeeed55409be26d61a53c519d3ed2a2b460157869181",
+        "input_manifest_hash": "sha256:138c40a677f8b840f9b9e37fe2fb417348c43f8f66b20aa638257b23815feecf",
+        "assessments": {
+          "test": {
+            "status": "pass",
+            "rationale": "Separates conditional necessity from sufficiency/exclusive localization, considers relay/output/remote disruption and retrieval versus storage, and proposes controlled organization tests."
+          },
+          "boundary": {
+            "status": "pass",
+            "rationale": "Keeps identifying the lesion intervention effect distinct from identifying an algorithm or actual constitutive mechanism."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Directly answers the claim and explains what extra neural and intervention evidence would change the judgment."
+      },
+      {
+        "id": "information-count",
+        "partition": "final",
+        "fresh_context_id": "fresh_information",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/information-count",
+        "answer_hash": "sha256:b4b3cf6e50c29b2cf9b9709e676099c1e779cf0a2a5551cf164e9b8e1aeec4b6",
+        "execution_record_hash": "sha256:2c46d55fa0139fc8fc41d0b19257bc8dabdcf4acbd406bf3d644dcafcf2d54f8",
+        "input_manifest_hash": "sha256:e34174c171f2e33f83e1b27f72742fd23ba2462afe5c8d68e8702132078a749d",
+        "assessments": {
+          "method": {
+            "status": "pass",
+            "rationale": "Defines mutual information with stimulus distribution, feature and time window; derives ideal-observer overlap error under equal priors/costs and distinguishes actual downstream use."
+          },
+          "condition": {
+            "status": "pass",
+            "rationale": "Explains finite-sample entropy/MI bias and uncertainty, estimator dependence, sparse response spaces, and why single-cell information cannot be summed without population dependence assumptions."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Provides defensible estimation checks and readout limits; the ideal error equation is analytic synthesis, not a claimed data analysis."
+      },
+      {
+        "id": "selected-eeg",
+        "partition": "final",
+        "fresh_context_id": "fresh_selected",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/selected-eeg",
+        "answer_hash": "sha256:4d00b4b385693481af17d2454e0a1b8e1a98ebdde5c22b8169301db5160f2b6e",
+        "execution_record_hash": "sha256:c66d1bfbba4b4d20cbd9154f1c854fb44f8202bd9e3834249b8d04a9cdb3fd41",
+        "input_manifest_hash": "sha256:f0d22ef659c1ee0c265f9d458dc3cd66a93e91cf4bd96548d28ffd69ebd6a80a",
+        "assessments": {
+          "method": {
+            "status": "pass",
+            "rationale": "Defines the selected contrast and a conditional A->S<-U->Y collider structure, distinguishes original randomized population from observed tolerators and always-tolerator effects."
+          },
+          "condition": {
+            "status": "pass",
+            "rationale": "States observation exchangeability, positivity, consistency and well-defined-outcome conditions for weighting/standardization; does not claim all post-assignment selection necessarily biases."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Explains the mechanism of possible selection bias and what exclusion/observation information is needed."
+      },
+      {
+        "id": "erp-latency-final",
+        "partition": "final",
+        "fresh_context_id": "fresh_erp_latency",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/erp-latency-final",
+        "answer_hash": "sha256:92f0b4ffeb052a461247adc5cfb9e99699908dc9feb4be8a8c68cd0947322a4a",
+        "execution_record_hash": "sha256:ca79d7d222e8eab2b8d847c5f16129cb5f79cfcb0f166d7dd29b9be6162d5df5",
+        "input_manifest_hash": "sha256:a9028fc23d842ceace458a4465a26ae8b128a5036d822027121a233d1d4db3c7",
+        "assessments": {
+          "method": {
+            "status": "pass",
+            "rationale": "Addresses backward/forward smearing, impulse response, overlap, trigger jitter, retained-trial noise and validated leading-edge measures; proposes known-onset pipeline simulations."
+          },
+          "condition": {
+            "status": "pass",
+            "rationale": "Separates waveform/component/process onset, prespecifies windows and polarity, rejects first-significant-sample comparisons, and labels fractional-area midpoint correctly."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Gives a concrete route from filtered peak results to a directly tested onset contrast, while marking no analysis was performed."
+      },
+      {
+        "id": "newest-trial",
+        "partition": "final",
+        "fresh_context_id": "fresh_newest",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/newest-trial",
+        "answer_hash": "sha256:c4ca92932a25baa20e8469cb8c5363ed408166a283313a1bb313e7fee0bf3663",
+        "execution_record_hash": "sha256:e4f160484d4b39448ddb4b36fa39d33d14821794eadc6bec166ee5a829978d77",
+        "input_manifest_hash": "sha256:349e977f611f8df3fec1f2c29214833fc9fa5da7eeddcf011fabbadf9cece719",
+        "assessments": {
+          "boundary": {
+            "status": "pass",
+            "rationale": "Refuses to invent a 2026 best protocol or replicated effect size; invokes the library date/scope, lack of current evidence, and unspecified indication/estimand."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Useful concise boundary answer; fixture contained core only as allowed by references_required=false. It explicitly reports that restriction rather than implying all references were examined."
+      },
+      {
+        "id": "advantage-sign",
+        "partition": "regression",
+        "fresh_context_id": "fresh_advantage",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/advantage-sign",
+        "answer_hash": "sha256:81b1ea536c83b8d11ec517db915a0c6b8c70dce12f430eee72f5d7accf8fa128",
+        "execution_record_hash": "sha256:c94c234eeddeab65f9282f1c3213de404fe7711126a1362d64801ed5870b1a9e",
+        "input_manifest_hash": "sha256:01c2193372f9a706587af3447862cbbd7c25f3ef1e5174f16cb5262e6ac3c09c",
+        "assessments": {
+          "sign": {
+            "status": "pass",
+            "rationale": "Computes A^pi=Q^pi-V^pi=6-4=+2 and interprets the policy-relative expected-return gain without calling it the best action or a guaranteed reward."
+          },
+          "updates": {
+            "status": "pass",
+            "rationale": "Separates tabular critic update and stochastic policy-gradient update; cumulative H+=beta*delta has positive expected increments and does not converge to A by definition; gives an averaging alternative under fixed-policy conditions."
+          },
+          "conditions": {
+            "status": "pass",
+            "rationale": "States exact-critic and matching on-policy Markov assumptions for E[delta|s,a]=A, terminal bootstrap convention, approximate-critic bias and changing-policy target."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Answers both the sign and adjacent update error with a useful counterexample. Explicitly attributes the corrected convention to editorial clarification."
+      },
+      {
+        "id": "exponential-axis",
+        "partition": "regression",
+        "fresh_context_id": "fresh_decay",
+        "context": "fork_turns=none; one case per newly spawned evaluator; no follow-up edits",
+        "artifact_directory": "fidelity-ledger/acceptance-runs/exponential-axis",
+        "answer_hash": "sha256:3e34df865d0713cce5c7bfa12be71341efdb4096cec5ff245a2e786bfaf31c62",
+        "execution_record_hash": "sha256:cd9a7ff3390ebdb7d80ac5fdc4be3997d9c199bb569686b179366de6afcbbf11",
+        "input_manifest_hash": "sha256:3e0325c47114477b96b5fd0d7f6e9483307e2a8af509569a73d7e96905418c88",
+        "assessments": {
+          "axes": {
+            "status": "pass",
+            "rationale": "Places log P vertically against linear t for exponential and uses log-log axes for power law; explicitly rejects logging time alone."
+          },
+          "derivation": {
+            "status": "pass",
+            "rationale": "Correctly derives log .8+t log .9 and log .8-.9 log t; defines slopes/intercepts, positivity, t=0 behavior, and probability-domain restriction for the power model."
+          },
+          "scope": {
+            "status": "pass",
+            "rationale": "Explains why straightness/R2 across transformations cannot select a statistical model or mechanism; calls for common-data likelihood, observation-error assumptions and held-out predictions."
+          }
+        },
+        "accepted": true,
+        "usefulness_review": "Clear side-by-side derivation plus scientifically useful domain and fitting cautions; no empirical winner claimed."
+      }
+    ]
+  },
+  "summary": {
+    "original_suite_passed": 10,
+    "original_suite_total": 10,
+    "mathematical_regressions_passed": 2,
+    "mathematical_regressions_total": 2,
+    "selected_contexts": 12,
+    "total_contexts_executed": 13
+  },
+  "excluded_attempts": [
+    {
+      "case": "mechanism-fit",
+      "fresh_context_id": "fresh_mechanism",
+      "artifact_directory": "fidelity-ledger/acceptance-runs/excluded-mechanism-fixture",
+      "reason": "Curated fixture omitted a Stocco reference the core requested. Original output preserved; fresh rerun used complete current reference directory. Exclusion is a fixture repair, not answer editing."
+    }
+  ],
+  "review": {
+    "reviewer": "Maintaining agent, after answer completion",
+    "method": "Read actual answers; assess each frozen criterion plus usefulness and attribution. No keyword-based scientific grading.",
+    "blinding": "Evaluators were not given rubrics, previous answers, audit, suspected errors or parent conversation; reviewer was not blinded.",
+    "source_scope": "Reference syntheses and core only; no independent revalidation of every original book."
+  },
+  "comparative_evaluation": {
+    "status": "not_run",
+    "arms_not_run": [
+      "baseline",
+      "core_only"
+    ],
+    "claim": "Current-content acceptance only; no measured baseline gain, reference gain, pre/post improvement or general reliability rate."
+  },
+  "limitations": [
+    "One sample per case, same inherited model family and platform instructions; fresh task contexts do not imply statistical independence or training-data independence.",
+    "Most fixtures contained preselected relevant references, so reference retrieval/routing completeness is not comprehensively assessed.",
+    "Original development/final partitions retained; neither evaluator saw criteria, but this is a post-expansion run and regressions were defined after review.",
+    "No clean-install matrix, empirical model validation, or new clinical/hardware verification is established."
+  ],
+  "prior_status_archive": "fidelity-ledger/acceptance-results-before-followup.json"
 }

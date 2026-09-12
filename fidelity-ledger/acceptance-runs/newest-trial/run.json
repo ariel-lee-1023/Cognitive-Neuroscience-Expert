@@ -1,0 +1,35 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt"
+  ],
+  "tools_actually_used": [
+    {
+      "tool": "exec_command",
+      "operation": "Read SKILL.md and question.txt with cat"
+    },
+    {
+      "tool": "exec_command",
+      "operation": "Attempted to read references/reference-lim-open-neuroscience.md; file absent"
+    },
+    {
+      "tool": "exec_command",
+      "operation": "Listed case files with rg --files; only SKILL.md and question.txt were present"
+    },
+    {
+      "tool": "exec_command",
+      "operation": "Used Python pathlib and json to save answer.md and run.json"
+    }
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "Linked reference-lim-open-neuroscience.md was absent; no reference files were supplied in the case directory.",
+    "2026 clinical protocols, effect sizes, and replication status could not be verified within the library-only constraint.",
+    "No internet or external sources were accessed."
+  ],
+  "context_limitations": [
+    "Question does not specify clinical indication, population, comparator, outcome, or follow-up.",
+    "The supplied overview reports a newest library source date of 2024 and explicitly limits current clinical and effect-size claims.",
+    "Only this case was examined; no other cases, repository, audits, rubrics, or prior answers were inspected."
+  ]
+}

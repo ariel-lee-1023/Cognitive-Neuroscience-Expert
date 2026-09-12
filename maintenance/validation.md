@@ -30,3 +30,7 @@ Executed commands completed successfully: `python -m unittest discover -s tests 
 - [Conversation evaluations](evaluations/README.md) retain 16 actual answers and two executed numerical figures, assessed for scientific correctness, scope, attribution, and usefulness. The report states arm-isolation and sampling limitations.
 
 Primary web sources were inspected for the targeted corrections, with access and attribution limits recorded in the [audit](audit/README.md). No complete external-link crawl or ten-book revalidation is claimed. Several exact commercial-source passages and the original Bayes-factor threshold attribution remain unresolved.
+
+## Subsequent acceptance follow-up
+
+The figures and 16-answer evaluation above are historical evidence. The [current expanded-skill acceptance report](../fidelity-ledger/acceptance-report.md) records 10 fresh prepared cases plus two mathematical regressions on the corrected runtime. The current audit contains 34 correction records; original-source verification limits remain explicit. See the [follow-up validation record](../fidelity-ledger/acceptance-validation.json) for current checks and unchanged architecture exceptions.

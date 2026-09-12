@@ -1,0 +1,15 @@
+{
+  "prompt": "Two conditions differ in peak latency after zero-phase filtering. How would you assess an onset claim using ERP measurements?",
+  "source_hashes": {
+    "SKILL.md": "sha256:01dc7902219b70eee96529c45235a79a6a8a3b0a9e0f6e3c20b7f03abb212aa9",
+    "references/reference-luck-erp-technique.md": "sha256:59e10544a7228d3ceb26a15dd6fc9db63695d097fd39aee335cf474087697f3e",
+    "references/reference-kappenman-luck-erp-components.md": "sha256:9c620a4e40ce5a7235a6f629aa32915d6bde30e15ebe18fcbd3c1be808f71a79"
+  },
+  "available_references": [
+    "reference-kappenman-luck-erp-components.md",
+    "reference-luck-erp-technique.md"
+  ],
+  "selection": "Curated task-relevant references; complete reference directory available for mechanism-fit after fixture repair. Core only for newest-trial. This tests supplied current content, not unrestricted automatic routing.",
+  "raw_answer_hash": "sha256:92f0b4ffeb052a461247adc5cfb9e99699908dc9feb4be8a8c68cd0947322a4a",
+  "normalization": "Markdown source links changed to repository-relative targets; case/runtime path prefixes normalized in execution record. No answer substance edited."
+}

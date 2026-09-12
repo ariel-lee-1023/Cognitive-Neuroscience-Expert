@@ -55,7 +55,7 @@ The extension strengthens four linked capabilities: distinguishing a mechanism s
 
 The source files determine the edition labels. In particular, the provided Luck book is the **2005 first edition**, although the requested capability table names the second edition. No second-edition additions are claimed. Dayan–Abbott is a December 2000 draft rather than a verified final-edition transcription. Equations were reconstructed from imperfect Markdown and checked selectively; chapter/section locators and limitations accompany the methods.
 
-The repository keeps its existing root `SKILL.md` and one canonical reference per source. `.agents/skills/cognitive-neuroscience` points to the root. Existing local demonstrations and maintenance records remain in place; new provenance, coverage, reading, and validation records are in [fidelity-ledger](fidelity-ledger/README.md). Structural and editorial checks are distinct from behavioral acceptance: fresh-context baseline/core/reference comparisons are **unrun**, so this extension does not claim measured reasoning improvement.
+The repository keeps its existing root `SKILL.md` and one canonical reference per source. `.agents/skills/cognitive-neuroscience` points to the root. Existing local demonstrations and maintenance records remain in place; new provenance, coverage, reading, and validation records are in [fidelity-ledger](fidelity-ledger/README.md). The [executed acceptance report](fidelity-ledger/acceptance-report.md) records fresh-context answers for all 10 prepared cases and two mathematical regressions, with model settings and criterion-level review. All 12 selected answers passed that review. Baseline/core-only comparative arms remain **unrun**, so these results establish bounded current-version acceptance, not measured reasoning improvement.
 
 ## Install
 
@@ -91,7 +91,7 @@ Thinner on MEG source modelling, naturalistic/large-scale datasets, deep-learnin
 
 ## Optional Python demonstrations
 
-The expert core has no Python dependency. For calculations, use Python 3.10 or later (tested with 3.12), create a virtual environment, and install the two pinned packages:
+The expert core has no Python dependency. For calculations, use Python 3.10–3.12 (execution tested with 3.12), create a virtual environment, and install the two pinned packages:
 
 ```bash
 python3 -m venv .venv
@@ -99,6 +99,8 @@ source .venv/bin/activate
 python -m pip install -r requirements-demo.txt
 python -m demos.run all --out outputs
 ```
+
+The supported interpreter range is limited by the pinned dependencies: [NumPy 1.26.4 supports Python 3.9–3.12](https://numpy.org/doc/2.3/release/1.26.4-notes.html), and this repository targets 3.10–3.12. Execution in an existing environment does not establish clean-install compatibility on every supported platform.
 
 Individual entry points:
 

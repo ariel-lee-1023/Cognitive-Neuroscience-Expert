@@ -1,0 +1,22 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-hernan-robins-causal-inference.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec",
+    "exec_command: cat to read the permitted skill, question, and reference; shell heredocs to save answer.md and run.json"
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "No participant data, exclusion counts, treatment versions, selection model, or covariate histories were provided; the actual selection structure, identification assumptions, and bias size/direction could not be verified.",
+    "External verification was prohibited by the case instructions and was not attempted."
+  ],
+  "context_limitations": [
+    "Answer based only on the case question, case SKILL.md, and the listed case-local reference.",
+    "The supplied reference is a condensed source framework, not the full original textbook.",
+    "No other cases, repository files, audits, rubrics, prior answers, or internet were inspected; no delegation was used.",
+    "Parent task and inherited operational instructions were present, but no additional domain sources were consulted."
+  ]
+}

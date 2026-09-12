@@ -14,7 +14,8 @@ from urllib.parse import unquote, urlsplit
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-KNOWN = [r'jitter is not decoration', r'HRFs are confounded by construction',
+KNOWN = [r'A\(s,\s*a\)\s*=\s*V\(s\)\s*-\s*Q\(s,\s*a\)',
+         r'exponential is straight only with the \*x\*-axis logged', r'jitter is not decoration', r'HRFs are confounded by construction',
          r'eye tracking contaminates EEG/fMRI', r'electrical artifacts in EEG and fMRI',
          r'MRI-compatible eye trackers are hard to obtain', r'switch to MAP',
          r'>\s*5\s+conclusive', r'conclusive if greater than 5',

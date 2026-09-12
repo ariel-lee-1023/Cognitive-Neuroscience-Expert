@@ -1,0 +1,28 @@
+{
+  "case": "lesion-necessity",
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-craver-explaining-brain.md",
+    "references/reference-hernan-robins-causal-inference.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec orchestration",
+    "exec_command: cat to read skill, question, and references",
+    "exec_command: rg --files restricted to this case directory",
+    "exec_command: sed to reread Hernan-Robins lines 1-68 after output truncation",
+    "exec_command: shell heredocs to save answer.md and run.json"
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "The skill-recommended reference-dayan-abbott-theoretical-neuroscience.md was requested but absent from the case directory; no contents were read.",
+    "No experiment, lesion protocol, model equations, recordings, or numerical data were supplied, so specificity, causal validity, fit, and biological mapping could not be verified.",
+    "External literature and internet verification were excluded by the case instructions."
+  ],
+  "context_limitations": [
+    "Used only this case's skill, question, and available references; no other case, repository, audit, rubric, or prior answer was inspected.",
+    "The initial combined reference output was truncated, obscuring part of the Hernan-Robins reference. Its initial 68 lines relevant to the causal comparison were explicitly reread; no claim of a complete untruncated reading is made.",
+    "The question does not specify whether the rate model reproduces only the learned response or also the lesion deficit; the answer addresses both interpretations.",
+    "No delegation or model/settings changes were performed."
+  ]
+}

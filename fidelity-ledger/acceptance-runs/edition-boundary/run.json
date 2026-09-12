@@ -1,0 +1,23 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-luck-erp-technique.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec",
+    "exec_command: cat to read case files",
+    "exec_command: python3 pathlib and json to save answer.md and run.json"
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "Second-edition text or authoritative edition comparison not supplied or consulted.",
+    "No current amplifier model, electrode configuration, manufacturer manual, or device validation measurements supplied.",
+    "Internet verification prohibited by case instructions."
+  ],
+  "context_limitations": [
+    "Used only the case SKILL.md, question.txt, and the supplied Luck ERP technique reference.",
+    "Reference summarizes the supplied 2005 first edition and explicitly does not verify second-edition additions or current hardware specifications.",
+    "No other cases, repository, audit records, rubrics, prior answers, or internet inspected. No delegation."
+  ]
+}

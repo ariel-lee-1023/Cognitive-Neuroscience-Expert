@@ -504,5 +504,93 @@
     ],
     "attribution": "Editorial clarification, not a verified author quotation.",
     "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "stocco-actor-critic-01",
+    "group": "stocco-actor-critic",
+    "location": "references/reference-stocco-explanatory-models.md",
+    "original_line": 62,
+    "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
+    "original": "- **Actor–Critic**: the **Actor** implements the policy; the **Critic** learns action values and feeds back. Motivation: keeping policy fully separate from learned action values \"might be conceptually cleaner from a computational standpoint\" but makes little sense for biological agents.",
+    "source_locator": "Stocco January 2023 draft, Part I Ch 1 Reinforcement Learning",
+    "verification_status": "Standard advantage and policy-gradient definitions verified in primary documentation; original Stocco page/convention not accessible.",
+    "revised": "- **Actor-Critic**: the actor represents the policy; the critic estimates state values, action values, or both, depending on the algorithm. Value-derived signals guide policy changes, but value estimation and policy optimization remain distinct updates.",
+    "reason": "Separate defined advantage, TD estimate, actor preferences, and critic learning; scope the biological analogy.",
+    "evidence": [
+      "https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#other-forms-of-the-policy-gradient",
+      "https://spinningup.openai.com/en/latest/algorithms/vpg.html"
+    ],
+    "attribution": "Editorial correction; external definitions or mathematical checks are not attributed to the original book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "stocco-actor-critic-02",
+    "group": "stocco-actor-critic",
+    "location": "references/reference-stocco-explanatory-models.md",
+    "original_line": 63,
+    "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
+    "original": "  - **Advantage Actor-Critic (A2C)**: learn an **advantage function** $A(s,a) = V(s) - Q(s,a)$ — \"how much [an action] can improve over the standard expectations for that state\" — updated by the same TD error, $A(s_t,a_t)_{new} = A(s_t,a_t)_{old} + \\beta\\delta_t$. **The payoff is resource-economic**: instead of multiple tables plus a policy, the agent needs only a V-table and TD-learning, with the policy maintained as directly-updated state–action associations. Deployable in both Pavlovian and instrumental settings without architectural change.",
+    "source_locator": "Stocco January 2023 draft, Part I Ch 1 Reinforcement Learning",
+    "verification_status": "Standard advantage and policy-gradient definitions verified in primary documentation; original Stocco page/convention not accessible.",
+    "revised": "  - **Advantage-based actor-critic**: for a policy $\\pi$, $A^\\pi(s,a)=Q^\\pi(s,a)-V^\\pi(s)$ measures the expected return from action $a$ relative to following $\\pi$ at state $s$; positive advantage means better than that policy baseline. In a one-step on-policy variant, $\\delta_t=r_t+\\gamma V_\\phi(s_{t+1})-V_\\phi(s_t)$ can estimate advantage. With the exact $V^\\pi$ and the matching Markov reward/transition model, $\\mathbb E[\\delta_t\\mid s_t,a_t]=A^\\pi(s_t,a_t)$; an approximate critic can introduce bias. Set the bootstrap value to zero at a true terminal state. A stochastic policy can ascend $\\theta\\leftarrow\\theta+\\eta\\hat A_t\\nabla_\\theta\\log\\pi_\\theta(a_t\\mid s_t)$, while a tabular critic separately updates $V(s_t)\\leftarrow V(s_t)+\\alpha\\delta_t$. Here $\\gamma$ discounts future reward, $\\phi$ and $\\theta$ parameterize critic and actor, $\\hat A_t$ is the chosen advantage estimate, and $\\eta,\\alpha>0$ are step sizes. A cumulative TD-driven state-action preference update is not, by itself, an update that estimates the defined advantage function. Actual A2C implementations may use multi-step returns and shared networks. This is an editorial mathematical clarification using [standard policy-gradient definitions](https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#other-forms-of-the-policy-gradient), not a verified transcription of Stocco's algorithm.",
+    "reason": "Separate defined advantage, TD estimate, actor preferences, and critic learning; scope the biological analogy.",
+    "evidence": [
+      "https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#other-forms-of-the-policy-gradient",
+      "https://spinningup.openai.com/en/latest/algorithms/vpg.html"
+    ],
+    "attribution": "Editorial correction; external definitions or mathematical checks are not attributed to the original book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "stocco-actor-critic-03",
+    "group": "stocco-actor-critic",
+    "location": "references/reference-stocco-explanatory-models.md",
+    "original_line": 64,
+    "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
+    "original": "  - **The biological mapping**: the striatum's two components — **ventral striatum / nucleus accumbens** (receives dopamine from VTA) and **dorsal striatum** (projects to motor cortex), both receiving broad cortical input — bear \"a remarkable similarity to the design of the A2C critic\" (Barto 1995; Takahashi, Schoenbaum & Niv 2008). *Cross-reference the Go/NoGo circuit detail in [[reference-oreilly-comp-cog-neuro]].*",
+    "source_locator": "Stocco January 2023 draft, Part I Ch 1 Reinforcement Learning",
+    "verification_status": "Standard advantage and policy-gradient definitions verified in primary documentation; original Stocco page/convention not accessible.",
+    "revised": "  - **The biological mapping**: the source relates ventral striatum / nucleus accumbens and dorsal striatum to actor-critic roles (Barto 1995; Takahashi, Schoenbaum & Niv 2008). Treat this as a source-specific computational analogy: anatomy alone does not identify an advantage estimator or policy-gradient implementation. Cross-reference the Go/NoGo discussion in [[reference-oreilly-comp-cog-neuro]].",
+    "reason": "Separate defined advantage, TD estimate, actor preferences, and critic learning; scope the biological analogy.",
+    "evidence": [
+      "https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#other-forms-of-the-policy-gradient",
+      "https://spinningup.openai.com/en/latest/algorithms/vpg.html"
+    ],
+    "attribution": "Editorial correction; external definitions or mathematical checks are not attributed to the original book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "stocco-decay-04",
+    "group": "stocco-decay",
+    "location": "references/reference-stocco-explanatory-models.md",
+    "original_line": 80,
+    "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
+    "original": "  - **The diagnostic**: on a **log-log plot** a power function is a straight line while an exponential is a curve (an exponential is straight only with the *x*-axis logged). Ebbinghaus's own data on log-log are \"an almost perfect straight line.\" → **power law of forgetting.**",
+    "source_locator": "Stocco January 2023 draft, Part I Models of Long-Term Memory, shape of forgetting",
+    "verification_status": "Log transformation verified algebraically and numerically; original Stocco wording and empirical forgetting claim not independently verified.",
+    "revised": "  - **The plotting diagnostic**: for exponential decay $P(t)=ab^t$ with $a>0$ and $0<b<1$, $\\log P=\\log a+t\\log b$. Plot logarithmic $P$ on the vertical axis against linear time on the horizontal axis: the line has slope $\\log b$. Logging time alone does not linearize an exponential. For a power law $P(t)=at^{-b}$ with $a,b>0$ and $t>0$, $\\log P=\\log a-b\\log t$, so a log-log plot is linear. Logarithms require positive values. The source describes Ebbinghaus's log-log data as nearly linear; that is a source-specific illustration, not sufficient evidence that all forgetting follows a power law. Fit candidate functions under a stated observation-noise model, because transforming observations changes the error structure.",
+    "reason": "Correct the logged axis and distinguish diagnostic plotting from statistical model comparison.",
+    "evidence": [
+      "https://numpy.org/doc/stable/reference/generated/numpy.log.html"
+    ],
+    "attribution": "Editorial correction; external definitions or mathematical checks are not attributed to the original book.",
+    "reviewed_on": "2026-09-12"
+  },
+  {
+    "id": "stocco-decay-05",
+    "group": "stocco-decay",
+    "location": "references/reference-stocco-explanatory-models.md",
+    "original_line": 122,
+    "base_commit": "1867409e29a87d0ce2841507c217e8fed34eb0a3",
+    "original": "- **Test functional form on a log-log plot before assuming exponential decay.** Power and exponential curves \"look almost identical to the naked eye\" and have very different properties (fixed half-life vs. scale invariance).",
+    "source_locator": "Stocco January 2023 draft, Part I Models of Long-Term Memory, shape of forgetting",
+    "verification_status": "Log transformation verified algebraically and numerically; original Stocco wording and empirical forgetting claim not independently verified.",
+    "revised": "- **Choose axes for the proposed functional form.** Exponential decay is linear in log response versus linear time; a power law is linear in log response versus log time, for positive response and time. Use plots to inspect candidates, then compare fits under a justified noise model; visual straightness alone does not select a mechanism.",
+    "reason": "Correct the logged axis and distinguish diagnostic plotting from statistical model comparison.",
+    "evidence": [
+      "https://numpy.org/doc/stable/reference/generated/numpy.log.html"
+    ],
+    "attribution": "Editorial correction; external definitions or mathematical checks are not attributed to the original book.",
+    "reviewed_on": "2026-09-12"
   }
 ]

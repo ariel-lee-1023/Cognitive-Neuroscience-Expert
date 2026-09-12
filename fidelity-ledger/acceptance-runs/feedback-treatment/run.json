@@ -1,0 +1,23 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-hernan-robins-causal-inference.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec orchestrating tools.exec_command: cat of SKILL.md and question.txt",
+    "functions.exec orchestrating tools.exec_command: cat of the Hernan-Robins reference",
+    "functions.exec orchestrating tools.apply_patch: creation of answer.md and run.json"
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "No empirical dataset or full study protocol was supplied, so identification assumptions, treatment support, model adequacy, missingness, and numerical effects could not be checked.",
+    "Original book text and external literature were not consulted; attribution relies on the supplied reference summary."
+  ],
+  "context_limitations": [
+    "Only the designated case skill, question, and one relevant reference were read.",
+    "No other cases, repository material, audits, rubrics, prior answers, internet, or delegated work were used.",
+    "The collider example is conditional on an additional causal structure, not asserted as a fact about the unspecified study.",
+    "The answer distinguishes ordinary covariate-adjusted regression from regression used within longitudinal g-computation."
+  ]
+}

@@ -7,7 +7,8 @@ The saved local working version, including demonstrations and prior prose correc
 - [Source provenance](source-provenance.json): source file hashes, versions, chapter counts, and limits.
 - [Coverage audit](coverage-audit.md): retained structure, compressed material, sampled exceptions, and editorial corrections.
 - [Reading ledger](reading-ledger.json) and [reading report](reading-report.json): targeted source slices and expenditure accounting, with the visibility limitation stated in the ledger.
-- [Acceptance suite](acceptance-suite.json) and [acceptance status](acceptance-results.json): frozen new scenarios; model-based behavioral comparison is unrun.
+- [Acceptance report](acceptance-report.md), [frozen suite](acceptance-suite.json), [mathematical regressions](acceptance-regressions.json), and [results](acceptance-results.json): 10 prepared cases and two regressions executed in fresh contexts, all passing criterion-level review. Baseline/core-only comparisons remain unrun; the [previous status](acceptance-results-before-followup.json) is preserved.
+- [Acceptance evidence checker](check_acceptance.py): checks answer/input hashes, runtime freshness and review completeness; does not grade scientific correctness.
 - [Validation](validation.md): actual structural, link, scanner, and regression checks; these do not prove reasoning quality.
 
 ## Edition limits

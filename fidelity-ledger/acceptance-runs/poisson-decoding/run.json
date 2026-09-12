@@ -1,0 +1,31 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-dayan-abbott-theoretical-neuroscience.md"
+  ],
+  "tools_actually_used": [
+    "functions.exec",
+    "exec_command: cat for source reads",
+    "exec_command: python3 for writing answer.md and run.json"
+  ],
+  "calculations_actually_used": [
+    "Analytic derivation of independent Poisson joint likelihood and log likelihood",
+    "Analytic score derivative and binary log likelihood ratio",
+    "Law of total covariance for a conditional Poisson latent-state model",
+    "Gaussian joint log likelihood as an explicitly approximate illustrative extension",
+    "Independent Poisson Fisher information from variance of the score"
+  ],
+  "numerical_calculations_or_simulations": "None",
+  "unavailable_verification": [
+    "External sources and internet were excluded by the case instructions.",
+    "No empirical spike data were supplied; conditional independence, calibration, and held-out performance could not be checked.",
+    "No symbolic algebra checker or numerical implementation was used."
+  ],
+  "context_limitations": [
+    "Used only this case skill, question, and the cited reference file.",
+    "The reference is a supplied summary of December 2000 chapter drafts, not independently verified final-edition text.",
+    "Tuning curves were treated as known; estimation uncertainty was not quantified.",
+    "Latent-state and Gaussian constructions are analytic illustrations, not claims about a particular neural population."
+  ]
+}

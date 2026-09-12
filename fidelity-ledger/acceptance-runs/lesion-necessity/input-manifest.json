@@ -1,0 +1,15 @@
+{
+  "prompt": "A lesion abolishes a learned response and a rate model reproduces it. Does this establish that the lesioned area alone implements the model algorithm?",
+  "source_hashes": {
+    "SKILL.md": "sha256:01dc7902219b70eee96529c45235a79a6a8a3b0a9e0f6e3c20b7f03abb212aa9",
+    "references/reference-craver-explaining-brain.md": "sha256:0ef3e08861a501e80ab3694d302a323a23f247795c9cecb3db0ebbb05095159e",
+    "references/reference-hernan-robins-causal-inference.md": "sha256:a811b49b5c0078a0f95dafabcb83f7e065e5f04563d503b6b5bab40119ef4f11"
+  },
+  "available_references": [
+    "reference-craver-explaining-brain.md",
+    "reference-hernan-robins-causal-inference.md"
+  ],
+  "selection": "Curated task-relevant references; complete reference directory available for mechanism-fit after fixture repair. Core only for newest-trial. This tests supplied current content, not unrestricted automatic routing.",
+  "raw_answer_hash": "sha256:a4e7697ac4affdbb5f35423511e09a68d1083f32213e6a21a812ba7844ed2c32",
+  "normalization": "Markdown source links changed to repository-relative targets; case/runtime path prefixes normalized in execution record. No answer substance edited."
+}

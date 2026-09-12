@@ -1,0 +1,13 @@
+{
+  "prompt": "In a longitudinal study, prior treatment changes symptoms; symptoms influence later treatment and outcome. Can a regression controlling all symptoms estimate the total treatment-strategy effect?",
+  "source_hashes": {
+    "SKILL.md": "sha256:01dc7902219b70eee96529c45235a79a6a8a3b0a9e0f6e3c20b7f03abb212aa9",
+    "references/reference-hernan-robins-causal-inference.md": "sha256:a811b49b5c0078a0f95dafabcb83f7e065e5f04563d503b6b5bab40119ef4f11"
+  },
+  "available_references": [
+    "reference-hernan-robins-causal-inference.md"
+  ],
+  "selection": "Curated task-relevant references; complete reference directory available for mechanism-fit after fixture repair. Core only for newest-trial. This tests supplied current content, not unrestricted automatic routing.",
+  "raw_answer_hash": "sha256:a8be08f268e65a1cfb29f06c0db093e9316c24102d28871efeaaa4f6aec89bd3",
+  "normalization": "Markdown source links changed to repository-relative targets; case/runtime path prefixes normalized in execution record. No answer substance edited."
+}

@@ -23,5 +23,62 @@
     "prediction_error": 0,
     "new_cue_update": 0
   },
+  "advantage_td_actor": {
+    "policy": [
+      0.25,
+      0.75
+    ],
+    "rewards": [
+      1.0,
+      3.0
+    ],
+    "gamma": 0.5,
+    "state_value": 5.0,
+    "action_values": [
+      3.5,
+      5.5
+    ],
+    "advantages": [
+      -1.5,
+      0.5
+    ],
+    "conditional_td": [
+      -1.5,
+      0.5
+    ],
+    "policy_weighted_advantage": 0.0,
+    "selected_action": 1,
+    "updated_policy": [
+      0.2453418560090823,
+      0.7546581439909177
+    ],
+    "conditions": "Fixed on-policy continuing one-state MDP with exact critic; no general claim for approximate critics or arbitrary finite updates."
+  },
+  "decay_axes": {
+    "times": [
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ],
+    "exponential_log_y_linear_t_slopes": [
+      -0.10536051565782623,
+      -0.10536051565782639,
+      -0.10536051565782625
+    ],
+    "expected_exponential_slope": -0.10536051565782628,
+    "power_log_log_slopes": [
+      -0.9000000000000001,
+      -0.9000000000000001,
+      -0.8999999999999997
+    ],
+    "expected_power_slope": -0.9,
+    "exponential_linear_y_log_t_slopes": [
+      -0.1038740429440053,
+      -0.17762461343424935,
+      -0.26041544575595266
+    ],
+    "conditions": "a>0, 0<b<1, positive times and responses; algebraic transformations, not fitted evidence."
+  },
   "scope": "Algebraic sanity checks of reconstructed formulas with synthetic values; no source-data replication, clinical claim, or behavioral evaluation."
 }

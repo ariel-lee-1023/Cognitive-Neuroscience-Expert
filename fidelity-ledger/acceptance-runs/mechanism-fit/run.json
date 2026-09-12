@@ -1,0 +1,29 @@
+{
+  "source_files_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-craver-explaining-brain.md",
+    "references/reference-stocco-explanatory-models.md",
+    "references/reference-hernan-robins-causal-inference.md"
+  ],
+  "read_scope": {
+    "references/reference-craver-explaining-brain.md": "Complete reference visible in first combined output",
+    "references/reference-stocco-explanatory-models.md": "Combined output truncated in middle; Introduction reread explicitly with sed lines 1-65; remaining visible excerpts not used for domain-specific empirical claims",
+    "references/reference-hernan-robins-causal-inference.md": "Lines 1-115; used Chapters 1-3 and 8-9"
+  },
+  "tools_used": [
+    "functions.exec",
+    "exec_command: cat and sed to read supplied files",
+    "exec_command: python3 pathlib and json to write answer.md and run.json"
+  ],
+  "calculations_used": [],
+  "unavailable_verification": [
+    "No network architecture, behavioral dataset, neural measurements, or intervention results supplied; model comparison and experimental predictions could not be executed or empirically verified.",
+    "No original books or external literature consulted; supplied reference syntheses are the sole domain sources."
+  ],
+  "context_limitations": [
+    "Single case only; no other cases, repository, audit, rubrics, prior answers, or internet inspected.",
+    "Working-memory comparison is explicitly hypothetical and is not evidence about the unspecified network.",
+    "No new numerical results, simulations, or empirical claims of verification."
+  ]
+}

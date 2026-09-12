@@ -1,0 +1,29 @@
+{
+  "source_files_actually_read": [
+    "SKILL.md",
+    "question.txt",
+    "references/reference-luck-erp-technique.md",
+    "references/reference-kappenman-luck-erp-components.md"
+  ],
+  "tools_actually_used": [
+    {
+      "tool": "functions.exec / exec_command",
+      "use": "Read the case skill, question, and two references using cat and sed; write answer.md and run.json using Python standard library."
+    }
+  ],
+  "calculations_actually_used": [],
+  "unavailable_verification": [
+    "No participant EEG, event logs, behavior, retained-trial records, filter specifications, or acquisition metadata were supplied; no empirical reanalysis or calibration was possible.",
+    "No internet verification was performed, as instructed. Current equipment guidance and later-edition methods were not verified."
+  ],
+  "context_limitations": [
+    "Used only this case skill, question, and two case-local references. No other cases, repository, audit, rubrics, prior answers, or internet inspected.",
+    "An initial combined reference read was output-truncated; targeted sed reads recovered the relevant component framework and the remaining Luck technique sections.",
+    "Sources are supplied reference summaries, not original full books. Luck technique source explicitly represents the 2005 first edition.",
+    "All proposed empirical checks and filter simulations remain proposals; no numerical calculations were performed."
+  ],
+  "outputs": [
+    "answer.md",
+    "run.json"
+  ]
+}
