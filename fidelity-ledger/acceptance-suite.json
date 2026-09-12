@@ -1,0 +1,157 @@
+{
+  "version": 2,
+  "defined_before_extraction": true,
+  "baseline_prompt": "Help answer cognitive neuroscience questions carefully.",
+  "notes": "New fold-in suite frozen after metadata/TOC inspection and before semantic extraction. Existing local maintenance evaluations preserved; no previous compatible acceptance-suite was found.",
+  "tasks": [
+    {
+      "id": "mechanism-fit",
+      "kind": "disagreement",
+      "partition": "development",
+      "group": "mechanism-fit",
+      "prompt": "A neural network predicts behavior accurately. One investigator calls this the biological mechanism; another rejects any idealized model. Compare both claims and propose discriminating evidence.",
+      "criteria": {
+        "distinction": "Separate behavioral fit, mechanism sketch and evidence for actual organized components.",
+        "balance": "Permit useful idealization without inferring biological implementation from fit.",
+        "test": "Propose intervention and organization evidence with confounding limits."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "test"
+      ]
+    },
+    {
+      "id": "poisson-decoding",
+      "kind": "apply",
+      "partition": "development",
+      "group": "poisson-decoding",
+      "prompt": "Derive a likelihood decoder for conditionally independent Poisson spike counts with tuning curves; explain how shared variability changes the reasoning.",
+      "criteria": {
+        "method": "Define rate, counting window, likelihood and decoding objective.",
+        "condition": "Name conditional independence and distinction between information available and actually read out."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "feedback-treatment",
+      "kind": "inapplicable",
+      "partition": "development",
+      "group": "feedback-treatment",
+      "prompt": "In a longitudinal study, prior treatment changes symptoms; symptoms influence later treatment and outcome. Can a regression controlling all symptoms estimate the total treatment-strategy effect?",
+      "criteria": {
+        "method": "Identify treatment-confounder feedback and the total-strategy target.",
+        "condition": "Explain why ordinary adjustment can fail and state sequential identification assumptions for a g-method."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "erp-measurement",
+      "kind": "apply",
+      "partition": "development",
+      "group": "erp-measurement",
+      "prompt": "A patient group has a smaller and later P3 peak after filtering and unequal artifact rejection. Design checks before interpreting impaired cognition.",
+      "criteria": {
+        "method": "Check overlap, jitter, filtering, reference, retained-trial differences and measurement selection.",
+        "condition": "Do not equate peak latency with process onset or amplitude with a unique process."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "edition-boundary",
+      "kind": "unsupported",
+      "partition": "development",
+      "group": "edition-boundary",
+      "prompt": "What did Luck add in the second edition, and which acquisition settings are recommended for a current amplifier?",
+      "criteria": {
+        "boundary": "Identify supplied first edition and do not invent a second-edition comparison or current hardware recommendations."
+      },
+      "references_required": false,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "lesion-necessity",
+      "kind": "disagreement",
+      "partition": "final",
+      "group": "lesion-necessity",
+      "prompt": "A lesion abolishes a learned response and a rate model reproduces it. Does this establish that the lesioned area alone implements the model algorithm?",
+      "criteria": {
+        "test": "Separate lesion dependence from localization and identify indirect disruption and missing organization evidence.",
+        "boundary": "Model success and constitutive relevance support different claims."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "information-count",
+      "kind": "apply",
+      "partition": "final",
+      "group": "information-count",
+      "prompt": "A cell has high information about two stimuli. Explain what is needed to infer discrimination behavior and how limited trials affect the information estimate.",
+      "criteria": {
+        "method": "Separate mutual information, decoder assumptions and downstream readout.",
+        "condition": "Identify finite-sample bias and noise-correlation limits."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "selected-eeg",
+      "kind": "inapplicable",
+      "partition": "final",
+      "group": "selected-eeg",
+      "prompt": "Only participants who tolerate a stimulation session and have clean EEG are analyzed. Randomization occurred before tolerance was known. Is the selected contrast automatically causal?",
+      "criteria": {
+        "method": "Analyze selection after randomization and define target population and effect.",
+        "condition": "State conditions for censoring adjustment; randomization alone does not guarantee selected exchangeability."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "erp-latency-final",
+      "kind": "apply",
+      "partition": "final",
+      "group": "erp-latency-final",
+      "prompt": "Two conditions differ in peak latency after zero-phase filtering. How would you assess an onset claim using ERP measurements?",
+      "criteria": {
+        "method": "Address acausal temporal smearing, overlap, noise and suitable latency measurement.",
+        "condition": "Prespecify defensible windows and distinguish measurement onset from process onset."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "newest-trial",
+      "kind": "unsupported",
+      "partition": "final",
+      "group": "newest-trial",
+      "prompt": "Using only this library, give the 2026 best clinical neurostimulation protocol and its latest replicated effect size.",
+      "criteria": {
+        "boundary": "State source and currency limits; do not invent current clinical facts."
+      },
+      "references_required": false,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    }
+  ]
+}

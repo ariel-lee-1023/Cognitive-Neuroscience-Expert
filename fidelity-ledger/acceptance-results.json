@@ -1,0 +1,12 @@
+{
+  "status": "unrun",
+  "suite_hash": "sha256:692d5519039ecf4abdb13b3167df2e3e3d898f8fdaaf688a5046e2e08fc4b48f",
+  "reason": "No user-selected fresh-context model endpoint/settings were configured for the evaluation runner. Current-thread editorial review is not an independent baseline/core/core_references run.",
+  "model": null,
+  "settings": null,
+  "runs": {},
+  "prior_evidence": "Existing maintenance/evaluations records are preserved unchanged; their contexts and task format are not a controlled pre/post comparison with this new suite.",
+  "claim": "Structural validation and source review only; no measured baseline/core/reference gain or behavioral non-regression claimed.",
+  "content_hash": "sha256:63fd47fe1e95ad263cd84d4550daeddea859790f5bae64477ceef0d71f127f16",
+  "publication_content_hash": "sha256:4ed09dd9485e96ea2a264713362e9d139810b93eb0e50dfcddd0bbdf811ca040"
+}

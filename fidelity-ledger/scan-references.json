@@ -1,0 +1,58 @@
+[
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/computational-demonstrations.md",
+    "line": 42,
+    "excerpt": "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-brett-nipraxis.md",
+    "line": 76,
+    "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-forstmann-model-based-cogneuro.md",
+    "line": 42,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/23087632/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-jahn-brain-book.md",
+    "line": 22,
+    "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-jahn-brain-book.md",
+    "line": 92,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-jahn-brain-book.md",
+    "line": 180,
+    "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-series-computational-psychiatry.md",
+    "line": 7,
+    "excerpt": "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+  }
+]

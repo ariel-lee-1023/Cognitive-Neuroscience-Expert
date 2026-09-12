@@ -1,0 +1,21 @@
+{
+  "status": "passed with explicitly documented pre-existing architecture exceptions",
+  "final_directory": "/Users/AI products/GIthub/Cognitive-Neuroscience-Expert",
+  "preserved_baseline_files": 36,
+  "canonical_source_references": 14,
+  "final_reference_errors": [],
+  "final_layout_exceptions": [
+    "demos/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "maintenance/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "outputs/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "scripts/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "tests/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)"
+  ],
+  "publication_projection_errors": [],
+  "discovery_symlink": ".agents/skills/cognitive-neuroscience -> ../..",
+  "core_and_new_references_identical_to_staging": true,
+  "git_diff_check": "passed",
+  "demonstration_regression": "19 passed on identical staged files",
+  "behavioral_acceptance": "unrun",
+  "remote_verification": "Performed after commit and push; see git commit and remote identity reported by delivery agent."
+}

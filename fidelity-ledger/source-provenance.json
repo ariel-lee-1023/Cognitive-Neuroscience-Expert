@@ -1,0 +1,54 @@
+[
+  {
+    "id": "craver",
+    "filename": "Explaining-the-Brain-Mechanisms-and-the-Mosaic-Unity-of-Neuroscience-Carl-F-Crav.md",
+    "sha256": "67422f13c054e3c003042161e833e9d89a99425f084dd256f9633dc987799dc6",
+    "version": "Oxford University Press, 2007",
+    "sections": 7,
+    "source_estimated_tokens": 200191,
+    "type": "text",
+    "depth": "study",
+    "output_budget": 7269,
+    "reading_method": "Metadata/TOC probes and cleaned targeted slices; not exhaustive reading",
+    "rights": "Underlying source retains its rights; only original condensed synthesis is included."
+  },
+  {
+    "id": "dayan",
+    "filename": "Theoretical-Neuroscience-Peter-Dayan-Laurence-F-Abbott.md",
+    "sha256": "1ae54da30b7ecdf41a759d9e7db6ad22b146019f2047ada4ea3161a4a5ec2200",
+    "version": "Supplied December 2000 chapter drafts (not verified against final 2001 edition)",
+    "sections": 10,
+    "source_estimated_tokens": 284386,
+    "type": "technical",
+    "depth": "study",
+    "output_budget": 10650,
+    "reading_method": "Metadata/TOC probes and cleaned targeted slices; not exhaustive reading",
+    "rights": "Underlying source retains its rights; only original condensed synthesis is included."
+  },
+  {
+    "id": "hernan",
+    "filename": "Causal-Inference-What-If-Miguel-A-Hernan-James-M-Robins.md",
+    "sha256": "273b8dfa7938ebaae3fbdfbf20f0fa3bb29f4265fa9fc5cf8754adb268f8d43b",
+    "version": "February 21, 2020",
+    "sections": 22,
+    "source_estimated_tokens": 274282,
+    "type": "technical",
+    "depth": "study",
+    "output_budget": 13974,
+    "reading_method": "Metadata/TOC probes and cleaned targeted slices; not exhaustive reading",
+    "rights": "Underlying source retains its rights; only original condensed synthesis is included."
+  },
+  {
+    "id": "luck",
+    "filename": "An-introduction-to-the-event-related-potential-technique-Luck-Steven-J-Steven-Jo.md",
+    "sha256": "ed62353729dcb03547b9f064adc8161ef9cab86cee33b561e49da60c96ae28b8",
+    "version": "First edition, 2005 (requested image names second edition)",
+    "sections": 8,
+    "source_estimated_tokens": 235721,
+    "type": "technical",
+    "depth": "study",
+    "output_budget": 9924,
+    "reading_method": "Metadata/TOC probes and cleaned targeted slices; not exhaustive reading",
+    "rights": "Underlying source retains its rights; only original condensed synthesis is included."
+  }
+]

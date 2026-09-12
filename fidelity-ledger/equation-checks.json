@@ -1,0 +1,27 @@
+{
+  "poisson_fisher": {
+    "summed_score_squared": 0.2175755940841,
+    "formula": 0.2175755940841,
+    "absolute_error": 0.0
+  },
+  "standardization_ipw": {
+    "means_under_0_1": [
+      0.30999999999999994,
+      0.48
+    ],
+    "effect": 0.17000000000000004
+  },
+  "linear_recurrent_mode": {
+    "fixed_point": 8.0,
+    "effective_time_constant": 0.08
+  },
+  "oja_norm_derivative": {
+    "direct": 0.09734399999999999,
+    "identity": 0.09734400000000001
+  },
+  "blocking_limit": {
+    "prediction_error": 0,
+    "new_cue_update": 0
+  },
+  "scope": "Algebraic sanity checks of reconstructed formulas with synthetic values; no source-data replication, clinical claim, or behavioral evaluation."
+}

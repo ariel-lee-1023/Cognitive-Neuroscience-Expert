@@ -1,0 +1,34 @@
+{
+  "craver": {
+    "unique_lines": 350,
+    "repeated_lines": 117,
+    "input_tokens": 32075,
+    "unresolved": [],
+    "coverage_fraction": 0.09065009065009065,
+    "budget_alert": true
+  },
+  "dayan": {
+    "unique_lines": 611,
+    "repeated_lines": 1,
+    "input_tokens": 18771,
+    "unresolved": [],
+    "coverage_fraction": 0.052777057959747777,
+    "budget_alert": false
+  },
+  "hernan": {
+    "unique_lines": 526,
+    "repeated_lines": 0,
+    "input_tokens": 27454,
+    "unresolved": [],
+    "coverage_fraction": 0.08087330873308733,
+    "budget_alert": false
+  },
+  "luck": {
+    "unique_lines": 1317,
+    "repeated_lines": 0,
+    "input_tokens": 16175,
+    "unresolved": [],
+    "coverage_fraction": 0.07843020485945688,
+    "budget_alert": false
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "sources": {
+    "craver": {
+      "lines": 3861,
+      "output_budget": 7269,
+      "filename": "Explaining-the-Brain-Mechanisms-and-the-Mosaic-Unity-of-Neuroscience-Carl-F-Crav.md"
+    },
+    "dayan": {
+      "lines": 11577,
+      "output_budget": 10650,
+      "filename": "Theoretical-Neuroscience-Peter-Dayan-Laurence-F-Abbott.md"
+    },
+    "hernan": {
+      "lines": 6504,
+      "output_budget": 13974,
+      "filename": "Causal-Inference-What-If-Miguel-A-Hernan-James-M-Robins.md"
+    },
+    "luck": {
+      "lines": 16792,
+      "output_budget": 9924,
+      "filename": "An-introduction-to-the-event-related-potential-technique-Luck-Steven-J-Steven-Jo.md"
+    }
+  },
+  "reads": [
+    {
+      "source": "craver",
+      "start": 1500,
+      "end": 1522,
+      "tokens": 1056,
+      "reason": "initial"
+    },
+    {
+      "source": "craver",
+      "start": 1702,
+      "end": 1724,
+      "tokens": 1428,
+      "reason": "initial"
+    },
+    {
+      "source": "craver",
+      "start": 1748,
+      "end": 1784,
+      "tokens": 2171,
+      "reason": "initial"
+    },
+    {
+      "source": "craver",
+      "start": 1800,
+      "end": 1864,
+      "tokens": 4627,
+      "reason": "initial"
+    },
+    {
+      "source": "craver",
+      "start": 1978,
+      "end": 2050,
+      "tokens": 5359,
+      "reason": "initial",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "craver",
+      "start": 2170,
+      "end": 2198,
+      "tokens": 1418,
+      "reason": "initial"
+    },
+    {
+      "source": "craver",
+      "start": 2948,
+      "end": 3002,
+      "tokens": 3128,
+      "reason": "initial"
+    },
+    {
+      "source": "craver",
+      "start": 1978,
+      "end": 2048,
+      "tokens": 5353,
+      "reason": "verification",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "craver",
+      "start": 2038,
+      "end": 2048,
+      "tokens": 1113,
+      "reason": "verification: organization, top-down condition and higher-level contrast",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "craver",
+      "start": 1810,
+      "end": 1844,
+      "tokens": 3015,
+      "reason": "verification: organization, top-down condition and higher-level contrast",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "craver",
+      "start": 2712,
+      "end": 2726,
+      "tokens": 1772,
+      "reason": "verification: organization, top-down condition and higher-level contrast",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "dayan",
+      "start": 938,
+      "end": 944,
+      "tokens": 369,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 2062,
+      "end": 2070,
+      "tokens": 319,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 3060,
+      "end": 3068,
+      "tokens": 202,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 3835,
+      "end": 3847,
+      "tokens": 394,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 4919,
+      "end": 4927,
+      "tokens": 218,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 5776,
+      "end": 5779,
+      "tokens": 153,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 7239,
+      "end": 7289,
+      "tokens": 820,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 8442,
+      "end": 8454,
+      "tokens": 493,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 9102,
+      "end": 9128,
+      "tokens": 957,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 9993,
+      "end": 10012,
+      "tokens": 569,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 2551,
+      "end": 2589,
+      "tokens": 1587,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 2758,
+      "end": 2796,
+      "tokens": 690,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 1126,
+      "end": 1150,
+      "tokens": 640,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 3288,
+      "end": 3310,
+      "tokens": 656,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 7370,
+      "end": 7406,
+      "tokens": 1348,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 7513,
+      "end": 7523,
+      "tokens": 233,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 6351,
+      "end": 6398,
+      "tokens": 1111,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 6480,
+      "end": 6510,
+      "tokens": 369,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 3770,
+      "end": 3792,
+      "tokens": 961,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 8548,
+      "end": 8590,
+      "tokens": 1473,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 9438,
+      "end": 9462,
+      "tokens": 981,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 717,
+      "end": 747,
+      "tokens": 1485,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 810,
+      "end": 826,
+      "tokens": 1447,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 885,
+      "end": 926,
+      "tokens": 2769,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 1837,
+      "end": 1855,
+      "tokens": 1123,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 2105,
+      "end": 2127,
+      "tokens": 827,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 2275,
+      "end": 2296,
+      "tokens": 1380,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 2608,
+      "end": 2628,
+      "tokens": 1557,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3044,
+      "end": 3066,
+      "tokens": 871,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3148,
+      "end": 3170,
+      "tokens": 1588,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3485,
+      "end": 3503,
+      "tokens": 751,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 4894,
+      "end": 4917,
+      "tokens": 690,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 5036,
+      "end": 5068,
+      "tokens": 1461,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 5323,
+      "end": 5333,
+      "tokens": 523,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 5754,
+      "end": 5774,
+      "tokens": 1368,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 5865,
+      "end": 5888,
+      "tokens": 1157,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3850,
+      "end": 3867,
+      "tokens": 1096,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3252,
+      "end": 3274,
+      "tokens": 511,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3510,
+      "end": 3520,
+      "tokens": 412,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 3960,
+      "end": 3978,
+      "tokens": 856,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 4170,
+      "end": 4184,
+      "tokens": 902,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 4434,
+      "end": 4452,
+      "tokens": 640,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 5164,
+      "end": 5184,
+      "tokens": 560,
+      "reason": "initial"
+    },
+    {
+      "source": "hernan",
+      "start": 5226,
+      "end": 5234,
+      "tokens": 224,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 4390,
+      "end": 4470,
+      "tokens": 965,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 4550,
+      "end": 4618,
+      "tokens": 924,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 5248,
+      "end": 5318,
+      "tokens": 968,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 5670,
+      "end": 5720,
+      "tokens": 414,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 5850,
+      "end": 5915,
+      "tokens": 717,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 7360,
+      "end": 7430,
+      "tokens": 939,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 2950,
+      "end": 3035,
+      "tokens": 1057,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 6305,
+      "end": 6368,
+      "tokens": 855,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 7120,
+      "end": 7180,
+      "tokens": 760,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 9200,
+      "end": 9215,
+      "tokens": 117,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 9280,
+      "end": 9300,
+      "tokens": 340,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 9690,
+      "end": 9788,
+      "tokens": 1230,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 9970,
+      "end": 10022,
+      "tokens": 527,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 10385,
+      "end": 10450,
+      "tokens": 893,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 4700,
+      "end": 4772,
+      "tokens": 898,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 6405,
+      "end": 6480,
+      "tokens": 788,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 12065,
+      "end": 12130,
+      "tokens": 890,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 13060,
+      "end": 13145,
+      "tokens": 1110,
+      "reason": "initial"
+    },
+    {
+      "source": "luck",
+      "start": 13335,
+      "end": 13420,
+      "tokens": 985,
+      "reason": "initial"
+    },
+    {
+      "source": "dayan",
+      "start": 3792,
+      "end": 3833,
+      "tokens": 1791,
+      "reason": "audit: information sampling and model-detail limits",
+      "question": "What sampling, approximation, or model-detail restriction changes the method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "dayan",
+      "start": 4050,
+      "end": 4088,
+      "tokens": 1641,
+      "reason": "audit: information sampling and model-detail limits",
+      "question": "What sampling, approximation, or model-detail restriction changes the method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "dayan",
+      "start": 5000,
+      "end": 5024,
+      "tokens": 796,
+      "reason": "audit: information sampling and model-detail limits",
+      "question": "What sampling, approximation, or model-detail restriction changes the method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "craver",
+      "start": 1290,
+      "end": 1306,
+      "tokens": 1315,
+      "reason": "audit: omission and interlevel integration",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "craver",
+      "start": 3050,
+      "end": 3062,
+      "tokens": 320,
+      "reason": "audit: omission and interlevel integration",
+      "question": "What restrictions on organization, component relevance, levels, or causal arguments qualify the proposed inference?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "hernan",
+      "start": 266,
+      "end": 268,
+      "tokens": 569,
+      "reason": "verification: interference, mean SNMs, mediation and grace periods",
+      "question": "What assumption or counterexample restricts this causal method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "hernan",
+      "start": 3522,
+      "end": 3534,
+      "tokens": 533,
+      "reason": "verification: interference, mean SNMs, mediation and grace periods",
+      "question": "What assumption or counterexample restricts this causal method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "hernan",
+      "start": 5785,
+      "end": 5797,
+      "tokens": 903,
+      "reason": "verification: interference, mean SNMs, mediation and grace periods",
+      "question": "What assumption or counterexample restricts this causal method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "hernan",
+      "start": 5900,
+      "end": 5908,
+      "tokens": 1251,
+      "reason": "verification: interference, mean SNMs, mediation and grace periods",
+      "question": "What assumption or counterexample restricts this causal method?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "luck",
+      "start": 6369,
+      "end": 6377,
+      "tokens": 143,
+      "reason": "audit: omission controls and topography normalization",
+      "question": "What measurement or design artifact can change the interpretation?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    },
+    {
+      "source": "luck",
+      "start": 10680,
+      "end": 10725,
+      "tokens": 655,
+      "reason": "audit: omission controls and topography normalization",
+      "question": "What measurement or design artifact can change the interpretation?",
+      "resolution": "The source-specific restriction was retained in the corresponding method section or recorded as omitted in coverage-audit.md; this is an editorial resolution, not independent behavioral validation."
+    }
+  ],
+  "accounting_note": "Tokens are script-density estimates of cleaned slices submitted to the reading tool, not provider usage. Some combined outputs were display-truncated; totals therefore conservatively overcount visible semantic reading. Unique-line coverage means selected spans, not exhaustive inspection. Short metadata/keyword probes are additional unmetered overhead. Targeted rereads resolve key claims omitted by output windows."
+}
