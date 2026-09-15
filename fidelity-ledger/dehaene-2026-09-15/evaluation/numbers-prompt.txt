@@ -1,0 +1,1 @@
+A learner compares 8 and 9 slowly, reads 89 fluently, recalls 6×7, but fails subtraction. Build a testing plan before deciding the learner has a damaged number sense.

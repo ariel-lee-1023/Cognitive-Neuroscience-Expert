@@ -1,0 +1,14 @@
+{
+  "files_read": [
+    "SKILL.md",
+    "evaluation/infants-prompt.txt",
+    "references/reference-dehaene-number-sense.md"
+  ],
+  "model": "unknown (exact runtime model identifier not exposed)",
+  "settings": {
+    "reasoning_effort": "unknown",
+    "temperature": "unknown",
+    "other_sampling_settings": "unknown"
+  },
+  "browsing_used": false
+}

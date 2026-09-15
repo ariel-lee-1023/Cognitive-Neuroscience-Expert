@@ -1,0 +1,12 @@
+{
+  "files_read": [
+    "SKILL.md",
+    "evaluation/lesson-prompt.txt"
+  ],
+  "model": "unknown",
+  "limitations": [
+    "Core-only condition: no references, browsing, repository instruction files, or evaluation rubric read.",
+    "Script type and learner characteristics were unspecified; lesson explicitly assumes an alphabetic script.",
+    "No empirical effect sizes or optimal spacing intervals verified."
+  ]
+}

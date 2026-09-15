@@ -1,0 +1,45 @@
+test_drift_probability_and_numerical_error (test_models.AccumulationTests.test_drift_probability_and_numerical_error) ... ok
+test_invalid_inputs (test_models.AccumulationTests.test_invalid_inputs) ... ok
+test_nondecision_only_shifts_rt (test_models.AccumulationTests.test_nondecision_only_shifts_rt) ... ok
+test_repeatability_and_censoring (test_models.AccumulationTests.test_repeatability_and_censoring) ... ok
+test_zero_drift_and_analytic_moments (test_models.AccumulationTests.test_zero_drift_and_analytic_moments) ... ok
+test_reward_plot_labels_and_saved_settings (test_models.FigureDataTests.test_reward_plot_labels_and_saved_settings) ...
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	<home>/.cache/fontconfig
+	<home>/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	<home>/.cache/fontconfig
+	<home>/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	<home>/.cache/fontconfig
+	<home>/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	<home>/.cache/fontconfig
+	<home>/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+ok
+test_accumulation_histogram_labels_match_calculated_fractions (test_models.OtherFigureDataTests.test_accumulation_histogram_labels_match_calculated_fractions) ... ok
+test_timing_matrix_images_equal_saved_calculations (test_models.OtherFigureDataTests.test_timing_matrix_images_equal_saved_calculations) ... ok
+test_bounded_values (test_models.RewardTests.test_bounded_values) ... ok
+test_invalid_inputs (test_models.RewardTests.test_invalid_inputs) ... ok
+test_limits_and_geometric_solution (test_models.RewardTests.test_limits_and_geometric_solution) ... ok
+test_noiseless_recovery_and_flat_likelihood (test_models.RewardTests.test_noiseless_recovery_and_flat_likelihood) ... ok
+test_observation_is_pre_update (test_models.RewardTests.test_observation_is_pre_update) ... ok
+test_design_repeatability_area_and_fixed_estimability (test_models.TimingTests.test_design_repeatability_area_and_fixed_estimability) ... ok
+test_exact_confounding_preserves_sum_not_difference (test_models.TimingTests.test_exact_confounding_preserves_sum_not_difference) ... ok
+test_full_rank_matches_inverse_and_noise_scaling (test_models.TimingTests.test_full_rank_matches_inverse_and_noise_scaling) ... ok
+test_impulse_zero_and_linearity (test_models.TimingTests.test_impulse_zero_and_linearity) ... ok
+test_invalid_inputs (test_models.TimingTests.test_invalid_inputs) ... ok
+test_near_collinearity_is_imprecise_not_nonestimable (test_models.TimingTests.test_near_collinearity_is_imprecise_not_nonestimable) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 51.020s
+
+OK

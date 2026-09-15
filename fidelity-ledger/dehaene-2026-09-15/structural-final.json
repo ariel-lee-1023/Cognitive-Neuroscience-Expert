@@ -1,0 +1,171 @@
+{
+  "errors": [
+    "demos/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "maintenance/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "outputs/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "scripts/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "tests/ — the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)"
+  ],
+  "warnings": [
+    "requirements-demo.txt — unexpected file at the skill root; the contract is SKILL.md plus a references/ directory",
+    "references/computational-demonstrations.md — unexpected file; the contract is reference-<slug>.md, and optionally topic-index.md",
+    "reference-byrne-neuroscience-online.md is ~13,407 tokens against a computed budget of 6,300 for 4 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-oreilly-comp-cog-neuro.md is ~12,515 tokens against a computed budget of 8,043 for 10 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-stocco-explanatory-models.md has no `**Sections**: N` in its header line, so its Step 7 budget cannot be computed — only the 14,000 cap could be checked"
+  ],
+  "facts": {
+    "skill_root": ".",
+    "discovery_entry": ".agents/skills/cognitive-neuroscience",
+    "layout": "published-repo",
+    "master_body_tokens": 4301,
+    "master_budget": 4650,
+    "master_capabilities": 6,
+    "references": {
+      "reference-brett-nipraxis.md": {
+        "tokens": 5851,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 67,
+        "budget": 15578
+      },
+      "reference-byrne-neuroscience-online.md": {
+        "tokens": 13407,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 4,
+        "budget": 6300
+      },
+      "reference-craver-explaining-brain.md": {
+        "tokens": 4767,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 7,
+        "budget": 7269
+      },
+      "reference-dayan-abbott-theoretical-neuroscience.md": {
+        "tokens": 6085,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 10,
+        "budget": 8043
+      },
+      "reference-dehaene-consciousness-brain.md": {
+        "tokens": 5236,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 7,
+        "budget": 7269
+      },
+      "reference-dehaene-how-we-learn.md": {
+        "tokens": 5497,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 10,
+        "budget": 8043
+      },
+      "reference-dehaene-number-sense.md": {
+        "tokens": 5560,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 9,
+        "budget": 7800
+      },
+      "reference-dehaene-reading-brain.md": {
+        "tokens": 5585,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 8,
+        "budget": 7543
+      },
+      "reference-fornito-brain-network-analysis.md": {
+        "tokens": 7416,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 11,
+        "budget": 8275
+      },
+      "reference-forstmann-model-based-cogneuro.md": {
+        "tokens": 9189,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 14,
+        "budget": 8912
+      },
+      "reference-hernan-robins-causal-inference.md": {
+        "tokens": 6745,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 22,
+        "budget": 10336
+      },
+      "reference-jahn-brain-book.md": {
+        "tokens": 11545,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 265,
+        "budget": 27718
+      },
+      "reference-kappenman-luck-erp-components.md": {
+        "tokens": 6860,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 23,
+        "budget": 10494
+      },
+      "reference-lim-open-neuroscience.md": {
+        "tokens": 9535,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 16,
+        "budget": 9300
+      },
+      "reference-luck-erp-technique.md": {
+        "tokens": 6409,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 8,
+        "budget": 7543
+      },
+      "reference-oreilly-comp-cog-neuro.md": {
+        "tokens": 12515,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 10,
+        "budget": 8043
+      },
+      "reference-series-computational-psychiatry.md": {
+        "tokens": 7897,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": 11,
+        "budget": 8275
+      },
+      "reference-stocco-explanatory-models.md": {
+        "tokens": 7335,
+        "cap": 14000,
+        "depth": "study",
+        "type": "text",
+        "sections": null,
+        "budget": null
+      }
+    },
+    "books": 18
+  }
+}

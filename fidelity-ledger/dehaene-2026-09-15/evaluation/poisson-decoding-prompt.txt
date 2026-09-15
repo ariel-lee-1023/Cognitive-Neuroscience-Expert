@@ -1,0 +1,1 @@
+Derive a likelihood decoder for conditionally independent Poisson spike counts with tuning curves; explain how shared variability changes the reasoning.

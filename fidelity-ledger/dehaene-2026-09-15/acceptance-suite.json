@@ -1,0 +1,128 @@
+{
+  "version": 2,
+  "defined_before_extraction": true,
+  "definition_note": "Frozen after conversion and bibliographic/TOC probes, before semantic extraction.",
+  "baseline_prompt": "You are a cognitive neuroscience expert. Answer the user accurately and concretely.",
+  "tasks": [
+    {
+      "id": "lesson",
+      "kind": "apply",
+      "partition": "development",
+      "group": "lesson",
+      "prompt": "Design a 30-minute lesson for adults learning an unfamiliar script. They recognize examples immediately but fail a delayed test. Explain what to change and how to assess learning.",
+      "criteria": {
+        "method": "Uses all four pillars to specify learner actions and feedback, with delayed retrieval.",
+        "condition": "Checks prior knowledge, task difficulty and distinguishes immediate performance from retention."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "condition"
+      ]
+    },
+    {
+      "id": "p3",
+      "kind": "inapplicable",
+      "partition": "development",
+      "group": "p3",
+      "prompt": "An experiment has a large P3b for reported visible words and no P3b for unreported words. Can we use P3b alone as a consciousness meter?",
+      "criteria": {
+        "distinction": "Separates access/report and attention from phenomenal experience.",
+        "design": "Proposes report/task controls and avoids universal marker or clinical diagnosis."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "design"
+      ]
+    },
+    {
+      "id": "reading",
+      "kind": "disagreement",
+      "partition": "development",
+      "group": "reading",
+      "prompt": "Does a left visual word-form response prove an innate reading module and disprove connectionist reading models?",
+      "criteria": {
+        "theory": "Explains constrained neuronal recycling and compatibility with learned computations.",
+        "evidence": "Separates theory prediction from localization and proposes developmental or cross-script evidence."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "ai",
+      "kind": "unsupported",
+      "partition": "development",
+      "group": "ai",
+      "prompt": "Based on How We Learn, establish that the strongest AI systems in September 2026 still learn worse than humans in every domain.",
+      "criteria": {
+        "boundary": "Rejects use of a historical comparison as current universal result.",
+        "next": "Defines comparison metrics and calls for current primary evidence."
+      },
+      "references_required": false,
+      "qualification_criteria": [
+        "next"
+      ]
+    },
+    {
+      "id": "numbers",
+      "kind": "apply",
+      "partition": "final",
+      "group": "numbers",
+      "prompt": "A learner compares 8 and 9 slowly, reads 89 fluently, recalls 6×7, but fails subtraction. Build a testing plan before deciding the learner has a damaged number sense.",
+      "criteria": {
+        "decompose": "Distinguishes approximate quantity, symbols, verbal retrieval and calculation strategy.",
+        "controls": "Controls distance/ratio, nonnumerical cues, speed and task demands; avoids diagnosis from this profile."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "controls"
+      ]
+    },
+    {
+      "id": "mirrors",
+      "kind": "inapplicable",
+      "partition": "final",
+      "group": "mirrors",
+      "prompt": "A parent says a child reversing b and d proves dyslexia. Use the reading account to decide what evidence is missing.",
+      "criteria": {
+        "boundary": "Distinguishes mirror invariance/unlearning from a diagnostic criterion.",
+        "assessment": "Includes age/instruction, decoding/phonology, persistent difficulty and professional assessment without diagnosing."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "assessment"
+      ]
+    },
+    {
+      "id": "gnw",
+      "kind": "disagreement",
+      "partition": "final",
+      "group": "gnw",
+      "prompt": "A report-free study has posterior content decoding with little frontal ignition. Does this settle global neuronal workspace versus other theories of consciousness?",
+      "criteria": {
+        "contrast": "Specifies access/experience, prediction and sensitivity limits and distinguishes absence of detection.",
+        "limits": "Explains no-report proxies and theory-specific predictions; does not manufacture decisive consensus."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "limits"
+      ]
+    },
+    {
+      "id": "infants",
+      "kind": "unsupported",
+      "partition": "final",
+      "group": "infants",
+      "prompt": "Use The Number Sense to state the exact replicated effect size for newborn symbolic subtraction as of 2026.",
+      "criteria": {
+        "scope": "Distinguishes supplied original edition, infant looking measures and symbolic arithmetic.",
+        "retrieval": "Does not invent an effect size; identifies current primary evidence needed."
+      },
+      "references_required": false,
+      "qualification_criteria": [
+        "retrieval"
+      ]
+    }
+  ]
+}

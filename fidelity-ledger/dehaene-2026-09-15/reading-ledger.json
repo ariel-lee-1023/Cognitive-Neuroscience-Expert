@@ -1,0 +1,1775 @@
+{
+  "sources": {
+    "consciousness": {
+      "lines": 2827,
+      "output_budget": 7269
+    },
+    "number": {
+      "lines": 11291,
+      "output_budget": 7800
+    },
+    "reading": {
+      "lines": 3171,
+      "output_budget": 7543
+    },
+    "learning": {
+      "lines": 2516,
+      "output_budget": 8043
+    }
+  },
+  "note": "Initial large semantic emission was output-truncated and is excluded from claimed verified read spans; targeted character-bounded rereads below recover necessary evidence. Earlier metadata/TOC probes excluded. Source-line coverage is an upper bound because excerpts may inspect only part of a long paragraph. Token counts are estimates, not provider usage.",
+  "truncated_emissions": [
+    {
+      "source": "consciousness",
+      "start": 226,
+      "end": 264,
+      "tokens": 4740,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 569,
+      "end": 579,
+      "tokens": 1638,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 705,
+      "end": 735,
+      "tokens": 2789,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 757,
+      "end": 817,
+      "tokens": 7274,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 891,
+      "end": 915,
+      "tokens": 2254,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 943,
+      "end": 967,
+      "tokens": 1782,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 987,
+      "end": 1021,
+      "tokens": 3227,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 1150,
+      "end": 1179,
+      "tokens": 2183,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 1221,
+      "end": 1287,
+      "tokens": 6692,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "consciousness",
+      "start": 1311,
+      "end": 1359,
+      "tokens": 5044,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "reading",
+      "start": 180,
+      "end": 180,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "invariant|morpheme|grapheme",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 196,
+      "end": 196,
+      "char_start": 0,
+      "char_end": 1999,
+      "tokens": 500,
+      "reason": "targeted verification",
+      "question": "invariant|morpheme|grapheme",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 232,
+      "end": 232,
+      "char_start": 182,
+      "char_end": 2007,
+      "tokens": 456,
+      "reason": "targeted verification",
+      "question": "route|irregular|pseudoword",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 236,
+      "end": 236,
+      "char_start": 149,
+      "char_end": 994,
+      "tokens": 211,
+      "reason": "targeted verification",
+      "question": "route|irregular|pseudoword",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 467,
+      "end": 467,
+      "char_start": 173,
+      "char_end": 805,
+      "tokens": 158,
+      "reason": "targeted verification",
+      "question": "alexia|lesion",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 479,
+      "end": 479,
+      "char_start": 0,
+      "char_end": 1182,
+      "tokens": 295,
+      "reason": "targeted verification",
+      "question": "alexia|lesion",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 559,
+      "end": 559,
+      "char_start": 242,
+      "char_end": 2342,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "universal|left",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 565,
+      "end": 565,
+      "char_start": 0,
+      "char_end": 217,
+      "tokens": 54,
+      "reason": "targeted verification",
+      "question": "universal|left",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 694,
+      "end": 694,
+      "char_start": 1887,
+      "char_end": 2468,
+      "tokens": 145,
+      "reason": "targeted verification",
+      "question": "subliminal|learn",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 702,
+      "end": 702,
+      "char_start": 32,
+      "char_end": 663,
+      "tokens": 158,
+      "reason": "targeted verification",
+      "question": "subliminal|learn",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 746,
+      "end": 746,
+      "char_start": 237,
+      "char_end": 2042,
+      "tokens": 451,
+      "reason": "targeted verification",
+      "question": "Chinese|Japanese",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 750,
+      "end": 750,
+      "char_start": 0,
+      "char_end": 1460,
+      "tokens": 365,
+      "reason": "targeted verification",
+      "question": "Chinese|Japanese",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 957,
+      "end": 957,
+      "char_start": 522,
+      "char_end": 1295,
+      "tokens": 193,
+      "reason": "targeted verification",
+      "question": "junction|shape|learning",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 967,
+      "end": 967,
+      "char_start": 402,
+      "char_end": 2447,
+      "tokens": 511,
+      "reason": "targeted verification",
+      "question": "junction|shape|learning",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1114,
+      "end": 1114,
+      "char_start": 651,
+      "char_end": 2530,
+      "tokens": 469,
+      "reason": "targeted verification",
+      "question": "recycling|bigram|hierarch",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1122,
+      "end": 1122,
+      "char_start": 0,
+      "char_end": 1940,
+      "tokens": 485,
+      "reason": "targeted verification",
+      "question": "recycling|bigram|hierarch",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1296,
+      "end": 1296,
+      "char_start": 0,
+      "char_end": 1395,
+      "tokens": 349,
+      "reason": "targeted verification",
+      "question": "universal|natural",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1310,
+      "end": 1310,
+      "char_start": 0,
+      "char_end": 468,
+      "tokens": 117,
+      "reason": "targeted verification",
+      "question": "universal|natural",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1498,
+      "end": 1498,
+      "char_start": 0,
+      "char_end": 607,
+      "tokens": 152,
+      "reason": "targeted verification",
+      "question": "phonem|orthographic",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1502,
+      "end": 1502,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "phonem|orthographic",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1634,
+      "end": 1634,
+      "char_start": 812,
+      "char_end": 1448,
+      "tokens": 159,
+      "reason": "targeted verification",
+      "question": "phonics|whole|explicit",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1638,
+      "end": 1638,
+      "char_start": 0,
+      "char_end": 737,
+      "tokens": 184,
+      "reason": "targeted verification",
+      "question": "phonics|whole|explicit",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1744,
+      "end": 1744,
+      "char_start": 0,
+      "char_end": 524,
+      "tokens": 131,
+      "reason": "targeted verification",
+      "question": "phonolog|dyslexia",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1748,
+      "end": 1748,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "phonolog|dyslexia",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1860,
+      "end": 1860,
+      "char_start": 0,
+      "char_end": 1355,
+      "tokens": 339,
+      "reason": "targeted verification",
+      "question": "gene|train",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 1864,
+      "end": 1864,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "gene|train",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 2067,
+      "end": 2067,
+      "char_start": 0,
+      "char_end": 2037,
+      "tokens": 509,
+      "reason": "targeted verification",
+      "question": "mirror|symmetr",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 2079,
+      "end": 2079,
+      "char_start": 0,
+      "char_end": 1829,
+      "tokens": 457,
+      "reason": "targeted verification",
+      "question": "mirror|symmetr",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 2203,
+      "end": 2203,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "recycling|modul",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 2209,
+      "end": 2209,
+      "char_start": 0,
+      "char_end": 2087,
+      "tokens": 522,
+      "reason": "targeted verification",
+      "question": "recycling|modul",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 2305,
+      "end": 2305,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "workspace|theory",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    },
+    {
+      "source": "reading",
+      "start": 2313,
+      "end": 2313,
+      "char_start": 0,
+      "char_end": 1122,
+      "tokens": 280,
+      "reason": "targeted verification",
+      "question": "workspace|theory",
+      "resolution": "See source-specific coverage audit and reference; char bounds delimit actual inspected excerpt."
+    }
+  ],
+  "reads": [
+    {
+      "source": "consciousness",
+      "start": 298,
+      "end": 298,
+      "char_start": 1762,
+      "char_end": 2559,
+      "tokens": 199,
+      "reason": "targeted verification",
+      "question": "blink|lag",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 302,
+      "end": 302,
+      "char_start": 0,
+      "char_end": 460,
+      "tokens": 115,
+      "reason": "targeted verification",
+      "question": "blink|lag",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 336,
+      "end": 336,
+      "char_start": 57,
+      "char_end": 899,
+      "tokens": 210,
+      "reason": "targeted verification",
+      "question": "subjective|objective",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 354,
+      "end": 354,
+      "char_start": 0,
+      "char_end": 1516,
+      "tokens": 379,
+      "reason": "targeted verification",
+      "question": "subjective|objective",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 523,
+      "end": 523,
+      "char_start": 0,
+      "char_end": 1465,
+      "tokens": 366,
+      "reason": "targeted verification",
+      "question": "unconscious|arithmetic",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 527,
+      "end": 527,
+      "char_start": 0,
+      "char_end": 2100,
+      "tokens": 525,
+      "reason": "targeted verification",
+      "question": "unconscious|arithmetic",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 763,
+      "end": 763,
+      "char_start": 0,
+      "char_end": 749,
+      "tokens": 187,
+      "reason": "targeted verification",
+      "question": "serial|lasting|social",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 775,
+      "end": 775,
+      "char_start": 2066,
+      "char_end": 2538,
+      "tokens": 118,
+      "reason": "targeted verification",
+      "question": "serial|lasting|social",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 901,
+      "end": 901,
+      "char_start": 374,
+      "char_end": 782,
+      "tokens": 102,
+      "reason": "targeted verification",
+      "question": "P3|300|delay",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 905,
+      "end": 905,
+      "char_start": 1245,
+      "char_end": 2542,
+      "tokens": 324,
+      "reason": "targeted verification",
+      "question": "P3|300|delay",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 945,
+      "end": 945,
+      "char_start": 140,
+      "char_end": 1104,
+      "tokens": 241,
+      "reason": "targeted verification",
+      "question": "signature|synchron|gamma",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 959,
+      "end": 959,
+      "char_start": 7,
+      "char_end": 450,
+      "tokens": 111,
+      "reason": "targeted verification",
+      "question": "signature|synchron|gamma",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1152,
+      "end": 1152,
+      "char_start": 214,
+      "char_end": 1045,
+      "tokens": 208,
+      "reason": "targeted verification",
+      "question": "global|broadcast|pyramid",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1158,
+      "end": 1158,
+      "char_start": 0,
+      "char_end": 83,
+      "tokens": 21,
+      "reason": "targeted verification",
+      "question": "global|broadcast|pyramid",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1271,
+      "end": 1271,
+      "char_start": 0,
+      "char_end": 553,
+      "tokens": 138,
+      "reason": "targeted verification",
+      "question": "ignit|spontaneous",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1273,
+      "end": 1273,
+      "char_start": 731,
+      "char_end": 1970,
+      "tokens": 310,
+      "reason": "targeted verification",
+      "question": "ignit|spontaneous",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1392,
+      "end": 1392,
+      "char_start": 0,
+      "char_end": 1081,
+      "tokens": 270,
+      "reason": "targeted verification",
+      "question": "vegetative|locked|coma",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1398,
+      "end": 1398,
+      "char_start": 0,
+      "char_end": 435,
+      "tokens": 109,
+      "reason": "targeted verification",
+      "question": "vegetative|locked|coma",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1444,
+      "end": 1444,
+      "char_start": 114,
+      "char_end": 665,
+      "tokens": 138,
+      "reason": "targeted verification",
+      "question": "tennis|global|complexity",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1448,
+      "end": 1448,
+      "char_start": 0,
+      "char_end": 886,
+      "tokens": 221,
+      "reason": "targeted verification",
+      "question": "tennis|global|complexity",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1575,
+      "end": 1575,
+      "char_start": 0,
+      "char_end": 673,
+      "tokens": 168,
+      "reason": "targeted verification",
+      "question": "babi|monkey",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1589,
+      "end": 1589,
+      "char_start": 245,
+      "char_end": 1522,
+      "tokens": 319,
+      "reason": "targeted verification",
+      "question": "babi|monkey",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1727,
+      "end": 1727,
+      "char_start": 51,
+      "char_end": 612,
+      "tokens": 140,
+      "reason": "targeted verification",
+      "question": "machine|hypoth",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1735,
+      "end": 1735,
+      "char_start": 1078,
+      "char_end": 2510,
+      "tokens": 358,
+      "reason": "targeted verification",
+      "question": "machine|hypoth",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1114,
+      "end": 1114,
+      "char_start": 651,
+      "char_end": 2051,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "recycling",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1122,
+      "end": 1122,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "recycling",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1149,
+      "end": 1149,
+      "char_start": 0,
+      "char_end": 683,
+      "tokens": 171,
+      "reason": "targeted verification",
+      "question": "bigram|hierarch",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1153,
+      "end": 1153,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "bigram|hierarch",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1296,
+      "end": 1296,
+      "char_start": 0,
+      "char_end": 1395,
+      "tokens": 349,
+      "reason": "targeted verification",
+      "question": "natural|universal",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1310,
+      "end": 1310,
+      "char_start": 0,
+      "char_end": 468,
+      "tokens": 117,
+      "reason": "targeted verification",
+      "question": "natural|universal",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1490,
+      "end": 1490,
+      "char_start": 0,
+      "char_end": 759,
+      "tokens": 190,
+      "reason": "targeted verification",
+      "question": "stage|phonem",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1494,
+      "end": 1494,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "stage|phonem",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1698,
+      "end": 1698,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "teach|attention",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1702,
+      "end": 1702,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "teach|attention",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1756,
+      "end": 1756,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "phonolog",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1766,
+      "end": 1766,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "phonolog",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 2089,
+      "end": 2089,
+      "char_start": 0,
+      "char_end": 372,
+      "tokens": 93,
+      "reason": "targeted verification",
+      "question": "mirror|learn",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 2093,
+      "end": 2093,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "mirror|learn",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1570,
+      "end": 1570,
+      "char_start": 1767,
+      "char_end": 2424,
+      "tokens": 164,
+      "reason": "targeted verification",
+      "question": "lose|face",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1586,
+      "end": 1586,
+      "char_start": 0,
+      "char_end": 1021,
+      "tokens": 255,
+      "reason": "targeted verification",
+      "question": "lose|face",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1874,
+      "end": 1874,
+      "char_start": 2001,
+      "char_end": 2529,
+      "tokens": 132,
+      "reason": "targeted verification",
+      "question": "train|intervention",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1878,
+      "end": 1878,
+      "char_start": 1543,
+      "char_end": 2465,
+      "tokens": 230,
+      "reason": "targeted verification",
+      "question": "train|intervention",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 206,
+      "end": 206,
+      "char_start": 0,
+      "char_end": 1217,
+      "tokens": 304,
+      "reason": "targeted verification",
+      "question": "Learning Is|Learning Means|Learning Consists",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 208,
+      "end": 208,
+      "char_start": 0,
+      "char_end": 1003,
+      "tokens": 251,
+      "reason": "targeted verification",
+      "question": "Learning Is|Learning Means|Learning Consists",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 324,
+      "end": 324,
+      "char_start": 0,
+      "char_end": 317,
+      "tokens": 79,
+      "reason": "targeted verification",
+      "question": "seven|abstract|probab|compos",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 326,
+      "end": 326,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "seven|abstract|probab|compos",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 469,
+      "end": 469,
+      "char_start": 755,
+      "char_end": 1258,
+      "tokens": 126,
+      "reason": "targeted verification",
+      "question": "object|number|probab",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 475,
+      "end": 475,
+      "char_start": 0,
+      "char_end": 268,
+      "tokens": 67,
+      "reason": "targeted verification",
+      "question": "object|number|probab",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 609,
+      "end": 609,
+      "char_start": 707,
+      "char_end": 2107,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "genetic|synap",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 643,
+      "end": 643,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "genetic|synap",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 667,
+      "end": 667,
+      "char_start": 0,
+      "char_end": 751,
+      "tokens": 188,
+      "reason": "targeted verification",
+      "question": "critical|sensitive|plastic",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 677,
+      "end": 677,
+      "char_start": 925,
+      "char_end": 1663,
+      "tokens": 184,
+      "reason": "targeted verification",
+      "question": "critical|sensitive|plastic",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 863,
+      "end": 863,
+      "char_start": 498,
+      "char_end": 1898,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "recycl|face",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 871,
+      "end": 871,
+      "char_start": 114,
+      "char_end": 1054,
+      "tokens": 235,
+      "reason": "targeted verification",
+      "question": "recycl|face",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1021,
+      "end": 1021,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "alert|orient|executive",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1039,
+      "end": 1039,
+      "char_start": 0,
+      "char_end": 86,
+      "tokens": 21,
+      "reason": "targeted verification",
+      "question": "alert|orient|executive",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1106,
+      "end": 1106,
+      "char_start": 935,
+      "char_end": 2305,
+      "tokens": 342,
+      "reason": "targeted verification",
+      "question": "multitask|attention",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1110,
+      "end": 1110,
+      "char_start": 0,
+      "char_end": 1220,
+      "tokens": 305,
+      "reason": "targeted verification",
+      "question": "multitask|attention",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1208,
+      "end": 1208,
+      "char_start": 0,
+      "char_end": 448,
+      "tokens": 112,
+      "reason": "targeted verification",
+      "question": "passive|active|discovery",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1210,
+      "end": 1210,
+      "char_start": 0,
+      "char_end": 1079,
+      "tokens": 270,
+      "reason": "targeted verification",
+      "question": "passive|active|discovery",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1290,
+      "end": 1290,
+      "char_start": 0,
+      "char_end": 1304,
+      "tokens": 326,
+      "reason": "targeted verification",
+      "question": "curiosity|metacogn",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1294,
+      "end": 1294,
+      "char_start": 0,
+      "char_end": 664,
+      "tokens": 166,
+      "reason": "targeted verification",
+      "question": "curiosity|metacogn",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1210,
+      "end": 1210,
+      "char_start": 0,
+      "char_end": 1079,
+      "tokens": 270,
+      "reason": "targeted verification",
+      "question": "discovery|mental|engagement",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1218,
+      "end": 1218,
+      "char_start": 0,
+      "char_end": 1046,
+      "tokens": 261,
+      "reason": "targeted verification",
+      "question": "discovery|mental|engagement",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1379,
+      "end": 1379,
+      "char_start": 0,
+      "char_end": 356,
+      "tokens": 89,
+      "reason": "targeted verification",
+      "question": "Rescorla|surprise|error|prediction",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1387,
+      "end": 1387,
+      "char_start": 0,
+      "char_end": 387,
+      "tokens": 97,
+      "reason": "targeted verification",
+      "question": "Rescorla|surprise|error|prediction",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1451,
+      "end": 1451,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "grade|spacing|test",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1455,
+      "end": 1455,
+      "char_start": 0,
+      "char_end": 322,
+      "tokens": 80,
+      "reason": "targeted verification",
+      "question": "grade|spacing|test",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1520,
+      "end": 1520,
+      "char_start": 104,
+      "char_end": 1504,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "consolid|sleep|automat",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1524,
+      "end": 1524,
+      "char_start": 0,
+      "char_end": 754,
+      "tokens": 188,
+      "reason": "targeted verification",
+      "question": "consolid|sleep|automat",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1582,
+      "end": 1582,
+      "char_start": 0,
+      "char_end": 429,
+      "tokens": 107,
+      "reason": "targeted verification",
+      "question": "sleep|replay",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1591,
+      "end": 1591,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "sleep|replay",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 765,
+      "end": 765,
+      "char_start": 690,
+      "char_end": 2090,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "critical period|sensitive period",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 769,
+      "end": 769,
+      "char_start": 637,
+      "char_end": 1222,
+      "tokens": 146,
+      "reason": "targeted verification",
+      "question": "critical period|sensitive period",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1312,
+      "end": 1312,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "confidence|curiosity|Goldilocks",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1314,
+      "end": 1314,
+      "char_start": 30,
+      "char_end": 837,
+      "tokens": 202,
+      "reason": "targeted verification",
+      "question": "confidence|curiosity|Goldilocks",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "number",
+      "start": 1314,
+      "end": 1378,
+      "tokens": 1179,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 1578,
+      "end": 1630,
+      "tokens": 799,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 2478,
+      "end": 2540,
+      "tokens": 987,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 3256,
+      "end": 3310,
+      "tokens": 952,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 3443,
+      "end": 3512,
+      "tokens": 1100,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 3513,
+      "end": 3558,
+      "tokens": 724,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 4077,
+      "end": 4124,
+      "tokens": 687,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 4890,
+      "end": 4934,
+      "tokens": 632,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 5220,
+      "end": 5268,
+      "tokens": 845,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 5420,
+      "end": 5483,
+      "tokens": 799,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 5674,
+      "end": 5750,
+      "tokens": 1246,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 6731,
+      "end": 6790,
+      "tokens": 775,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 7223,
+      "end": 7306,
+      "tokens": 1468,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 7840,
+      "end": 7946,
+      "tokens": 1636,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 9761,
+      "end": 9814,
+      "tokens": 908,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 7946,
+      "end": 8055,
+      "tokens": 1577,
+      "reason": "retrospectively documented overlapping semantic read",
+      "question": "Which task and output-format qualifications constrain the chapter-specific numerical dissociation claim?",
+      "resolution": "Retained task/strategy/output-format qualifications in the chapter 7\u20138 synthesis; repeated spans count as expenditure, not extra coverage.",
+      "audit_note": "Question reconstructed from the extraction purpose after the audit detected overlap; not contemporaneously logged."
+    },
+    {
+      "source": "number",
+      "start": 8880,
+      "end": 8940,
+      "tokens": 1015,
+      "reason": "initial semantic evidence slice"
+    },
+    {
+      "source": "number",
+      "start": 9380,
+      "end": 9430,
+      "tokens": 914,
+      "reason": "initial semantic evidence slice",
+      "visibility": "potentially partial in combined output; do not use as sole support"
+    },
+    {
+      "source": "learning",
+      "start": 1391,
+      "end": 1391,
+      "char_start": 388,
+      "char_end": 1456,
+      "tokens": 267,
+      "reason": "targeted verification",
+      "question": "blocking|Rescorla|prediction",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1395,
+      "end": 1395,
+      "char_start": 0,
+      "char_end": 393,
+      "tokens": 98,
+      "reason": "targeted verification",
+      "question": "blocking|Rescorla|prediction",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1477,
+      "end": 1477,
+      "char_start": 98,
+      "char_end": 939,
+      "tokens": 210,
+      "reason": "targeted verification",
+      "question": "retrieval|test|spac",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1481,
+      "end": 1481,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "retrieval|test|spac",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1546,
+      "end": 1546,
+      "char_start": 0,
+      "char_end": 872,
+      "tokens": 218,
+      "reason": "targeted verification",
+      "question": "replay|sleep",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1552,
+      "end": 1552,
+      "char_start": 184,
+      "char_end": 1584,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "replay|sleep",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1244,
+      "end": 1244,
+      "char_start": 0,
+      "char_end": 1172,
+      "tokens": 293,
+      "reason": "targeted verification",
+      "question": "discovery",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 1248,
+      "end": 1248,
+      "char_start": 0,
+      "char_end": 538,
+      "tokens": 134,
+      "reason": "targeted verification",
+      "question": "discovery",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 216,
+      "end": 216,
+      "char_start": 0,
+      "char_end": 1020,
+      "tokens": 255,
+      "reason": "targeted verification",
+      "question": "combinatorial|gradient|search space|reward",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 238,
+      "end": 238,
+      "char_start": 43,
+      "char_end": 1443,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "combinatorial|gradient|search space|reward",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 989,
+      "end": 989,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "synchron|gamma|bidirectional",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 997,
+      "end": 997,
+      "char_start": 0,
+      "char_end": 89,
+      "tokens": 22,
+      "reason": "targeted verification",
+      "question": "synchron|gamma|bidirectional",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1478,
+      "end": 1478,
+      "char_start": 1866,
+      "char_end": 2578,
+      "tokens": 178,
+      "reason": "targeted verification",
+      "question": "local|global|complexity",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1482,
+      "end": 1482,
+      "char_start": 0,
+      "char_end": 1335,
+      "tokens": 334,
+      "reason": "targeted verification",
+      "question": "local|global|complexity",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 809,
+      "end": 809,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "social|confidence",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 813,
+      "end": 813,
+      "char_start": 604,
+      "char_end": 2004,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "social|confidence",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "number",
+      "start": 7946,
+      "end": 8055,
+      "tokens": 1577,
+      "reason": "retrospectively documented overlapping semantic read",
+      "question": "Which task and output-format qualifications constrain the chapter-specific numerical dissociation claim?",
+      "resolution": "Retained task/strategy/output-format qualifications in the chapter 7\u20138 synthesis; repeated spans count as expenditure, not extra coverage.",
+      "audit_note": "Question reconstructed from the extraction purpose after the audit detected overlap; not contemporaneously logged."
+    },
+    {
+      "source": "number",
+      "start": 8880,
+      "end": 8940,
+      "tokens": 1015,
+      "reason": "retrospectively documented overlapping semantic read",
+      "question": "Which task and output-format qualifications constrain the chapter-specific numerical dissociation claim?",
+      "resolution": "Retained task/strategy/output-format qualifications in the chapter 7\u20138 synthesis; repeated spans count as expenditure, not extra coverage.",
+      "audit_note": "Question reconstructed from the extraction purpose after the audit detected overlap; not contemporaneously logged."
+    },
+    {
+      "source": "consciousness",
+      "start": 475,
+      "end": 475,
+      "char_start": 226,
+      "char_end": 1626,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "binding",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 605,
+      "end": 605,
+      "char_start": 0,
+      "char_end": 222,
+      "tokens": 55,
+      "reason": "targeted verification",
+      "question": "unconscious|arithmetic",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 609,
+      "end": 609,
+      "char_start": 0,
+      "char_end": 685,
+      "tokens": 171,
+      "reason": "targeted verification",
+      "question": "unconscious|arithmetic",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1505,
+      "end": 1505,
+      "char_start": 545,
+      "char_end": 1945,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "complexity|TMS|perturb",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1509,
+      "end": 1509,
+      "char_start": 39,
+      "char_end": 643,
+      "tokens": 151,
+      "reason": "targeted verification",
+      "question": "complexity|TMS|perturb",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1649,
+      "end": 1649,
+      "char_start": 692,
+      "char_end": 1759,
+      "tokens": 267,
+      "reason": "targeted verification",
+      "question": "monkey|confidence",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "consciousness",
+      "start": 1653,
+      "end": 1653,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "monkey|confidence",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 196,
+      "end": 196,
+      "char_start": 793,
+      "char_end": 1813,
+      "tokens": 255,
+      "reason": "targeted verification",
+      "question": "parameter",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 202,
+      "end": 202,
+      "char_start": 0,
+      "char_end": 627,
+      "tokens": 157,
+      "reason": "targeted verification",
+      "question": "parameter",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 252,
+      "end": 252,
+      "char_start": 88,
+      "char_end": 1181,
+      "tokens": 273,
+      "reason": "targeted verification",
+      "question": "explor|local",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 256,
+      "end": 256,
+      "char_start": 115,
+      "char_end": 1515,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "explor|local",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 292,
+      "end": 292,
+      "char_start": 981,
+      "char_end": 2004,
+      "tokens": 256,
+      "reason": "targeted verification",
+      "question": "prior|Bayes|restrict",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "learning",
+      "start": 298,
+      "end": 298,
+      "char_start": 449,
+      "char_end": 1849,
+      "tokens": 349,
+      "reason": "targeted verification",
+      "question": "prior|Bayes|restrict",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1169,
+      "end": 1169,
+      "char_start": 0,
+      "char_end": 1400,
+      "tokens": 350,
+      "reason": "targeted verification",
+      "question": "open.bigram",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    },
+    {
+      "source": "reading",
+      "start": 1173,
+      "end": 1173,
+      "char_start": 1341,
+      "char_end": 2432,
+      "tokens": 273,
+      "reason": "targeted verification",
+      "question": "open.bigram",
+      "resolution": "Used only within the chapter-specific retained concepts and boundaries recorded in coverage-audit.md; an excerpt is not full-paragraph verification."
+    }
+  ],
+  "truncated_emissions_note": "These entries record text submitted for viewing with known output truncation. They are retained as expenditure evidence, not claimed as verified whole-span coverage."
+}

@@ -1,0 +1,101 @@
+{
+  "grader": "parent agent; unblinded manual criterion review, not independent scoring",
+  "runs": [
+    {
+      "run": "lesson-baseline",
+      "criteria": {
+        "method": true,
+        "condition": true
+      },
+      "all_pass": true,
+      "review_note": "Plain-role baseline already gives actions, feedback, delayed retrieval and prior-knowledge checks; not evidence of a gain."
+    },
+    {
+      "run": "lesson-core",
+      "criteria": {
+        "method": true,
+        "condition": true
+      },
+      "all_pass": true,
+      "review_note": "Core-only gives an applicable plan and performance/retention distinction."
+    },
+    {
+      "run": "lesson-full",
+      "criteria": {
+        "method": true,
+        "condition": true
+      },
+      "all_pass": true,
+      "review_note": "Explicit four-pillar mapping and cross-script/causal qualifications; binary criteria tie with other arms."
+    },
+    {
+      "run": "numbers-full",
+      "criteria": {
+        "decompose": true,
+        "controls": true
+      },
+      "all_pass": true,
+      "review_note": "Separates quantity, symbols, verbal facts and procedural strategy; ratio and visual cue controls; no diagnosis."
+    },
+    {
+      "run": "mirrors-full",
+      "criteria": {
+        "boundary": true,
+        "assessment": false
+      },
+      "all_pass": false,
+      "review_note": "Correctly rejects reversals as diagnosis and identifies missing developmental/reading information, but omits qualified professional assessment."
+    },
+    {
+      "run": "gnw-full",
+      "criteria": {
+        "contrast": true,
+        "limits": true
+      },
+      "all_pass": true,
+      "review_note": "Addresses access/experience, null sensitivity, no-report proxies and theory-specific predictions."
+    },
+    {
+      "run": "infants-full",
+      "criteria": {
+        "scope": true,
+        "retrieval": true
+      },
+      "all_pass": true,
+      "review_note": "Rejects invented effect size and distinguishes edition, newborns, looking behavior and symbolic arithmetic."
+    },
+    {
+      "run": "poisson-decoding-full",
+      "criteria": {
+        "likelihood": true,
+        "dependence": true
+      },
+      "all_pass": true,
+      "review_note": "Correct Poisson log likelihood including rate penalty; conditional independence and joint-model changes, shared gain and overdispersion distinguished."
+    },
+    {
+      "run": "erp-measurement-full",
+      "criteria": {
+        "measurement": true,
+        "inference": true
+      },
+      "all_pass": true,
+      "review_note": "Checks filters, timing, artifact selection, trial count, jitter, overlap, measurement and uncertainty before impairment inference."
+    },
+    {
+      "run": "reading-support-full",
+      "criteria": {
+        "boundary": true,
+        "action": true
+      },
+      "all_pass": true,
+      "review_note": "New case after revision rejects normal MRI as exclusion and recommends timely qualified evaluation with support and progress checks."
+    }
+  ],
+  "unrun_development_cases": [
+    "p3",
+    "reading",
+    "ai"
+  ],
+  "limits": "One three-arm development case only. Four original final full-condition cases, two old-capability regressions, and one new full-condition follow-up. No aggregate model-improvement estimate. Original mirror failure is retained."
+}

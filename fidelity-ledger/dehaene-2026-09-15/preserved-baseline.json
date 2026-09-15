@@ -1,0 +1,311 @@
+{
+  ".agents/skills/cognitive-neuroscience": {
+    "symlink": "../.."
+  },
+  ".gitignore": {
+    "sha256": "22f32817ab9651a5d4524058b56145e90e2c5de9f689c2b32022a8094c400859"
+  },
+  "AGENTS.md": {
+    "sha256": "8f917ac7fbda902177c609df20ad2492dc8012232071ca53832bee17f90c962f"
+  },
+  "LICENSE": {
+    "sha256": "09871d42d18f406ac7fc136bf859037e787f681cfefaa34ac9acf8ea4e29dc8b"
+  },
+  "demos/__init__.py": {
+    "sha256": "cf29add884428abeb458eb0c941c6e695261874726a68f232584d5b4fe63b0cc"
+  },
+  "demos/data/rewards.csv": {
+    "sha256": "9ff65757cd940700e5c1512390ed9e721832fd710cef9f8a3f789c16dc25034a"
+  },
+  "demos/models.py": {
+    "sha256": "df86cf756958b26788c2397f49f3d39eeb2a578a3d3d68df5cbc1bb03fd59472"
+  },
+  "demos/run.py": {
+    "sha256": "bba1f6729377013348532d6e725ed4827d194b53c45fd1b5ac83847a9ad0bfea"
+  },
+  "fidelity-ledger/README.md": {
+    "sha256": "f2e8048a076dc287bbb40b9a9aa28da9d91b4e299b07d09e88d4970e4d011dc6"
+  },
+  "fidelity-ledger/acceptance-regressions.json": {
+    "sha256": "78caace3b63d63c90c543e2394547e913cbf819353adb938a83535f80d3145df"
+  },
+  "fidelity-ledger/acceptance-report.md": {
+    "sha256": "0c3a65344f4a66e309758b42de3e0da9c1c43fb79022ff4eaf45866b2836dd88"
+  },
+  "fidelity-ledger/acceptance-results-before-followup.json": {
+    "sha256": "f0e3c00aa2cdb18e28d20c215dd7ad97d32503f4f4b35e9a213b14a82747e8aa"
+  },
+  "fidelity-ledger/acceptance-results.json": {
+    "sha256": "77f8165a8d8846e08842c9b32af591d2cfe8856de04d5f2158dec35ac5643db0"
+  },
+  "fidelity-ledger/acceptance-runs/advantage-sign/answer.md": {
+    "sha256": "81b1ea536c83b8d11ec517db915a0c6b8c70dce12f430eee72f5d7accf8fa128"
+  },
+  "fidelity-ledger/acceptance-runs/advantage-sign/input-manifest.json": {
+    "sha256": "01c2193372f9a706587af3447862cbbd7c25f3ef1e5174f16cb5262e6ac3c09c"
+  },
+  "fidelity-ledger/acceptance-runs/advantage-sign/run.json": {
+    "sha256": "c94c234eeddeab65f9282f1c3213de404fe7711126a1362d64801ed5870b1a9e"
+  },
+  "fidelity-ledger/acceptance-runs/edition-boundary/answer.md": {
+    "sha256": "8a9fa5d7b5fa27e32073e390f54ea889ad1df41a9f610472cc15dd833d8b76f7"
+  },
+  "fidelity-ledger/acceptance-runs/edition-boundary/input-manifest.json": {
+    "sha256": "0cb407a08a9669ebaaf891316e13a4cc4f56220e08c7be546f13e428ef4f3244"
+  },
+  "fidelity-ledger/acceptance-runs/edition-boundary/run.json": {
+    "sha256": "a9110db76479a80e12cd312670d6a17cd47af593015e483365072ff13f4fe9ec"
+  },
+  "fidelity-ledger/acceptance-runs/erp-latency-final/answer.md": {
+    "sha256": "92f0b4ffeb052a461247adc5cfb9e99699908dc9feb4be8a8c68cd0947322a4a"
+  },
+  "fidelity-ledger/acceptance-runs/erp-latency-final/input-manifest.json": {
+    "sha256": "a9028fc23d842ceace458a4465a26ae8b128a5036d822027121a233d1d4db3c7"
+  },
+  "fidelity-ledger/acceptance-runs/erp-latency-final/run.json": {
+    "sha256": "ca79d7d222e8eab2b8d847c5f16129cb5f79cfcb0f166d7dd29b9be6162d5df5"
+  },
+  "fidelity-ledger/acceptance-runs/erp-measurement/answer.md": {
+    "sha256": "8b5be5bffccc143e4c72a3f305991d3872d5f0f93e85eb476fea4b8a525defc7"
+  },
+  "fidelity-ledger/acceptance-runs/erp-measurement/input-manifest.json": {
+    "sha256": "88363ed3f8aab0340e99a06f986839018e3bffdcb0f7f9ab87067f36c8f73ccc"
+  },
+  "fidelity-ledger/acceptance-runs/erp-measurement/run.json": {
+    "sha256": "0070bd5e8134c3b3f4cb6e28280992a942f4d086c431861e29d788382b312db7"
+  },
+  "fidelity-ledger/acceptance-runs/excluded-mechanism-fixture/answer.md": {
+    "sha256": "e65c2c868d4669fe96f3448b0e6a5729775806ad399c7743dcae9efc49ab8355"
+  },
+  "fidelity-ledger/acceptance-runs/excluded-mechanism-fixture/run.json": {
+    "sha256": "b7de35e1c723057ea9b2095b05167b0070ff209a7b384e86b4ff8e69f3b60fe5"
+  },
+  "fidelity-ledger/acceptance-runs/exponential-axis/answer.md": {
+    "sha256": "3e34df865d0713cce5c7bfa12be71341efdb4096cec5ff245a2e786bfaf31c62"
+  },
+  "fidelity-ledger/acceptance-runs/exponential-axis/input-manifest.json": {
+    "sha256": "3e0325c47114477b96b5fd0d7f6e9483307e2a8af509569a73d7e96905418c88"
+  },
+  "fidelity-ledger/acceptance-runs/exponential-axis/run.json": {
+    "sha256": "cd9a7ff3390ebdb7d80ac5fdc4be3997d9c199bb569686b179366de6afcbbf11"
+  },
+  "fidelity-ledger/acceptance-runs/feedback-treatment/answer.md": {
+    "sha256": "a8be08f268e65a1cfb29f06c0db093e9316c24102d28871efeaaa4f6aec89bd3"
+  },
+  "fidelity-ledger/acceptance-runs/feedback-treatment/input-manifest.json": {
+    "sha256": "42ff932d6bd94830162596d808da88eac1033249eeeb82f8abd3031215c3bd27"
+  },
+  "fidelity-ledger/acceptance-runs/feedback-treatment/run.json": {
+    "sha256": "c8bc7d4672fdd9d01938434d09d6fe77ac7ec063465052ee970514122524ef9d"
+  },
+  "fidelity-ledger/acceptance-runs/information-count/answer.md": {
+    "sha256": "b4b3cf6e50c29b2cf9b9709e676099c1e779cf0a2a5551cf164e9b8e1aeec4b6"
+  },
+  "fidelity-ledger/acceptance-runs/information-count/input-manifest.json": {
+    "sha256": "e34174c171f2e33f83e1b27f72742fd23ba2462afe5c8d68e8702132078a749d"
+  },
+  "fidelity-ledger/acceptance-runs/information-count/run.json": {
+    "sha256": "2c46d55fa0139fc8fc41d0b19257bc8dabdcf4acbd406bf3d644dcafcf2d54f8"
+  },
+  "fidelity-ledger/acceptance-runs/lesion-necessity/answer.md": {
+    "sha256": "f4512920e855e46b4a7c15fe482aeefb3d5b03ade4488cc7c8bdf4fd7d0fbd89"
+  },
+  "fidelity-ledger/acceptance-runs/lesion-necessity/input-manifest.json": {
+    "sha256": "138c40a677f8b840f9b9e37fe2fb417348c43f8f66b20aa638257b23815feecf"
+  },
+  "fidelity-ledger/acceptance-runs/lesion-necessity/run.json": {
+    "sha256": "885b51edc041fe132cafaeeed55409be26d61a53c519d3ed2a2b460157869181"
+  },
+  "fidelity-ledger/acceptance-runs/mechanism-fit/answer.md": {
+    "sha256": "7fdaf52bc6b32d607ded7c1c19bb0beed49727d26c79bf3b471bab4357bcc67d"
+  },
+  "fidelity-ledger/acceptance-runs/mechanism-fit/input-manifest.json": {
+    "sha256": "65f785b0abf818cd6074b089bd355f04c3290afb13017a92f03e9f62988081d4"
+  },
+  "fidelity-ledger/acceptance-runs/mechanism-fit/run.json": {
+    "sha256": "6dd326d4f1a0c8639b4fc4f640c293f4dc3896031619808c823d29442b0038cc"
+  },
+  "fidelity-ledger/acceptance-runs/newest-trial/answer.md": {
+    "sha256": "c4ca92932a25baa20e8469cb8c5363ed408166a283313a1bb313e7fee0bf3663"
+  },
+  "fidelity-ledger/acceptance-runs/newest-trial/input-manifest.json": {
+    "sha256": "349e977f611f8df3fec1f2c29214833fc9fa5da7eeddcf011fabbadf9cece719"
+  },
+  "fidelity-ledger/acceptance-runs/newest-trial/run.json": {
+    "sha256": "e4f160484d4b39448ddb4b36fa39d33d14821794eadc6bec166ee5a829978d77"
+  },
+  "fidelity-ledger/acceptance-runs/poisson-decoding/answer.md": {
+    "sha256": "f1ba80cf7f01f4f5dbf6255a780cf0c822d753ed5f342cbb80434822226f85f0"
+  },
+  "fidelity-ledger/acceptance-runs/poisson-decoding/input-manifest.json": {
+    "sha256": "b2a893a8158b552f131750c3784ba424967c75b86407cc500f5c5093bf453252"
+  },
+  "fidelity-ledger/acceptance-runs/poisson-decoding/run.json": {
+    "sha256": "84470e2ad928a07eb5e18be91cc72c23dd292d561940c3706dc0073cb7215917"
+  },
+  "fidelity-ledger/acceptance-runs/selected-eeg/answer.md": {
+    "sha256": "4d00b4b385693481af17d2454e0a1b8e1a98ebdde5c22b8169301db5160f2b6e"
+  },
+  "fidelity-ledger/acceptance-runs/selected-eeg/input-manifest.json": {
+    "sha256": "f0d22ef659c1ee0c265f9d458dc3cd66a93e91cf4bd96548d28ffd69ebd6a80a"
+  },
+  "fidelity-ledger/acceptance-runs/selected-eeg/run.json": {
+    "sha256": "c66d1bfbba4b4d20cbd9154f1c854fb44f8202bd9e3834249b8d04a9cdb3fd41"
+  },
+  "fidelity-ledger/acceptance-suite.json": {
+    "sha256": "692d5519039ecf4abdb13b3167df2e3e3d898f8fdaaf688a5046e2e08fc4b48f"
+  },
+  "fidelity-ledger/acceptance-validation.json": {
+    "sha256": "9ddf3aa9148de77cf8e69a4cc3336e023ce95734c13633af7f0b5bbb8784ab72"
+  },
+  "fidelity-ledger/check_acceptance.py": {
+    "sha256": "01b29de9658665c403ff9b212ce190778466af8511d36da0185dfa17485aed8c"
+  },
+  "fidelity-ledger/coverage-audit.md": {
+    "sha256": "9f139cc9b1435d174b18b48218059d1450fcf656e8fbed2a3efa11e01ec5e04a"
+  },
+  "fidelity-ledger/delivery-checks.json": {
+    "sha256": "9d18e0d908a6341a8bcfb23930facb942e8d8a8012791193a1ed38f6d51c0628"
+  },
+  "fidelity-ledger/demo-regression-anaconda.txt": {
+    "sha256": "c90855e92f171db527703ac8fbdc833b332860a70dd9245c05fafe77f4ba8e72"
+  },
+  "fidelity-ledger/equation-checks.json": {
+    "sha256": "76b972d31411c1d2a750e91494f891627d84dfcb5390431b5b8c30c4243fc4a4"
+  },
+  "fidelity-ledger/equation_checks.py": {
+    "sha256": "2f6398d2d2c5d876b739b4d2dd82be2ce6c905c2c694dd293e819161004526cd"
+  },
+  "fidelity-ledger/existing-architecture-check.json": {
+    "sha256": "e63a4e20dd7f8d43448b9e428b3aa7ddf728ec88f15d93e343f7058c4850ce67"
+  },
+  "fidelity-ledger/publication-validation.json": {
+    "sha256": "23cc7db8df34d00ab5a5b2e01b8d658865aafc0722badd0c66da5b283a3f01c1"
+  },
+  "fidelity-ledger/reading-ledger.json": {
+    "sha256": "c9c80633735e7387b25fe2424f5e13019bccd73ba5fd35db256b995c0cabee7e"
+  },
+  "fidelity-ledger/reading-report.json": {
+    "sha256": "53ddefa27abe93fcee8271d9bc4eee7338134bc49376ac3105d53ac6114fa4f5"
+  },
+  "fidelity-ledger/reference-check.json": {
+    "sha256": "f96bdeb7e6b2b3948c4962c5906530f85edfc155682132236bcafd8da95db483"
+  },
+  "fidelity-ledger/scan-core.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "fidelity-ledger/scan-references.json": {
+    "sha256": "caabcfa7bd04c76564d00e9509555cadf2c02890c0d6c7706d2f791693045d72"
+  },
+  "fidelity-ledger/source-provenance.json": {
+    "sha256": "7786c3c12244b87772aeffef0338820e50bb6a79abb4fd691e37411a071b48cf"
+  },
+  "fidelity-ledger/structural-final.json": {
+    "sha256": "4091e9bf7364640510fa79a777e1b34ddeac55c3cea063f698c715f28b21d97e"
+  },
+  "fidelity-ledger/structural-staging.json": {
+    "sha256": "77c26dd88c5794b50f4b8f9966aa3afe57342450f58ff8b89b52ce1223a68943"
+  },
+  "fidelity-ledger/validation.md": {
+    "sha256": "783b424368e19df769e2fef9eb326ca109774b152db885cf02df0e49863f7e91"
+  },
+  "maintenance/audit/README.md": {
+    "sha256": "d6a75c4f264ef5958df114c7ef2caf63b6f832ce4e7e5ff287a0a7604417e791"
+  },
+  "maintenance/audit/corrections.json": {
+    "sha256": "341e71a23afa0a623ef0c88f961ed69bef3f3de12ec266f43e1d28ac24c506d2"
+  },
+  "maintenance/evaluations/README.md": {
+    "sha256": "1801184b88d383e9d75e3658a9f2a16821f731c8a849f14efff60dc6957c1dc1"
+  },
+  "maintenance/evaluations/full-reference/context-manifest.json": {
+    "sha256": "d92e4d834cac7561f7a1a5014c8524dabe0658faaa902b2b83647970aed39405"
+  },
+  "maintenance/evaluations/full-reference/representation-metrics.json": {
+    "sha256": "f5bfef25aa53afa75261afcc6c332a3ba89dab4080a1d7dfb4e4ae329e6c2714"
+  },
+  "maintenance/evaluations/full-reference/representation.png": {
+    "sha256": "39a54c8d76b6845cccb23b86db99ed23116f71b17d1c53d121cef9d3f1b8a9cf"
+  },
+  "maintenance/evaluations/full-reference/representation.py": {
+    "sha256": "4bb39062d7dfad1e8d9014ac51c2c0ddd46ecc2228ee298c7bb78be97cca937c"
+  },
+  "maintenance/evaluations/full-reference/responses.json": {
+    "sha256": "87e09c4fa19ce8b930d54b3523dc289d90695e4f0282a70c2f637feae83cf18b"
+  },
+  "maintenance/evaluations/prompts.json": {
+    "sha256": "6e22a0cea4a542fbd822185785673d3a060fd37c0f2c2b7df9594e6dd04e9799"
+  },
+  "maintenance/evaluations/takeaway-only/context-manifest.json": {
+    "sha256": "e0da07788844b122998e0712b10326b8907cd80e426b678247cc1057985d4ab3"
+  },
+  "maintenance/evaluations/takeaway-only/representation-numbers.json": {
+    "sha256": "a053466d9ac763896f2b8aa4e5da498ed492bd3c816981f8bd73a10992c9ab20"
+  },
+  "maintenance/evaluations/takeaway-only/representation.png": {
+    "sha256": "0198cb5154de1296a81cd8b98fb9040e88811fe627490c8f4f6655f6c7632f02"
+  },
+  "maintenance/evaluations/takeaway-only/representation.py": {
+    "sha256": "59c9758f453f9e83eccb04621ee4bc15ac2f2b42388d2f97174a8bd5eafbbfa6"
+  },
+  "maintenance/evaluations/takeaway-only/responses.json": {
+    "sha256": "e8d81405c519e91107c9ba03795c97ff029e51b7f3d4f0d67145423989ebc105"
+  },
+  "maintenance/validation.md": {
+    "sha256": "f69faf934251ca267da565d92c028a637314783d36f39e7f8756f37585844d79"
+  },
+  "references/computational-demonstrations.md": {
+    "sha256": "a999c0f3f3e8ec3233a1c7343cdd31c38f9362cdab1a41215404668c00627aaa"
+  },
+  "references/reference-brett-nipraxis.md": {
+    "sha256": "b9f2d4d1e736b8bd2015741e4d67a676acdce5241ce53bfdc92f543eafa1052d"
+  },
+  "references/reference-byrne-neuroscience-online.md": {
+    "sha256": "980c07004af5315e9dc0ba78952faf1412854054318d1360c5bd98712adee96d"
+  },
+  "references/reference-craver-explaining-brain.md": {
+    "sha256": "0ef3e08861a501e80ab3694d302a323a23f247795c9cecb3db0ebbb05095159e"
+  },
+  "references/reference-dayan-abbott-theoretical-neuroscience.md": {
+    "sha256": "581980856856970ddbc9c4360a1d03f89c1b3a91ece9e3f3d541fb3d7bc27def"
+  },
+  "references/reference-fornito-brain-network-analysis.md": {
+    "sha256": "ee4d02cd0877fc57ee329c9aefefb70700feee6dba2b40abe43f281b53693252"
+  },
+  "references/reference-forstmann-model-based-cogneuro.md": {
+    "sha256": "af79427ffcdb6de14bf098f36ba4c23691c9cc35119ac194adf768afad408c12"
+  },
+  "references/reference-hernan-robins-causal-inference.md": {
+    "sha256": "a811b49b5c0078a0f95dafabcb83f7e065e5f04563d503b6b5bab40119ef4f11"
+  },
+  "references/reference-jahn-brain-book.md": {
+    "sha256": "7084adc7f992335a0f686bc1a1352e839bd320ba8bbd78c0ea4b8af011984b14"
+  },
+  "references/reference-kappenman-luck-erp-components.md": {
+    "sha256": "9c620a4e40ce5a7235a6f629aa32915d6bde30e15ebe18fcbd3c1be808f71a79"
+  },
+  "references/reference-lim-open-neuroscience.md": {
+    "sha256": "7dda2eac71d3119c691c20282107923a9fc63ae7940e4848e841d4128106c776"
+  },
+  "references/reference-luck-erp-technique.md": {
+    "sha256": "59e10544a7228d3ceb26a15dd6fc9db63695d097fd39aee335cf474087697f3e"
+  },
+  "references/reference-oreilly-comp-cog-neuro.md": {
+    "sha256": "6bccf866adc222362a807199d61e24eefda690fc499f677b039dc3f619e6792e"
+  },
+  "references/reference-series-computational-psychiatry.md": {
+    "sha256": "f07b1e7cd6d25ac17b054a171c64b4917182e9b7b04e9e6059be4ab05c03617c"
+  },
+  "references/reference-stocco-explanatory-models.md": {
+    "sha256": "e544e1cef9bfd860d09c33abf72729e487738dbc0f08ea3e109c4741f7659cb0"
+  },
+  "requirements-demo.txt": {
+    "sha256": "bbb53cba39f4d90ab2fa4121500180d9da6fb3ab0f0128a6cf8ea0e2af067fa5"
+  },
+  "scripts/check_references.py": {
+    "sha256": "ddd43e40ca868d7d2d1911b6f0b334731b52ff9c658128ee768ec58efbe17a4d"
+  },
+  "tests/test_models.py": {
+    "sha256": "ad7983623e8e3fe7a8b676e2ada8361ed4aa5e45d6c053a577ba8f27bdf4f4ce"
+  }
+}

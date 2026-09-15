@@ -1,0 +1,16 @@
+{
+  "files_read": [
+    "SKILL.md",
+    "evaluation/lesson-prompt.txt",
+    "references/reference-dehaene-how-we-learn.md",
+    "references/reference-dehaene-reading-brain.md",
+    "references/reference-hernan-robins-causal-inference.md"
+  ],
+  "model": "unknown",
+  "limitations": [
+    "No browsing or external verification; answer is an instructional synthesis from supplied references.",
+    "First combined reference output was truncated; reading reference was subsequently read separately through line 165. Available How We Learn and causal-inference passages informed the answer.",
+    "Script, learner baseline, and delayed-test format unspecified; assumptions and adaptable mapping units are stated.",
+    "Proposed lesson and assessment have not been empirically tested in this task."
+  ]
+}

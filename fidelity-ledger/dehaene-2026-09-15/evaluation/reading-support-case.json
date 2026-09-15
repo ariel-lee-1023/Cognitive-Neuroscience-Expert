@@ -1,0 +1,14 @@
+{
+  "id": "reading-support",
+  "kind": "inapplicable",
+  "partition": "final-followup",
+  "group": "persistent-school-reading",
+  "prompt": "An eight-year-old reads familiar stories from context, but after sustained instruction still cannot decode unfamiliar words and avoids reading aloud. A teacher says normal-looking MRI rules out a reading disorder, so the family should just wait. How should we respond?",
+  "criteria": {
+    "boundary": "Rejects normal MRI as sufficient to exclude a reading disorder; distinguishes context guessing from decoding.",
+    "action": "Recommends timely qualified educational/clinical reading assessment and targeted support, without diagnosing the child or waiting for proof of a lesion."
+  },
+  "references_required": true,
+  "frozen_before_revision": true,
+  "note": "New scenario after original mirrors final case missed actionable qualified-assessment criterion; original case retained as a failed probe, not rerun as an untouched holdout."
+}

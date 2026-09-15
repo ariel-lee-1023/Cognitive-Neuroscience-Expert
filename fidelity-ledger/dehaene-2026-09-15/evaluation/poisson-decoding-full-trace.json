@@ -1,0 +1,15 @@
+{
+  "files_read": [
+    "SKILL.md",
+    "evaluation/poisson-decoding-prompt.txt",
+    "references/reference-dayan-abbott-theoretical-neuroscience.md"
+  ],
+  "model": "unknown (system identifies GPT-6; exact serving model not exposed)",
+  "settings": {
+    "reasoning_effort": "unknown",
+    "temperature": "unknown",
+    "other": "unknown"
+  },
+  "browsing_used": false,
+  "answer_file": "evaluation/poisson-decoding-full.md"
+}
