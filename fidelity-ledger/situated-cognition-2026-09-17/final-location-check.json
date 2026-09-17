@@ -1,0 +1,19 @@
+{
+  "status": "pass under existing-architecture override",
+  "stage": "final local checkout before commit",
+  "source_count": 21,
+  "master_body_tokens": 4297,
+  "generic_errors_preserved": [
+    "demos/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "maintenance/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "outputs/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "scripts/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "tests/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)"
+  ],
+  "unexpected_errors": [],
+  "reference_checker": "0 errors; 34 audited corrections; 403 prose flags for human review\nExternal reachability not tested; use --external when network access is available.",
+  "discovery_target": "../..",
+  "discovery_git_mode": "120000",
+  "runtime_hashes_match_staging": true,
+  "prior_files_preserved": true
+}

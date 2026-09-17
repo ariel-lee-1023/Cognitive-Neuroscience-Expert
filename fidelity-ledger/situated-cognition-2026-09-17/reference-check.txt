@@ -1,0 +1,2 @@
+0 errors; 34 audited corrections; 403 prose flags for human review
+External reachability not tested; use --external when network access is available.

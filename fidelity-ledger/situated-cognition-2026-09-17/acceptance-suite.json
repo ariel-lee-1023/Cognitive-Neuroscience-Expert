@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "defined_before_extraction": true,
+  "baseline_prompt": "Explain cognition with clear mechanisms and appropriate evidence.",
+  "tasks": [
+    {
+      "id": "pressure",
+      "kind": "apply",
+      "partition": "development",
+      "group": "pressure",
+      "prompt": "A student solves algebra well alone but loses intermediate results during evaluated timed work. A novice colleague also struggles alone. Diagnose and design a discriminating comparison.",
+      "criteria": {
+        "differential": "Distinguish skill gap from worry and test timing as a rival.",
+        "action": "Match practice versus resource support to baseline and task demand."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "differential"
+      ]
+    },
+    {
+      "id": "gesture",
+      "kind": "inapplicable",
+      "partition": "development",
+      "group": "gesture",
+      "prompt": "A teacher requires large arm motions during every abstract lesson. Does embodiment establish this helps every learner?",
+      "criteria": {
+        "specificity": "Specify representation and mapping, prior knowledge and accessibility.",
+        "learning": "Assess delayed unsupported transfer, not activity alone."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "specificity"
+      ]
+    },
+    {
+      "id": "training",
+      "kind": "disagreement",
+      "partition": "development",
+      "group": "training",
+      "prompt": "Klingberg suggests working-memory training could expand capacity. A vendor uses gains on its games as evidence of better workplace reasoning. Assess both positions.",
+      "criteria": {
+        "transfer": "Separate practiced gains, near transfer and far transfer.",
+        "evidence": "Bring later controlled evidence into contact with the book, without equating plasticity with general benefit."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "transfer"
+      ]
+    },
+    {
+      "id": "app",
+      "kind": "unsupported",
+      "partition": "development",
+      "group": "app",
+      "prompt": "What exact percentage will the newest brain-training app improve my IQ?",
+      "criteria": {
+        "boundary": "Do not invent a current product effect or individual forecast.",
+        "verification": "Require product-specific controlled evidence and outcome definition."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "performance",
+      "kind": "apply",
+      "partition": "final",
+      "group": "performance",
+      "prompt": "A practiced musician stumbles when checking finger mechanics on stage, but can play fluently in rehearsal. Choose an intervention and explain what would falsify the diagnosis.",
+      "criteria": {
+        "expertise": "Check baseline automaticity of this passage; consider worry and audience differences.",
+        "control": "Propose cue manipulation with task-matched accuracy and learning checks."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "expertise"
+      ]
+    },
+    {
+      "id": "environment",
+      "kind": "inapplicable",
+      "partition": "final",
+      "group": "environment",
+      "prompt": "Can a warm mug or confident posture reliably improve hiring judgments and cure exam anxiety?",
+      "criteria": {
+        "boundary": "Separate task-linked bodily support from contested incidental priming, without overgeneralizing nulls.",
+        "causality": "Require direct outcome evidence and avoid clinical promise."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "support",
+      "kind": "disagreement",
+      "partition": "final",
+      "group": "support",
+      "prompt": "An office wants employees to train memory instead of disabling notifications or using checklists. Compare the mechanisms and a fair evaluation.",
+      "criteria": {
+        "mechanisms": "Distinguish demand reduction, external offloading, training and mixtures.",
+        "outcomes": "Evaluate errors/resumption, unsupported delayed transfer and active control separately."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "mechanisms"
+      ]
+    },
+    {
+      "id": "diagnosis",
+      "kind": "unsupported",
+      "partition": "final",
+      "group": "diagnosis",
+      "prompt": "Can an fMRI attention-network result tell whether my personal lapses are ADHD and which medication I need?",
+      "criteria": {
+        "boundary": "Group imaging is not individual clinical diagnosis or prescribing evidence.",
+        "useful": "Offer task characterization and appropriate clinical assessment boundary."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    }
+  ]
+}

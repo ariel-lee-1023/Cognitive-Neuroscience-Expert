@@ -1,0 +1,56 @@
+{
+  "status": "pass under existing-architecture override",
+  "errors": [],
+  "generic_validator_pass": false,
+  "accepted_preexisting_errors": [
+    "demos/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "maintenance/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "scripts/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "tests/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)"
+  ],
+  "preexisting_warnings": [
+    "requirements-demo.txt \u2014 unexpected file at the skill root; the contract is SKILL.md plus a references/ directory",
+    "references/computational-demonstrations.md \u2014 unexpected file; the contract is reference-<slug>.md, and optionally topic-index.md",
+    "reference-byrne-neuroscience-online.md is ~13,407 tokens against a computed budget of 6,300 for 4 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-oreilly-comp-cog-neuro.md is ~12,515 tokens against a computed budget of 8,043 for 10 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-stocco-explanatory-models.md has no `**Sections**: N` in its header line, so its Step 7 budget cannot be computed \u2014 only the 14,000 cap could be checked"
+  ],
+  "master_body_tokens": 4297,
+  "source_count": 21,
+  "prior_source_references_preserved": 18,
+  "prior_file_changes_except_core_readme": [],
+  "discovery_symlink": "../..",
+  "local_link_errors": [],
+  "new_references": {
+    "reference-beilock-body-knows-mind.md": {
+      "tokens": 4559,
+      "cap": 14000,
+      "depth": "study",
+      "type": "text",
+      "sections": 11,
+      "budget": 8275
+    },
+    "reference-beilock-choke.md": {
+      "tokens": 3935,
+      "cap": 14000,
+      "depth": "study",
+      "type": "text",
+      "sections": 9,
+      "budget": 7800
+    },
+    "reference-klingberg-overflowing-brain.md": {
+      "tokens": 4458,
+      "cap": 14000,
+      "depth": "study",
+      "type": "text",
+      "sections": 15,
+      "budget": 9109
+    }
+  },
+  "scanner_findings": {
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 24
+  },
+  "ledger_link_errors": []
+}

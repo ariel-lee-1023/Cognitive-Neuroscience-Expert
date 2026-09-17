@@ -1,0 +1,26 @@
+{
+  "choke": {
+    "unique_lines": 464,
+    "repeated_lines": 86,
+    "input_tokens": 39411,
+    "unresolved": [],
+    "coverage_fraction": 0.15348991068475024,
+    "budget_alert": true
+  },
+  "body": {
+    "unique_lines": 269,
+    "repeated_lines": 0,
+    "input_tokens": 19394,
+    "unresolved": [],
+    "coverage_fraction": 0.09810357403355215,
+    "budget_alert": false
+  },
+  "overflow": {
+    "unique_lines": 228,
+    "repeated_lines": 34,
+    "input_tokens": 23011,
+    "unresolved": [],
+    "coverage_fraction": 0.18627450980392157,
+    "budget_alert": false
+  }
+}

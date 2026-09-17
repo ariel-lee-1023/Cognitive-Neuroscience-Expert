@@ -1,0 +1,50 @@
+{
+  "revised": "2026-09-17",
+  "baseline_commit": "682c549b8911686084e366fca16fc79f334876fa",
+  "source_count_added": 3,
+  "sources": [
+    {
+      "id": "choke",
+      "filename": "Choke-what-the-secrets-of-the-brain-reveal-about-getting-it-right-when-you-have-.md",
+      "sha256": "89f52194791c62bb9310c1430706e5b7eebca4b705eda7df8960833197d1ed08",
+      "format": "md",
+      "estimated_pages": 347,
+      "estimated_source_tokens": 155950,
+      "canonical_detected_chapters": 2,
+      "toc_verified_chapters": 9,
+      "source_lines": 3023,
+      "edition": "2010 publication associated with supplied title; copyright/edition leaf not verified",
+      "quality": "OCR-derived Markdown; figures and page fragments not authoritative"
+    },
+    {
+      "id": "body",
+      "filename": "How-the-body-knows-its-mind-the-surprising-power-of-the-physical-environment-to-.md",
+      "sha256": "6c517d4119f4d7c0563d4799e5dd392eaca2af8e7a9b76fcac3a064022e3b900",
+      "format": "md",
+      "estimated_pages": 272,
+      "estimated_source_tokens": 122613,
+      "canonical_detected_chapters": 14,
+      "toc_verified_chapters": 11,
+      "source_lines": 2742,
+      "edition": "Copyright 2015, first Atria Paperback edition March 2017",
+      "quality": "OCR-derived Markdown; figures and page fragments not authoritative"
+    },
+    {
+      "id": "overflow",
+      "filename": "The-Overflowing-Brain-Torkel-Klingberg.md",
+      "sha256": "145c29b561ac4bd190f4331f2ac24b542cea1063b1571c6cb2ecee4963999ab4",
+      "format": "md",
+      "estimated_pages": 184,
+      "estimated_source_tokens": 82699,
+      "canonical_detected_chapters": 1,
+      "toc_verified_chapters": 15,
+      "source_lines": 1224,
+      "edition": "OUP 2009, translated by Neil Betteridge",
+      "quality": "OCR-derived Markdown; figures and page fragments not authoritative"
+    }
+  ],
+  "raw_sources_published": false,
+  "extraction_mode": "text",
+  "scope": "targeted sampled distillation; full raw corpus not read",
+  "token_method": "script-density (bookrefs.tokens); not word-split"
+}

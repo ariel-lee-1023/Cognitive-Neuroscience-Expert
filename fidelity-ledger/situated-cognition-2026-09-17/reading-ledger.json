@@ -1,0 +1,325 @@
+{
+  "sources": {
+    "choke": {
+      "lines": 3023,
+      "output_budget": 7800
+    },
+    "body": {
+      "lines": 2742,
+      "output_budget": 8275
+    },
+    "overflow": {
+      "lines": 1224,
+      "output_budget": 9109
+    }
+  },
+  "reads": [
+    {
+      "source": "choke",
+      "start": 225,
+      "end": 269,
+      "tokens": 3736,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 311,
+      "end": 367,
+      "tokens": 4347,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 1034,
+      "end": 1054,
+      "tokens": 1696,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 1118,
+      "end": 1145,
+      "tokens": 1169,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 1365,
+      "end": 1447,
+      "tokens": 5599,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 1655,
+      "end": 1675,
+      "tokens": 1443,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 1723,
+      "end": 1781,
+      "tokens": 4277,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 1886,
+      "end": 1984,
+      "tokens": 7341,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "choke",
+      "start": 285,
+      "end": 310,
+      "tokens": 1119,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "choke",
+      "start": 1421,
+      "end": 1447,
+      "tokens": 2216,
+      "reason": "targeted verification / recovery after oversized emission",
+      "question": "Confirm an answer-changing mechanism or qualification visible only partly in the earlier emission.",
+      "resolution": "Retained task/strategy conditions, exceptions, and later-evidence boundaries in the corresponding reference."
+    },
+    {
+      "source": "choke",
+      "start": 1723,
+      "end": 1781,
+      "tokens": 4277,
+      "reason": "targeted verification / recovery after oversized emission",
+      "question": "Confirm an answer-changing mechanism or qualification visible only partly in the earlier emission.",
+      "resolution": "Retained task/strategy conditions, exceptions, and later-evidence boundaries in the corresponding reference.",
+      "visibility": "some batched output truncated; range/token counts upper bounds"
+    },
+    {
+      "source": "body",
+      "start": 470,
+      "end": 510,
+      "tokens": 2396,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 731,
+      "end": 749,
+      "tokens": 1915,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 761,
+      "end": 780,
+      "tokens": 1236,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 530,
+      "end": 545,
+      "tokens": 952,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 607,
+      "end": 617,
+      "tokens": 663,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 641,
+      "end": 653,
+      "tokens": 52,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 931,
+      "end": 955,
+      "tokens": 1990,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 1561,
+      "end": 1581,
+      "tokens": 1568,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "overflow",
+      "start": 238,
+      "end": 248,
+      "tokens": 1147,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "overflow",
+      "start": 264,
+      "end": 312,
+      "tokens": 2628,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "overflow",
+      "start": 432,
+      "end": 450,
+      "tokens": 1578,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "overflow",
+      "start": 476,
+      "end": 502,
+      "tokens": 2028,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "overflow",
+      "start": 675,
+      "end": 708,
+      "tokens": 4492,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "overflow",
+      "start": 444,
+      "end": 502,
+      "tokens": 4598,
+      "reason": "targeted verification / recovery after oversized emission",
+      "question": "Confirm an answer-changing mechanism or qualification visible only partly in the earlier emission.",
+      "resolution": "Retained task/strategy conditions, exceptions, and later-evidence boundaries in the corresponding reference.",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "overflow",
+      "start": 889,
+      "end": 921,
+      "tokens": 2593,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; targeted followup recovered relevant claims"
+    },
+    {
+      "source": "choke",
+      "start": 1836,
+      "end": 1850,
+      "tokens": 1259,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "choke",
+      "start": 1986,
+      "end": 1995,
+      "tokens": 932,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 1099,
+      "end": 1109,
+      "tokens": 744,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 1603,
+      "end": 1615,
+      "tokens": 979,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "overflow",
+      "start": 582,
+      "end": 590,
+      "tokens": 1033,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "overflow",
+      "start": 797,
+      "end": 803,
+      "tokens": 1232,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 282,
+      "end": 300,
+      "tokens": 1358,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; relevant claims also checked against research/adjacent slices"
+    },
+    {
+      "source": "body",
+      "start": 619,
+      "end": 627,
+      "tokens": 945,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; relevant claims also checked against research/adjacent slices"
+    },
+    {
+      "source": "body",
+      "start": 751,
+      "end": 760,
+      "tokens": 912,
+      "reason": "targeted source inspection; headings/blank/separator cleaning",
+      "visibility": "some batched output truncated; relevant claims also checked against research/adjacent slices"
+    },
+    {
+      "source": "overflow",
+      "start": 314,
+      "end": 320,
+      "tokens": 1203,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "overflow",
+      "start": 408,
+      "end": 414,
+      "tokens": 479,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 387,
+      "end": 403,
+      "tokens": 1907,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 1273,
+      "end": 1285,
+      "tokens": 1211,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    },
+    {
+      "source": "body",
+      "start": 1325,
+      "end": 1335,
+      "tokens": 566,
+      "reason": "targeted source inspection; headings/blank/separator cleaning"
+    }
+  ],
+  "accounting_limit": "tokens records cleaned numbered text emitted before tool truncation, a conservative upper bound on model-visible reading. Source-line spans are upper bounds for partial/truncated paragraphs. Structural regex probes and bibliographic search snippets are not enumerated as semantic reads. Repetition includes deliberate verification. These are not billed/provider tokens.",
+  "expenditure_review": "Choke emissions exceeded 4x its output budget because an initial long-paragraph batch was truncated; narrower verification recovered central mechanisms. Later reads targeted yips and expert teaching exceptions. Reading stopped after these conditions and research checks were resolved; no whole-book reread."
+}

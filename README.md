@@ -2,14 +2,14 @@
 
 An [Agent Skill](https://docs.claude.com/en/docs/claude-code/skills) that turns an agent into a senior, rigorous, **mechanism-oriented cognitive neuroscientist** — capable of mechanism explanation, theoretical comparison, evidence evaluation, experimental-design reasoning, methodological boundary-setting, and cross-level integration.
 
-It is a distillation of **eighteen book and educational sources** across three layers: how the brain implements cognition, how formal models are built and linked to neural data, and what the methods will and will not support.
+It is a distillation of **twenty-one book and educational sources** across three layers: how the brain implements cognition, how formal models are built and linked to neural data, and what the methods will and will not support.
 
 ## Layout
 
 ```
 SKILL.md                  # expert reasoning core + task-based loading triggers (always loaded)
 references/
-  reference-<slug>.md     # eighteen source distillations, loaded on demand
+  reference-<slug>.md     # twenty-one source distillations, loaded on demand
   computational-demonstrations.md  # optional numerical-work guide
 fidelity-ledger/          # versioned provenance, coverage, and validation records
 demos/                    # reusable Python models, plotting entrypoint, reward input
@@ -57,6 +57,24 @@ outputs/                  # ignored generated figures and settings
 | **Reading in the Brain: The Science and Evolution of a Human Invention** — Stanislas Dehaene, Viking 2009 | [Reading and neuronal recycling](references/reference-dehaene-reading-brain.md) |
 | **The Number Sense: How the Mind Creates Mathematics** — Stanislas Dehaene, OUP 1997, supplied 1999 paperback | [Numerical representations and arithmetic](references/reference-dehaene-number-sense.md) |
 | **How We Learn: Why Brains Learn Better Than Any Machine … for Now** — Stanislas Dehaene, Viking 2020 | [Learning mechanisms and four pillars](references/reference-dehaene-how-we-learn.md) |
+
+### Pressure, bodily action & technological demands
+
+| Source | Distillation |
+|---|---|
+| **Choke: What the Secrets of the Brain Reveal About Getting It Right When You Have To** — Sian Beilock, 2010 publication; supplied edition leaf unverified | [Pressure, expertise, and attentional control](references/reference-beilock-choke.md) |
+| **How the Body Knows Its Mind: The Surprising Power of the Physical Environment to Influence How You Think and Feel** — Sian Beilock, copyright 2015; supplied 2017 paperback | [Action, gesture, and material support](references/reference-beilock-body-knows-mind.md) |
+| **The Overflowing Brain: Information Overload and the Limits of Working Memory** — Torkel Klingberg, OUP 2009, translated by Neil Betteridge | [Working-memory demands and training transfer](references/reference-klingberg-overflowing-brain.md) |
+
+## Situated-cognition extension (2026-09-17)
+
+Three references add a practical diagnostic capability: decide whether improvement calls for further learning, different attentional control, bodily or material support, or a redesigned task environment. The core distinguishes skill gaps, worry competing with deliberate reasoning, and excessive monitoring of practiced movement. It separates environmental demand reduction and external support from capacity training, and assesses transfer independently of practiced-task gains.
+
+Selected primary studies qualify the source-era claims: gesture–speech timing, facial feedback, action–sentence compatibility, warmth priming, power-posing endpoints, expressive writing, latent working-memory representations, and cognitive-training transfer. These are bounded checks, not a comprehensive systematic review. The references label the books' positions, subsequent evidence, and cross-book synthesis separately.
+
+Examples: compare an algebra student's lost intermediate steps with a musician's overmonitored finger movements; design a gesture that represents an equivalence relation; decide whether an interrupted analyst needs more practice, fewer notifications, or a visible resumption cue. Supported performance can be useful without independent capacity growth.
+
+The existing repository architecture, all 18 earlier references, demonstrations, and historical evaluations are preserved. See the [fidelity and validation record](fidelity-ledger/situated-cognition-2026-09-17/README.md). Scenario review is editorial; fresh-context baseline/core/reference behavioral comparisons are **unrun**, so no measured model-performance gain is claimed.
 
 ## Dehaene extension (2026-09-15)
 
