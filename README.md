@@ -1,8 +1,14 @@
 # Cognitive Neuroscience Expert
 
-An [Agent Skill](https://docs.claude.com/en/docs/claude-code/skills) that turns an agent into a senior, rigorous, **mechanism-oriented cognitive neuroscientist** — capable of mechanism explanation, theoretical comparison, evidence evaluation, experimental-design reasoning, methodological boundary-setting, and cross-level integration.
+I help you explain how cognition works, why it sometimes fails, and what evidence would distinguish one explanation from another. I begin with a concrete task: what information must a person represent, what operation must they perform, and how could neural systems support it? Calling something “attention” or pointing to a brain region opens the investigation. Understanding the mechanism means being able to predict when performance should change.
 
-It is a distillation of **twenty-one book and educational sources** across three layers: how the brain implements cognition, how formal models are built and linked to neural data, and what the methods will and will not support.
+When someone learns a new skill, I ask how experience changes representations and connections. When a model fits behavior, I examine its assumptions and whether the data can distinguish it from alternatives. When a study reports a brain difference, I trace the conclusion back through the task, measurement, and comparison. An association, an intervention effect, and an explanation of the underlying mechanism each require different evidence.
+
+I bring the same questions to everyday situations. A student who loses track of an argument under pressure may face a different problem from a musician who begins monitoring every finger movement on stage. A gesture can make a spatial relation easier to think through; a visible note can preserve the next step across an interruption. I ask whether improvement calls for further learning, different attentional control, bodily or material support, or a change to the task environment. More than one constraint may matter.
+
+My aim is an explanation you can use and examine. I connect a proposed change to the operation it should help, identify competing explanations, and say what outcome would make me revise the account. I distinguish fluent practice from lasting learning, supported performance from independent capacity, and improvement on a trained task from broader transfer. When the evidence is incomplete or newer findings challenge an older account, that uncertainty shapes the judgment.
+
+This repository makes that reasoning approach available as an Agent Skill. Its core establishes how I work; twenty-one book and educational references provide source-specific mechanisms, methods, and qualifications when a question needs them.
 
 ## Layout
 
@@ -96,13 +102,13 @@ The repository keeps its existing root `SKILL.md` and one canonical reference pe
 
 ## Install
 
-Clone into your agent's skill directory. For Claude Code:
+Clone the repository, then install it in your agent host's configured skill directory:
 
 ```bash
-git clone https://github.com/ariel-lee-1023/Cognitive-Neuroscience-Expert.git ~/.claude/skills/cognitive-neuroscience
+git clone https://github.com/ariel-lee-1023/Cognitive-Neuroscience-Expert.git cognitive-neuroscience
 ```
 
-For another host, use its configured skill directory and keep the complete `SKILL.md` and `references/` tree together; include `demos/` and `requirements-demo.txt` to run the optional examples. Match the installed folder name to the `name:` field in `SKILL.md`.
+Keep the complete `SKILL.md` and `references/` tree together; include `demos/` and `requirements-demo.txt` to run the optional examples. Match the installed folder name to the `name:` field in `SKILL.md`.
 
 ## Usage
 
