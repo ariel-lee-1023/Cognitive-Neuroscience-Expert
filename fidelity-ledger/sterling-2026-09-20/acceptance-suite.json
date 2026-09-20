@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "defined_before_extraction": true,
+  "baseline_prompt": "Explain cognition with clear mechanisms and appropriate evidence.",
+  "tasks": [
+    {
+      "id": "learning-app",
+      "kind": "apply",
+      "partition": "development",
+      "group": "learning-app",
+      "prompt": "A learning app improves weekly test scores but users anticipate rankings all day, sleep less, and abandon hobbies. Assess what has improved and what evidence should guide redesign.",
+      "criteria": {
+        "sequence": "Trace demands, anticipation, coordinated responses, repeated adaptation and costs without assuming mechanism from anxiety.",
+        "outcomes": "Assess retention/transfer, recovery, flexible functioning and meaningful participation; include rivals and evidence that could change judgment."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "outcomes"
+      ]
+    },
+    {
+      "id": "neuron-efficiency",
+      "kind": "inapplicable",
+      "partition": "development",
+      "group": "neuron-efficiency",
+      "prompt": "A model encodes more stimulus bits by doubling firing rates. Has neural design therefore improved?",
+      "criteria": {
+        "tradeoff": "Specify task, noise, latency, energy, wire and marginal benefit before calling improvement.",
+        "boundary": "Do not infer globally optimal brain design or animal use of analyst information from coding gain."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "treatment-versus-demands",
+      "kind": "disagreement",
+      "partition": "development",
+      "group": "treatment-versus-demands",
+      "prompt": "Sterling criticizes clamping physiological parameters with drugs. Does predictive regulation make lowering chronically high blood pressure a mistake?",
+      "criteria": {
+        "faithfulness": "State Sterling\u2019s adaptive-capacity critique and demand-generating conditions accurately.",
+        "boundary": "Distinguish his thesis from clinical efficacy; adaptation may be damaging; no treatment withdrawal or claim that drugs necessarily diminish health."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "individual-cost",
+      "kind": "unsupported",
+      "partition": "development",
+      "group": "individual-cost",
+      "prompt": "How many years of life will my stressful study schedule cost me, and what cortisol threshold proves my learning is unhealthy?",
+      "criteria": {
+        "boundary": "Do not invent individual prognosis or diagnostic threshold.",
+        "evidence": "Describe missing longitudinal individual/context/outcome evidence and distinguish framework from clinical measurement."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "retained-capacity",
+      "kind": "apply",
+      "partition": "final",
+      "group": "retained-capacity",
+      "prompt": "Someone with severe memory loss can still garden and join a choir. How should a cognitive account and evaluation of care change?",
+      "criteria": {
+        "scope": "Investigate retained capacities, environmental supports and person-valued participation alongside impairment.",
+        "boundary": "Neither infer memory restoration nor endorse a speculative sacred-experience circuit from meaningful engagement."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "reward-policy",
+      "kind": "inapplicable",
+      "partition": "final",
+      "group": "reward-policy",
+      "prompt": "A school wants to maximize dopamine with points for every act of cooperation, citing human evolution. Does this establish a good educational design?",
+      "criteria": {
+        "meaning": "Keep mastery, agency, reciprocity, inclusion and participation visible.",
+        "boundary": "Separate reward-learning hypotheses, evolutionary claims and normative choice; require task-specific outcomes instead of reducing meaning to dopamine."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "coding-redundancy",
+      "kind": "disagreement",
+      "partition": "final",
+      "group": "coding-redundancy",
+      "prompt": "One engineer wants to remove all correlated neural activity to save energy; another says redundant populations improve reliability. Use neural-design principles to resolve the disagreement.",
+      "criteria": {
+        "conditions": "Distinguish predictable redundancy, noise averaging, downstream task requirements and cost of local computation.",
+        "boundary": "No universal sparsity/correlation rule; articulate a noise/latency regime that changes choice."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "current-ai",
+      "kind": "unsupported",
+      "partition": "final",
+      "group": "current-ai",
+      "prompt": "Does the 2015 neural-design book establish that today\u2019s AI consumes exactly 100000 times as much energy as a human doing the same task?",
+      "criteria": {
+        "boundary": "Historical comparison does not establish current matched-task efficiency.",
+        "evidence": "Require specified task/performance/system boundaries and current measurements."
+      },
+      "references_required": true,
+      "qualification_criteria": [
+        "evidence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "sources": {
+    "health": {
+      "lines": 5628,
+      "output_budget": 7269
+    },
+    "design": {
+      "lines": 13002,
+      "output_budget": 12196
+    }
+  },
+  "reads": [
+    {
+      "source": "health",
+      "start": 153,
+      "end": 225,
+      "tokens": 1956,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 340,
+      "end": 437,
+      "tokens": 1959,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 916,
+      "end": 981,
+      "tokens": 1697,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 1090,
+      "end": 1193,
+      "tokens": 1703,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 1263,
+      "end": 1407,
+      "tokens": 3343,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 1667,
+      "end": 1749,
+      "tokens": 2092,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 1852,
+      "end": 1898,
+      "tokens": 1185,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 1949,
+      "end": 2035,
+      "tokens": 2535,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 2430,
+      "end": 2498,
+      "tokens": 1623,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 2677,
+      "end": 2837,
+      "tokens": 3685,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 3491,
+      "end": 3614,
+      "tokens": 3546,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 3915,
+      "end": 4042,
+      "tokens": 3128,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 4043,
+      "end": 4169,
+      "tokens": 2917,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 4171,
+      "end": 4385,
+      "tokens": 6314,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 2968,
+      "end": 3055,
+      "tokens": 2022,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 3132,
+      "end": 3200,
+      "tokens": 1292,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 3419,
+      "end": 3470,
+      "tokens": 1288,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 1852,
+      "end": 1910,
+      "tokens": 1596,
+      "reason": "verification",
+      "question": "Did the earlier truncated allocation slice preserve Guns or Butter and the adaptation/reserve exception?",
+      "resolution": "Reread 47 overlapping lines and added the end of the section: ambient temperature affects sickness response; costly organs combine modest reserves with adaptation. Both retained."
+    },
+    {
+      "source": "design",
+      "start": 9446,
+      "end": 9726,
+      "tokens": 8195,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 361,
+      "end": 451,
+      "tokens": 3219,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 1034,
+      "end": 1107,
+      "tokens": 1927,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 1323,
+      "end": 1444,
+      "tokens": 3033,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 2482,
+      "end": 2560,
+      "tokens": 1423,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 2602,
+      "end": 2658,
+      "tokens": 1288,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 3073,
+      "end": 3166,
+      "tokens": 2766,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 5409,
+      "end": 5429,
+      "tokens": 615,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 2143,
+      "end": 2152,
+      "tokens": 214,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 3430,
+      "end": 3460,
+      "tokens": 1158,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 4468,
+      "end": 4554,
+      "tokens": 1632,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 6072,
+      "end": 6095,
+      "tokens": 597,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 6122,
+      "end": 6172,
+      "tokens": 1226,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 6250,
+      "end": 6308,
+      "tokens": 1769,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 7292,
+      "end": 7312,
+      "tokens": 382,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 8038,
+      "end": 8099,
+      "tokens": 1958,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 8367,
+      "end": 8401,
+      "tokens": 575,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 5954,
+      "end": 6000,
+      "tokens": 1187,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 8801,
+      "end": 8886,
+      "tokens": 3263,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 8974,
+      "end": 9011,
+      "tokens": 1212,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 9205,
+      "end": 9249,
+      "tokens": 622,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 9316,
+      "end": 9365,
+      "tokens": 1473,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 438,
+      "end": 482,
+      "tokens": 960,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 790,
+      "end": 832,
+      "tokens": 1189,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "health",
+      "start": 3707,
+      "end": 3787,
+      "tokens": 2200,
+      "reason": "initial bounded argument/mechanism reading"
+    },
+    {
+      "source": "design",
+      "start": 6000,
+      "end": 6037,
+      "tokens": 791,
+      "reason": "verification",
+      "question": "Does the shared boundary line introduce a qualification missing from the adjacent slice?",
+      "resolution": "Boundary overlap only; surrounding conditional interpretation retained."
+    },
+    {
+      "source": "design",
+      "start": 3159,
+      "end": 3180,
+      "tokens": 694,
+      "reason": "verification",
+      "question": "Does a component efficiency optimum exclude surplus capacity for robustness?",
+      "resolution": "No: fixed costs, expensive upstream information and perturbation risk can justify a larger array; retained in chapter 6 and decision rules."
+    }
+  ],
+  "accounting_limitations": [
+    "Token figures are script-density estimates of cleaned text emitted for requested spans, not provider token usage.",
+    "Several combined tool responses were truncated; their span counts and token sums are conservative upper bounds on visible inspection, not proof every line was read.",
+    "TOC/title/heading probes and the user-provided contextual excerpts were also inspected but are not included in these slice totals.",
+    "The same original supplied Markdown was sliced directly using source-local coordinates; extractor SOURCE-fence offsets are retained separately in provenance.",
+    "No whole-book read was performed. The reader removed heading and bold wrappers, page comments and empty/link/image lines; full extracted corpus remained unmodified."
+  ],
+  "expenditure_review": "Health crossed four times the planned 7269-token output budget while reading new argument sections, rather than through broad rereading. Continued only for missing chapter-1 grounding, chapter-6 metabolism and answer-changing exceptions. Neural Design stayed below its 4x planned budget. Counts remain emitted-text upper estimates where output truncation occurred."
+}

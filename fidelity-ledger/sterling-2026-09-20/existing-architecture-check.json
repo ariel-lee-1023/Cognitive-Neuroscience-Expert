@@ -1,0 +1,46 @@
+{
+  "status": "pass for existing destination architecture",
+  "generic_validator_exit_code": 1,
+  "accepted_preexisting_layout_errors": [
+    "demos/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "maintenance/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "scripts/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)",
+    "tests/ \u2014 the only subdirectory the generated skill may have is references/ (no chapters/, no per-book folders)"
+  ],
+  "new_structural_errors": [],
+  "baseline_warnings": [
+    ".DS_Store \u2014 unexpected file at the skill root; the contract is SKILL.md plus a references/ directory",
+    "requirements-demo.txt \u2014 unexpected file at the skill root; the contract is SKILL.md plus a references/ directory",
+    "references/computational-demonstrations.md \u2014 unexpected file; the contract is reference-<slug>.md, and optionally topic-index.md",
+    "reference-byrne-neuroscience-online.md is ~13,407 tokens against a computed budget of 6,300 for 4 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-oreilly-comp-cog-neuro.md is ~12,515 tokens against a computed budget of 8,043 for 10 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-stocco-explanatory-models.md has no `**Sections**: N` in its header line, so its Step 7 budget cannot be computed \u2014 only the 14,000 cap could be checked"
+  ],
+  "current_warnings": [
+    "requirements-demo.txt \u2014 unexpected file at the skill root; the contract is SKILL.md plus a references/ directory",
+    "references/computational-demonstrations.md \u2014 unexpected file; the contract is reference-<slug>.md, and optionally topic-index.md",
+    "reference-byrne-neuroscience-online.md is ~13,407 tokens against a computed budget of 6,300 for 4 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-oreilly-comp-cog-neuro.md is ~12,515 tokens against a computed budget of 8,043 for 10 sections (text/study), over the 10% tolerance. Merge adjacent thin sections before trimming evidence.",
+    "reference-stocco-explanatory-models.md has no `**Sections**: N` in its header line, so its Step 7 budget cannot be computed \u2014 only the 14,000 cap could be checked"
+  ],
+  "preserved_prior_files": 187,
+  "changed_prior_files": [
+    "README.md",
+    "SKILL.md"
+  ],
+  "preserved_old_source_references": 21,
+  "source_references": 23,
+  "master_body_tokens": 4438,
+  "master_cap": 4500,
+  "new_reference_tokens": {
+    "reference-sterling-health-allostasis.md": 7094,
+    "reference-sterling-laughlin-neural-design.md": 7737
+  },
+  "discovery_symlink": "../..",
+  "local_link_errors": [],
+  "high_medium_scan_findings": 0,
+  "low_scan_findings_reviewed": "27 external citation URLs; three new primary research citations",
+  "equation_checks": "four executed sanity checks, all passed",
+  "quick_validate": "passed under /opt/anaconda3/bin/python; system python lacked PyYAML",
+  "behavioral_acceptance": "unrun; editorial review only"
+}

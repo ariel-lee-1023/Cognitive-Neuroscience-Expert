@@ -1,0 +1,18 @@
+{
+  "health": {
+    "unique_lines": 1917,
+    "repeated_lines": 47,
+    "input_tokens": 48230,
+    "unresolved": [],
+    "coverage_fraction": 0.3406183368869936,
+    "budget_alert": true
+  },
+  "design": {
+    "unique_lines": 1516,
+    "repeated_lines": 9,
+    "input_tokens": 41219,
+    "unresolved": [],
+    "coverage_fraction": 0.11659744654668512,
+    "budget_alert": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "unrun",
+  "reason": "No configured user-selected fresh-context evaluation endpoint/model; no baseline/core/full response records were generated.",
+  "suite_hash": "sha256:0745fff854c6b88b41678a95a74b00a76f6c6d49a057dd6517f4a3eb7af87264",
+  "content_hash": "sha256:3256cac555cdc822ed8abc6aec63d174e4614f1e3caf42c0016dd437e0d24da5",
+  "editorial_review": "evaluation.md",
+  "previous_behavioral_evidence": "preserved for its original runtime; not applied to this candidate"
+}

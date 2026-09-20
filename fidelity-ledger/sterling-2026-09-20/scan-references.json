@@ -1,0 +1,218 @@
+[
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/computational-demonstrations.md",
+    "line": 42,
+    "excerpt": "https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/AppendixD_DesignOptimization.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-beilock-body-knows-mind.md",
+    "line": 44,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/29051690/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-beilock-body-knows-mind.md",
+    "line": 71,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/34755319/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-beilock-body-knows-mind.md",
+    "line": 78,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/36266452/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-beilock-body-knows-mind.md",
+    "line": 82,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/25810452/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-brett-nipraxis.md",
+    "line": 76,
+    "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-consciousness-brain.md",
+    "line": 101,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/32409620/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-consciousness-brain.md",
+    "line": 102,
+    "excerpt": "https://www.nature.com/articles/s41586-025-08888-1"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-number-sense.md",
+    "line": 108,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/9220256/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-number-sense.md",
+    "line": 108,
+    "excerpt": "https://www.unicog.org/publications/DehaeneS2000CerebralBasesInNeuroscience.pdf"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-number-sense.md",
+    "line": 110,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/10594312/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-number-sense.md",
+    "line": 111,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/20957581/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-reading-brain.md",
+    "line": 85,
+    "excerpt": "https://dyslexiaida.org/testing-and-evaluation/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-reading-brain.md",
+    "line": 107,
+    "excerpt": "https://www.unicog.org/publications/DehaeneCohen_CulturalRecyclingCorticalMaps_Neuron2007.pdf"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-reading-brain.md",
+    "line": 108,
+    "excerpt": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5003691/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-dehaene-reading-brain.md",
+    "line": 109,
+    "excerpt": "https://www.nature.com/articles/s41588-022-01192-y"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-forstmann-model-based-cogneuro.md",
+    "line": 42,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/23087632/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-jahn-brain-book.md",
+    "line": 22,
+    "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-jahn-brain-book.md",
+    "line": 92,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/17070706/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-jahn-brain-book.md",
+    "line": 180,
+    "excerpt": "https://textbook.nipraxis.org/bonferroni_correction.html"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-klingberg-overflowing-brain.md",
+    "line": 76,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/22708717/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-klingberg-overflowing-brain.md",
+    "line": 78,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/40914122/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-series-computational-psychiatry.md",
+    "line": 7,
+    "excerpt": "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/about-rdoc"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-sterling-health-allostasis.md",
+    "line": 97,
+    "excerpt": "https://www.nature.com/articles/nn1226"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-sterling-health-allostasis.md",
+    "line": 103,
+    "excerpt": "https://www.nejm.org/doi/full/10.1056/NEJMoa1511939"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-sterling-health-allostasis.md",
+    "line": 103,
+    "excerpt": "https://pubmed.ncbi.nlm.nih.gov/31535829/"
+  },
+  {
+    "severity": "LOW",
+    "rule": "external-link",
+    "why": "links off to a host the distillation did not need",
+    "file": "/Users/AI products/Git-deliverables/Cognitive-Neuroscience-Expert/references/reference-stocco-explanatory-models.md",
+    "line": 63,
+    "excerpt": "https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html#other-forms-of-the-policy-gradient"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "status": "pass under preserved existing architecture",
+  "origin": "https://github.com/ariel-lee-1023/Cognitive-Neuroscience-Expert.git",
+  "branch": "main",
+  "runtime_matches_staging": true,
+  "preexisting_layout_errors_and_warnings_unchanged": true,
+  "symlink_target": "../..",
+  "symlink_resolves_to_canonical_root": true,
+  "reference_check_errors": 0,
+  "preserved_old_source_references": 21,
+  "full_behavioral_comparison": "unrun"
+}

@@ -6,16 +6,20 @@ When someone learns a new skill, I ask how experience changes representations an
 
 I bring the same questions to everyday situations. A student who loses track of an argument under pressure may face a different problem from a musician who begins monitoring every finger movement on stage. A gesture can make a spatial relation easier to think through; a visible note can preserve the next step across an interruption. I ask whether improvement calls for further learning, different attentional control, bodily or material support, or a change to the task environment. More than one constraint may matter.
 
+If a learning app raises test scores while keeping someone anxious about rankings, I ask what the person is learning and what maintaining that performance costs. Which demands persist outside the lesson? What do they anticipate, how do they recover, and which activities or relationships become harder to sustain? A neural account must explain useful performance within the resources and history of a living organism. A judgment about improvement must also consider the person’s opportunities to develop, belong, and contribute.
+
+I keep these questions connected without collapsing them. An efficient circuit does not prove an optimal life; an understandable adaptation can still cause harm. I distinguish measured mechanisms, explanatory hypotheses, evolutionary interpretations, and choices about what is worthwhile. I can investigate how music or gardening supports someone with memory loss while recognizing that meaningful participation matters beyond whether a memory score rises.
+
 My aim is an explanation you can use and examine. I connect a proposed change to the operation it should help, identify competing explanations, and say what outcome would make me revise the account. I distinguish fluent practice from lasting learning, supported performance from independent capacity, and improvement on a trained task from broader transfer. When the evidence is incomplete or newer findings challenge an older account, that uncertainty shapes the judgment.
 
-This repository makes that reasoning approach available as an Agent Skill. Its core establishes how I work; twenty-one book and educational references provide source-specific mechanisms, methods, and qualifications when a question needs them.
+This repository makes that reasoning approach available as an Agent Skill. Its core establishes how I work; twenty-three book and educational references provide source-specific mechanisms, methods, and qualifications when a question needs them.
 
 ## Layout
 
 ```
 SKILL.md                  # expert reasoning core + task-based loading triggers (always loaded)
 references/
-  reference-<slug>.md     # twenty-one source distillations, loaded on demand
+  reference-<slug>.md     # twenty-three source distillations, loaded on demand
   computational-demonstrations.md  # optional numerical-work guide
 fidelity-ledger/          # versioned provenance, coverage, and validation records
 demos/                    # reusable Python models, plotting entrypoint, reward input
@@ -72,6 +76,19 @@ outputs/                  # ignored generated figures and settings
 | **How the Body Knows Its Mind: The Surprising Power of the Physical Environment to Influence How You Think and Feel** — Sian Beilock, copyright 2015; supplied 2017 paperback | [Action, gesture, and material support](references/reference-beilock-body-knows-mind.md) |
 | **The Overflowing Brain: Information Overload and the Limits of Working Memory** — Torkel Klingberg, OUP 2009, translated by Neil Betteridge | [Working-memory demands and training transfer](references/reference-klingberg-overflowing-brain.md) |
 
+## Neural-design and allostasis extension (2026-09-20)
+
+The library now contains **23 source references**. Two new sources extend its explanatory scope from task mechanisms to their resource constraints and the regulation of a living organism:
+
+| Source | Reference |
+|---|---|
+| **Principles of Neural Design** — Peter Sterling & Simon Laughlin, MIT Press 2015 | [Information, noise, energy, wiring, and learning costs](references/reference-sterling-laughlin-neural-design.md) |
+| **What Is Health? Allostasis and the Evolution of Human Design** — Peter Sterling, MIT Press, copyright 2020 | [Predictive regulation, adaptation, recovery, and participation](references/reference-sterling-health-allostasis.md) |
+
+The core now asks what useful performance costs, traces demands and adaptation across timescales, and considers retained capacities and meaningful participation alongside test outcomes. The health reference preserves the book’s full argumentative arc, including individual differences, art, shared practices, and institutional conditions. Sterling’s strongest claims about optimality, disease, medication, and society remain attributed; selected primary checks constrain clinical overgeneralization and flag a leptin-direction discrepancy in the supplied text.
+
+The existing architecture, all 21 earlier source references, demonstration code, and historical evaluations are preserved. See the [Sterling fidelity ledger](fidelity-ledger/sterling-2026-09-20/README.md) for coverage, source limitations, checks, and evaluation status. Eight new scenarios were frozen before semantic extraction. Their inspection is editorial: fresh-context baseline/core/reference comparisons and behavioral regressions remain **unrun**; no measured gain in reasoning is claimed.
+
 ## Situated-cognition extension (2026-09-17)
 
 Three references add a practical diagnostic capability: decide whether improvement calls for further learning, different attentional control, bodily or material support, or a redesigned task environment. The core distinguishes skill gaps, worry competing with deliberate reasoning, and excessive monitoring of practiced movement. It separates environmental demand reduction and external support from capacity training, and assesses transfer independently of practiced-task gains.
@@ -124,11 +141,11 @@ Load the smallest set of references that can support the question. Combine mecha
 
 Structure, not summary. Each reference preserves source framework names, defines terms inline, and condenses mechanisms and procedures into worked examples and decision rules. These are editorial syntheses, not authoritative transcriptions of an author's universal advice. Preserve task, model, and measurement conditions when reusing a passage. Corrections distinguish source-specific positions from added methodological evidence; exact source verification remains incomplete for some passages.
 
-Each file also carries an explicit **coverage note** recording what was compressed or dropped and why, so the gaps are visible rather than silent.
+Coverage notes and versioned fidelity-ledger records identify what was compressed, qualified, or omitted and why. Runtime references contain the knowledge needed for use; maintainer coverage records remain outside them.
 
 ## Scope
 
-Strong on perception and attention, memory systems, PFC/BG executive function, language, reinforcement learning, sequential-sampling decision models, network/connectome analysis, ERP/EEG temporal dynamics, computational psychiatry, fMRI methodology, mechanistic explanation standards, neural encoding/decoding and information theory, causal identification, and ERP acquisition and measurement.
+Strong on perception and attention, memory systems, PFC/BG executive function, language, reinforcement learning, sequential-sampling decision models, network/connectome analysis, ERP/EEG temporal dynamics, computational psychiatry, fMRI methodology, mechanistic explanation standards, neural encoding/decoding and information theory, causal identification, ERP acquisition and measurement, neural resource tradeoffs, predictive regulation, and the relation between sustained performance, recovery, and participation.
 
 Thinner on MEG source modelling, naturalistic/large-scale datasets, deep-learning models of cognition beyond classical connectionism, and comprehensive post-2024 work (newest full source is 2024; selected Dehaene-related supplements reach 2025). `SKILL.md` instructs the agent to **name the gap and search rather than extrapolate** when a question falls outside the corpus, and to mark which part of an answer rests on the library versus on retrieval.
 

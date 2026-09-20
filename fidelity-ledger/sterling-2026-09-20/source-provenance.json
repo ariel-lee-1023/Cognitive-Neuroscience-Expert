@@ -1,0 +1,146 @@
+{
+  "revised": "2026-09-20",
+  "baseline_commit": "116d7fe808c92f063413fed986d858aab3723b25",
+  "scope": "fold-in to existing architecture; argument-wide targeted source sampling, not exhaustive source or reference verification",
+  "raw_sources_published": false,
+  "source_count_before": 21,
+  "source_count_after": 23,
+  "default_language": "English; both added sources and existing substantive corpus are English; aligns with existing AGENTS.md",
+  "extraction_mode": "technical; supplied Markdown copied by first-party standard-library extractor, without re-OCR",
+  "sources": [
+    {
+      "id": "health",
+      "filename": "What-Is-Health-Allostasis-and-the-Evolution-of-Human-Design-Peter-Sterling.md",
+      "sha256": "057fcb2bce03d59c31d40316def82fb41dccdda8a6bf778df377d6858ca034a0",
+      "format": "md",
+      "source_lines": 5628,
+      "raw_estimated_tokens": 141908,
+      "extractor_estimated_pages": 315,
+      "page_estimate_note": "length heuristic, not bibliographic pagination",
+      "canonical_detected_chapters": 0,
+      "toc_verified_chapters": 7,
+      "chapter_spans": [
+        [
+          438,
+          981
+        ],
+        [
+          982,
+          1453
+        ],
+        [
+          1454,
+          2036
+        ],
+        [
+          2037,
+          2838
+        ],
+        [
+          2839,
+          3470
+        ],
+        [
+          3471,
+          4170
+        ],
+        [
+          4171,
+          4385
+        ]
+      ],
+      "corpus_fence_body": [
+        4,
+        5631
+      ],
+      "quality": "Converted Markdown has spurious headings, fragmented figures/equations, and line-break artifacts. No page images supplied.",
+      "edition": "MIT Press copyright 2020; cataloging 2019",
+      "planned_reference_budget": 7269,
+      "reference_type": "text",
+      "depth": "study"
+    },
+    {
+      "id": "design",
+      "filename": "Principles-of-Neural-Design-Peter-Sterling-Simon-Laughlin.md",
+      "sha256": "748c7cbfa0481d91012d5c5e337e05152a654fb18e852ed696eb68e105b22b31",
+      "format": "md",
+      "source_lines": 13002,
+      "raw_estimated_tokens": 335817,
+      "extractor_estimated_pages": 746,
+      "page_estimate_note": "length heuristic, not bibliographic pagination",
+      "canonical_detected_chapters": 0,
+      "toc_verified_chapters": 15,
+      "chapter_spans": [
+        [
+          361,
+          546
+        ],
+        [
+          547,
+          1108
+        ],
+        [
+          1109,
+          1445
+        ],
+        [
+          1446,
+          2435
+        ],
+        [
+          2436,
+          2896
+        ],
+        [
+          2897,
+          3617
+        ],
+        [
+          3618,
+          4555
+        ],
+        [
+          4556,
+          5430
+        ],
+        [
+          5431,
+          6095
+        ],
+        [
+          6096,
+          6309
+        ],
+        [
+          6310,
+          7313
+        ],
+        [
+          7314,
+          8058
+        ],
+        [
+          8059,
+          8748
+        ],
+        [
+          8749,
+          9445
+        ],
+        [
+          9446,
+          9656
+        ]
+      ],
+      "corpus_fence_body": [
+        5635,
+        18636
+      ],
+      "quality": "Converted Markdown has spurious headings, fragmented figures/equations, and line-break artifacts. No page images supplied.",
+      "edition": "MIT Press copyright 2015",
+      "planned_reference_budget": 12196,
+      "reference_type": "technical",
+      "depth": "study"
+    }
+  ]
+}

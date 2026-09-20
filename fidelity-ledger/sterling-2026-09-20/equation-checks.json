@@ -1,0 +1,29 @@
+{
+  "status": "four executed mathematical sanity checks; not biological validation",
+  "checks": [
+    {
+      "case": "fixed-count spike trains",
+      "computed_messages": 6,
+      "computed_bits": 2.584962500721156,
+      "passed": true
+    },
+    {
+      "case": "unequal-probability entropy",
+      "computed_bits": 1.75,
+      "passed": true
+    },
+    {
+      "case": "flat-spectrum rate",
+      "B_Hz": 10,
+      "signal_noise_power_ratio": 3,
+      "computed_bits_per_second": 20.0,
+      "passed": true
+    },
+    {
+      "case": "CDF transformation for p(c)=2c on [0,1]",
+      "q50_input": 0.7071067811865476,
+      "computed_output": 0.5000000000000001,
+      "passed": true
+    }
+  ]
+}
