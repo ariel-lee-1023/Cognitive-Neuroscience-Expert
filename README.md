@@ -33,6 +33,8 @@ outputs/                  # ignored generated figures and settings
 
 ## Sources
 
+The library contains **23 source references**, grouped below by topic. Each source links to its distillation in `references/`.
+
 ### Mechanism & systems
 | Source | Distillation |
 |---|---|
@@ -76,14 +78,16 @@ outputs/                  # ignored generated figures and settings
 | **How the Body Knows Its Mind: The Surprising Power of the Physical Environment to Influence How You Think and Feel** — Sian Beilock, copyright 2015; supplied 2017 paperback | [Action, gesture, and material support](references/reference-beilock-body-knows-mind.md) |
 | **The Overflowing Brain: Information Overload and the Limits of Working Memory** — Torkel Klingberg, OUP 2009, translated by Neil Betteridge | [Working-memory demands and training transfer](references/reference-klingberg-overflowing-brain.md) |
 
+### Neural design & allostasis
+
+| Source | Distillation |
+|---|---|
+| **Principles of Neural Design**, Peter Sterling & Simon Laughlin, MIT Press 2015 | [Information, noise, energy, wiring, and learning costs](references/reference-sterling-laughlin-neural-design.md) |
+| **What Is Health? Allostasis and the Evolution of Human Design**, Peter Sterling, MIT Press, copyright 2020 | [Predictive regulation, adaptation, recovery, and participation](references/reference-sterling-health-allostasis.md) |
+
 ## Neural-design and allostasis extension (2026-09-20)
 
-The library now contains **23 source references**. Two new sources extend its explanatory scope from task mechanisms to their resource constraints and the regulation of a living organism:
-
-| Source | Reference |
-|---|---|
-| **Principles of Neural Design** — Peter Sterling & Simon Laughlin, MIT Press 2015 | [Information, noise, energy, wiring, and learning costs](references/reference-sterling-laughlin-neural-design.md) |
-| **What Is Health? Allostasis and the Evolution of Human Design** — Peter Sterling, MIT Press, copyright 2020 | [Predictive regulation, adaptation, recovery, and participation](references/reference-sterling-health-allostasis.md) |
+The two Sterling sources listed above extend the library’s explanatory scope from task mechanisms to their resource constraints and the regulation of a living organism.
 
 The core now asks what useful performance costs, traces demands and adaptation across timescales, and considers retained capacities and meaningful participation alongside test outcomes. The health reference preserves the book’s full argumentative arc, including individual differences, art, shared practices, and institutional conditions. Sterling’s strongest claims about optimality, disease, medication, and society remain attributed; selected primary checks constrain clinical overgeneralization and flag a leptin-direction discrepancy in the supplied text.
 
