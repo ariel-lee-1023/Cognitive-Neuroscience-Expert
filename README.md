@@ -14,114 +14,47 @@ My aim is an explanation you can use and examine. I connect a proposed change to
 
 This repository makes that reasoning approach available as an Agent Skill. Its core establishes how I work; twenty-three book and educational references provide source-specific mechanisms, methods, and qualifications when a question needs them.
 
-## Layout
+**Task → computation → neural mechanism → measurement → discriminating test.**
 
+[Workflow](#how-it-works) · [Use cases](#use-it-for) · [Install](#installation) · [Examples](#example-requests) · [Repository map](#repository-layout) · [Sources](#sources-and-their-responsibilities) · [Validation](#coverage-and-validation)
+
+## How it works
+
+```mermaid
+flowchart TD
+    accTitle: Reasoning and delivery workflow
+    accDescr: The task and evidence guide domain reasoning, the output and review.
+    input["Cognitive task, study, model or everyday difficulty"]
+    frame["Specify representations, operations and conditions"]
+    reason["Compare mechanisms, models and measurement assumptions"]
+    choice{"What would distinguish the accounts?"}
+    primary["Mechanistic explanation or research critique"]
+    alternative["Learning or task-design intervention hypothesis"]
+    review["Check competing explanations, transfer and resource costs"]
+    input --> frame --> reason --> choice
+    choice --> primary
+    choice --> alternative
+    primary --> review
+    alternative --> review
+    review -.->|Revisit when evidence changes| reason
+    classDef focus fill:#e0f2fe,stroke:#0369a1,color:#0c4a6e
+    classDef output fill:#dcfce7,stroke:#15803d,color:#14532d
+    classDef decision fill:#fef3c7,stroke:#b45309,color:#78350f
+    class frame,reason focus
+    class primary,alternative output
+    class choice,review decision
 ```
-SKILL.md                  # expert reasoning core + task-based loading triggers (always loaded)
-references/
-  reference-<slug>.md     # twenty-three source distillations, loaded on demand
-  computational-demonstrations.md  # optional numerical-work guide
-fidelity-ledger/          # versioned provenance, coverage, and validation records
-demos/                    # reusable Python models, plotting entrypoint, reward input
-tests/                    # analytical, numerical, and plotting-data checks
-scripts/check_references.py # links, provenance, known regressions, prose review flags
-maintenance/              # audit and evaluation records, not domain loading
-outputs/                  # ignored generated figures and settings
-```
 
-`SKILL.md` is the expert entrypoint; root `AGENTS.md` also guides work when this repository is opened as a project. It establishes the expert’s reasoning stance, then routes tasks to reference files that load only when needed.
+Task → computation → neural mechanism → measurement → discriminating test. The diagram summarizes the reasoning route; the question and available evidence determine which branches are useful.
 
-## Sources
+## Use it for
 
-The library contains **23 source references**, grouped below by topic. Each source links to its distillation in `references/`.
+- Explain a cognitive mechanism and identify evidence that distinguishes rival accounts.
+- Critique task, measurement and model assumptions in a study.
+- Design a qualified learning or task-environment intervention.
+- Use optional numerical demonstrations to inspect model behavior without treating a fit as proof.
 
-### Mechanism & systems
-| Source | Distillation |
-|---|---|
-| **Computational Cognitive Neuroscience, 4th ed.** — O'Reilly, Munakata, Hazy, Frank et al. ([CompCogNeuro/ed4](https://github.com/CompCogNeuro/ed4)) | [`reference-oreilly-comp-cog-neuro.md`](references/reference-oreilly-comp-cog-neuro.md) |
-| **Neuroscience Online** — Byrne, Wright, Dougherty et al., UTHealth ([nba.uth.tmc.edu](https://nba.uth.tmc.edu/neuroscience/)) | [`reference-byrne-neuroscience-online.md`](references/reference-byrne-neuroscience-online.md) |
-| **Open Neuroscience Initiative** — Austin Lim ([austinlim.com](https://www.austinlim.com/open-neuroscience-initiative)) | [`reference-lim-open-neuroscience.md`](references/reference-lim-open-neuroscience.md) |
-| **Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience** — Carl F. Craver, OUP 2007 | [`reference-craver-explaining-brain.md`](references/reference-craver-explaining-brain.md) |
-
-### Formal models
-| Source | Distillation |
-|---|---|
-| **An Introduction to Model-Based Cognitive Neuroscience, 2nd ed.** — Forstmann & Turner (eds.), Springer 2024 | [`reference-forstmann-model-based-cogneuro.md`](references/reference-forstmann-model-based-cogneuro.md) |
-| **Explanatory Computational Models in Cognitive Neuroscience** — Andrea Stocco | [`reference-stocco-explanatory-models.md`](references/reference-stocco-explanatory-models.md) |
-| **Computational Psychiatry: A Primer** — Peggy Seriès (ed.), MIT Press 2020 | [`reference-series-computational-psychiatry.md`](references/reference-series-computational-psychiatry.md) |
-| **Theoretical Neuroscience** — Peter Dayan & L. F. Abbott, supplied December 2000 chapter drafts | [`reference-dayan-abbott-theoretical-neuroscience.md`](references/reference-dayan-abbott-theoretical-neuroscience.md) |
-
-### Methods & inference
-| Source | Distillation |
-|---|---|
-| **Andy's Brain Book** — Andrew Jahn ([readthedocs](https://andysbrainbook.readthedocs.io/)) | [`reference-jahn-brain-book.md`](references/reference-jahn-brain-book.md) |
-| **Nipraxis: Practical Neuroimaging in Python** — Matthew Brett et al. ([textbook.nipraxis.org](https://textbook.nipraxis.org/)) | [`reference-brett-nipraxis.md`](references/reference-brett-nipraxis.md) |
-| **Fundamentals of Brain Network Analysis** — Fornito, Zalesky & Bullmore, Academic Press 2016 | [`reference-fornito-brain-network-analysis.md`](references/reference-fornito-brain-network-analysis.md) |
-| **The Oxford Handbook of Event-Related Potential Components** — Kappenman & Luck (eds.), OUP | [`reference-kappenman-luck-erp-components.md`](references/reference-kappenman-luck-erp-components.md) |
-| **Causal Inference: What If** — Miguel A. Hernán & James M. Robins, February 21, 2020 version | [`reference-hernan-robins-causal-inference.md`](references/reference-hernan-robins-causal-inference.md) |
-| **An Introduction to the Event-Related Potential Technique** — Steven J. Luck, supplied **first edition (2005)** | [`reference-luck-erp-technique.md`](references/reference-luck-erp-technique.md) |
-
-### Conscious access, cultural learning & number
-
-| Source | Distillation |
-|---|---|
-| **Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts** — Stanislas Dehaene, Viking 2014 | [Conscious access and GNW](references/reference-dehaene-consciousness-brain.md) |
-| **Reading in the Brain: The Science and Evolution of a Human Invention** — Stanislas Dehaene, Viking 2009 | [Reading and neuronal recycling](references/reference-dehaene-reading-brain.md) |
-| **The Number Sense: How the Mind Creates Mathematics** — Stanislas Dehaene, OUP 1997, supplied 1999 paperback | [Numerical representations and arithmetic](references/reference-dehaene-number-sense.md) |
-| **How We Learn: Why Brains Learn Better Than Any Machine … for Now** — Stanislas Dehaene, Viking 2020 | [Learning mechanisms and four pillars](references/reference-dehaene-how-we-learn.md) |
-
-### Pressure, bodily action & technological demands
-
-| Source | Distillation |
-|---|---|
-| **Choke: What the Secrets of the Brain Reveal About Getting It Right When You Have To** — Sian Beilock, 2010 publication; supplied edition leaf unverified | [Pressure, expertise, and attentional control](references/reference-beilock-choke.md) |
-| **How the Body Knows Its Mind: The Surprising Power of the Physical Environment to Influence How You Think and Feel** — Sian Beilock, copyright 2015; supplied 2017 paperback | [Action, gesture, and material support](references/reference-beilock-body-knows-mind.md) |
-| **The Overflowing Brain: Information Overload and the Limits of Working Memory** — Torkel Klingberg, OUP 2009, translated by Neil Betteridge | [Working-memory demands and training transfer](references/reference-klingberg-overflowing-brain.md) |
-
-### Neural design & allostasis
-
-| Source | Distillation |
-|---|---|
-| **Principles of Neural Design**, Peter Sterling & Simon Laughlin, MIT Press 2015 | [Information, noise, energy, wiring, and learning costs](references/reference-sterling-laughlin-neural-design.md) |
-| **What Is Health? Allostasis and the Evolution of Human Design**, Peter Sterling, MIT Press, copyright 2020 | [Predictive regulation, adaptation, recovery, and participation](references/reference-sterling-health-allostasis.md) |
-
-## Neural-design and allostasis extension (2026-09-20)
-
-The two Sterling sources listed above extend the library’s explanatory scope from task mechanisms to their resource constraints and the regulation of a living organism.
-
-The core now asks what useful performance costs, traces demands and adaptation across timescales, and considers retained capacities and meaningful participation alongside test outcomes. The health reference preserves the book’s full argumentative arc, including individual differences, art, shared practices, and institutional conditions. Sterling’s strongest claims about optimality, disease, medication, and society remain attributed; selected primary checks constrain clinical overgeneralization and flag a leptin-direction discrepancy in the supplied text.
-
-The existing architecture, all 21 earlier source references, demonstration code, and historical evaluations are preserved. See the [Sterling fidelity ledger](fidelity-ledger/sterling-2026-09-20/README.md) for coverage, source limitations, checks, and evaluation status. Eight new scenarios were frozen before semantic extraction. Their inspection is editorial: fresh-context baseline/core/reference comparisons and behavioral regressions remain **unrun**; no measured gain in reasoning is claimed.
-
-## Situated-cognition extension (2026-09-17)
-
-Three references add a practical diagnostic capability: decide whether improvement calls for further learning, different attentional control, bodily or material support, or a redesigned task environment. The core distinguishes skill gaps, worry competing with deliberate reasoning, and excessive monitoring of practiced movement. It separates environmental demand reduction and external support from capacity training, and assesses transfer independently of practiced-task gains.
-
-Selected primary studies qualify the source-era claims: gesture–speech timing, facial feedback, action–sentence compatibility, warmth priming, power-posing endpoints, expressive writing, latent working-memory representations, and cognitive-training transfer. These are bounded checks, not a comprehensive systematic review. The references label the books' positions, subsequent evidence, and cross-book synthesis separately.
-
-Examples: compare an algebra student's lost intermediate steps with a musician's overmonitored finger movements; design a gesture that represents an equivalence relation; decide whether an interrupted analyst needs more practice, fewer notifications, or a visible resumption cue. Supported performance can be useful without independent capacity growth.
-
-The existing repository architecture, all 18 earlier references, demonstrations, and historical evaluations are preserved. See the [fidelity and validation record](fidelity-ledger/situated-cognition-2026-09-17/README.md). Scenario review is editorial; fresh-context baseline/core/reference behavioral comparisons are **unrun**, so no measured model-performance gain is claimed.
-
-## Dehaene extension (2026-09-15)
-
-Four source-specific references add mechanisms and judgment for conscious access, literacy, numerical cognition, and learning. The core now distinguishes awareness from report, treats neuronal recycling as constrained developmental change, decomposes numerical performance, and separates plausible teaching mechanisms from measured retention, transfer, and intervention effects.
-
-Selected primary research qualifies the book-era accounts: P3b/report dissociations and the 2025 adversarial GNWT/IIT test; connectivity preceding word selectivity and later dyslexia genetics; infant large-number discrimination and parietal task decomposition. These are identified as supplements inside the relevant book references, not counted as additional full-source distillations or a comprehensive literature review. The original Number Sense edition is not silently replaced with its later revision, and How We Learn's AI comparisons are not current rankings.
-
-Examples: explain why a masked word can prime without being consciously reported; compare neuronal recycling with an implemented reading model; design delayed retrieval for a new notation; distinguish number naming, approximate quantity, and arithmetic strategies before interpreting an error. Connections to technological mediation are explicitly editorial hypotheses, not conclusions established by localization.
-
-The existing architecture, 14 prior references, demonstrations, and historical evaluation records are preserved. See the [Dehaene fidelity and validation record](fidelity-ledger/dehaene-2026-09-15/README.md) for source scope, sampled coverage, and the exact extent of behavioral evaluation.
-
-## Four-book extension (2026-09-12)
-
-The extension strengthens four linked capabilities: distinguishing a mechanism sketch from an established biological mechanism; deriving neural coding, dynamics, and learning results with their assumptions; identifying causal effects before estimating them; and tracing ERP conclusions through experimental design, acquisition, preprocessing, and measurement. The core now uses these distinctions in its reasoning, with four new source references and combined-loading guidance.
-
-The source files determine the edition labels. In particular, the provided Luck book is the **2005 first edition**, although the requested capability table names the second edition. No second-edition additions are claimed. Dayan–Abbott is a December 2000 draft rather than a verified final-edition transcription. Equations were reconstructed from imperfect Markdown and checked selectively; chapter/section locators and limitations accompany the methods.
-
-The repository keeps its existing root `SKILL.md` and one canonical reference per source. `.agents/skills/cognitive-neuroscience` points to the root. Existing local demonstrations and maintenance records remain in place; new provenance, coverage, reading, and validation records are in [fidelity-ledger](fidelity-ledger/README.md). The historical [2026-09-12 acceptance report](fidelity-ledger/acceptance-report.md) records fresh-context answers for all 10 prepared cases and two mathematical regressions, with model settings and criterion-level review. All 12 selected answers passed that review. Baseline/core-only comparative arms remain **unrun**, so those results concern the September 12 candidate, not the present extension or measured reasoning improvement.
-
-## Install
+## Installation
 
 Clone the repository, then install it in your agent host's configured skill directory:
 
@@ -131,29 +64,7 @@ git clone https://github.com/ariel-lee-1023/Cognitive-Neuroscience-Expert.git co
 
 Keep the complete `SKILL.md` and `references/` tree together; include `demos/` and `requirements-demo.txt` to run the optional examples. Match the installed folder name to the `name:` field in `SKILL.md`.
 
-## Usage
-
-```
-cognitive-neuroscience                          # reason from the expert core
-cognitive-neuroscience about <topic>            # answer using relevant source depth
-cognitive-neuroscience for <book>               # open one distillation directly
-```
-
-Load the smallest set of references that can support the question. Combine mechanism, formal-model, and method sources when the claim crosses those levels; a narrow question may need only one module.
-
-## What kind of distillation this is
-
-Structure, not summary. Each reference preserves source framework names, defines terms inline, and condenses mechanisms and procedures into worked examples and decision rules. These are editorial syntheses, not authoritative transcriptions of an author's universal advice. Preserve task, model, and measurement conditions when reusing a passage. Corrections distinguish source-specific positions from added methodological evidence; exact source verification remains incomplete for some passages.
-
-Coverage notes and versioned fidelity-ledger records identify what was compressed, qualified, or omitted and why. Runtime references contain the knowledge needed for use; maintainer coverage records remain outside them.
-
-## Scope
-
-Strong on perception and attention, memory systems, PFC/BG executive function, language, reinforcement learning, sequential-sampling decision models, network/connectome analysis, ERP/EEG temporal dynamics, computational psychiatry, fMRI methodology, mechanistic explanation standards, neural encoding/decoding and information theory, causal identification, ERP acquisition and measurement, neural resource tradeoffs, predictive regulation, and the relation between sustained performance, recovery, and participation.
-
-Thinner on MEG source modelling, naturalistic/large-scale datasets, deep-learning models of cognition beyond classical connectionism, and comprehensive post-2024 work (newest full source is 2024; selected Dehaene-related supplements reach 2025). `SKILL.md` instructs the agent to **name the gap and search rather than extrapolate** when a question falls outside the corpus, and to mark which part of an answer rests on the library versus on retrieval.
-
-## Optional Python demonstrations
+### Optional Python demonstrations
 
 The expert core has no Python dependency. For calculations, use Python 3.10–3.12 (execution tested with 3.12), create a virtual environment, and install the two pinned packages:
 
@@ -184,7 +95,202 @@ The commands generate five PNG figures, three JSON result/settings records, and 
 
 Read the [optional guide](references/computational-demonstrations.md) for equations, assumptions, source locators, and limitations. These are illustrative calculations, not fitted empirical findings or clinical tools. A recovered teaching-model parameter does not establish an individual's biological mechanism. The diffusion implementation has discretization bias; the timing example assumes a known linear HRF and iid noise and does not prove jitter superiority.
 
-## Verification and maintenance
+## Example requests
+
+> A student loses intermediate steps under pressure while a musician overmonitors a practiced movement. Compare the mechanisms and interventions.
+
+> This model fits behavior. What observations would distinguish it from an alternative?
+
+> Our app improves practiced-task scores. What would establish retention or broader transfer?
+
+```
+cognitive-neuroscience                          # reason from the expert core
+cognitive-neuroscience about <topic>            # answer using relevant source depth
+cognitive-neuroscience for <book>               # open one distillation directly
+```
+
+Load the smallest set of references that can support the question. Combine mechanism, formal-model, and method sources when the claim crosses those levels; a narrow question may need only one module.
+
+## Repository layout
+
+```mermaid
+flowchart LR
+    accTitle: Repository structure and runtime loading
+    accDescr: The canonical core routes to references, while supporting files and maintenance records have separate roles.
+    root["Cognitive-Neuroscience-Expert/"]
+    root --> core["SKILL.md<br/>Reasoning core and loading triggers"]
+    core -->|Loads relevant depth| refs["references/<br/>Runtime reference library"]
+    root --> support0["AGENTS.md<br/>Project guidance"]
+    root --> support1["fidelity-ledger/<br/>Provenance and evaluation"]
+    root --> support2["maintenance/<br/>Maintenance records"]
+    root --> support3["demos/<br/>Optional Python demonstrations"]
+    root --> support4["scripts/<br/>Optional local tools"]
+    root --> support5["LICENSE<br/>License"]
+    root --> alias0[".agents/skills/cognitive-neuroscience"]
+    alias0 -.->|Discovery alias| root
+    classDef runtime fill:#e0f2fe,stroke:#0369a1,color:#0c4a6e
+    classDef support fill:#f1f5f9,stroke:#64748b,color:#334155
+    class core,refs runtime
+    class support0,support1,support2,support3,support4,support5 support
+```
+
+[Expert core](SKILL.md) · [Reference library](references/) · [Project guidance](AGENTS.md) · [Provenance and evaluation](fidelity-ledger/) · [Maintenance records](maintenance/) · [Optional Python demonstrations](demos/) · [Optional local tools](scripts/) · [License](LICENSE).
+
+The map reflects the repository’s existing architecture. Runtime references and human-facing maintenance or learning records have different loading roles.
+
+```
+SKILL.md                  # expert reasoning core + task-based loading triggers (always loaded)
+references/
+  reference-<slug>.md     # twenty-three source distillations, loaded on demand
+  computational-demonstrations.md  # optional numerical-work guide
+fidelity-ledger/          # versioned provenance, coverage, and validation records
+demos/                    # reusable Python models, plotting entrypoint, reward input
+tests/                    # analytical, numerical, and plotting-data checks
+scripts/check_references.py # links, provenance, known regressions, prose review flags
+maintenance/              # audit and evaluation records, not domain loading
+outputs/                  # ignored generated figures and settings
+```
+
+`SKILL.md` is the expert entrypoint; root `AGENTS.md` also guides work when this repository is opened as a project. It establishes the expert’s reasoning stance, then routes tasks to reference files that load only when needed.
+
+## Sources and their responsibilities
+
+```mermaid
+flowchart LR
+    accTitle: Sources and their primary responsibilities
+    accDescr: Task responsibilities connect the expert to its source material; groupings do not imply author agreement.
+    core["Expert core and task router"]
+    core --> g0["Mechanisms and systems"]
+    g0 --> s0_0["O’Reilly et al. · Computational Cognitive Neuroscience<br/>Byrne et al. · Neuroscience Online<br/>Lim · Open Neuroscience Initiative"]
+    g0 --> s0_1["Craver · Explaining the Brain"]
+    classDef group0 fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class g0,s0_0,s0_1 group0
+    core --> g1["Formal models"]
+    g1 --> s1_0["Forstmann &amp; Turner, eds. · Model-Based Cognitive Neuroscience<br/>Stocco · Explanatory Computational Models<br/>Seriès, ed. · Computational Psychiatry"]
+    g1 --> s1_1["Dayan &amp; Abbott · Theoretical Neuroscience"]
+    classDef group1 fill:#dcfce7,stroke:#15803d,color:#14532d
+    class g1,s1_0,s1_1 group1
+    core --> g2["Methods and inference"]
+    g2 --> s2_0["Jahn · Andy’s Brain Book<br/>Brett et al. · Nipraxis<br/>Fornito et al. · Brain Network Analysis"]
+    g2 --> s2_1["Kappenman &amp; Luck, eds. · ERP Components<br/>Hernán &amp; Robins · Causal Inference<br/>Luck · ERP Technique"]
+    classDef group2 fill:#fef3c7,stroke:#b45309,color:#78350f
+    class g2,s2_0,s2_1 group2
+    core --> g3["Access and learning"]
+    g3 --> s3_0["Dehaene · Consciousness and the Brain<br/>Dehaene · Reading in the Brain<br/>Dehaene · The Number Sense"]
+    g3 --> s3_1["Dehaene · How We Learn"]
+    classDef group3 fill:#e0f2fe,stroke:#0369a1,color:#0c4a6e
+    class g3,s3_0,s3_1 group3
+    core --> g4["Situated performance"]
+    g4 --> s4_0["Beilock · Choke<br/>Beilock · How the Body Knows Its Mind<br/>Klingberg · The Overflowing Brain"]
+    classDef group4 fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    class g4,s4_0 group4
+    core --> g5["Neural costs and regulation"]
+    g5 --> s5_0["Sterling &amp; Laughlin · Principles of Neural Design<br/>Sterling · What Is Health?"]
+    classDef group5 fill:#dcfce7,stroke:#15803d,color:#14532d
+    class g5,s5_0 group5
+    classDef focus fill:#e0f2fe,stroke:#0369a1,color:#0c4a6e
+    class core focus
+```
+
+Connections show primary contributions, not a required reading order or agreement among authors. Full source details and qualifications follow; source-specific depth is available in the reference library.
+
+The library contains **23 source references**, grouped below by topic. Each source links to its distillation in `references/`.
+
+#### Mechanism & systems
+| Source | Distillation |
+|---|---|
+| **Computational Cognitive Neuroscience, 4th ed.** — O'Reilly, Munakata, Hazy, Frank et al. ([CompCogNeuro/ed4](https://github.com/CompCogNeuro/ed4)) | [`reference-oreilly-comp-cog-neuro.md`](references/reference-oreilly-comp-cog-neuro.md) |
+| **Neuroscience Online** — Byrne, Wright, Dougherty et al., UTHealth ([nba.uth.tmc.edu](https://nba.uth.tmc.edu/neuroscience/)) | [`reference-byrne-neuroscience-online.md`](references/reference-byrne-neuroscience-online.md) |
+| **Open Neuroscience Initiative** — Austin Lim ([austinlim.com](https://www.austinlim.com/open-neuroscience-initiative)) | [`reference-lim-open-neuroscience.md`](references/reference-lim-open-neuroscience.md) |
+| **Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience** — Carl F. Craver, OUP 2007 | [`reference-craver-explaining-brain.md`](references/reference-craver-explaining-brain.md) |
+
+#### Formal models
+| Source | Distillation |
+|---|---|
+| **An Introduction to Model-Based Cognitive Neuroscience, 2nd ed.** — Forstmann & Turner (eds.), Springer 2024 | [`reference-forstmann-model-based-cogneuro.md`](references/reference-forstmann-model-based-cogneuro.md) |
+| **Explanatory Computational Models in Cognitive Neuroscience** — Andrea Stocco | [`reference-stocco-explanatory-models.md`](references/reference-stocco-explanatory-models.md) |
+| **Computational Psychiatry: A Primer** — Peggy Seriès (ed.), MIT Press 2020 | [`reference-series-computational-psychiatry.md`](references/reference-series-computational-psychiatry.md) |
+| **Theoretical Neuroscience** — Peter Dayan & L. F. Abbott, supplied December 2000 chapter drafts | [`reference-dayan-abbott-theoretical-neuroscience.md`](references/reference-dayan-abbott-theoretical-neuroscience.md) |
+
+#### Methods & inference
+| Source | Distillation |
+|---|---|
+| **Andy's Brain Book** — Andrew Jahn ([readthedocs](https://andysbrainbook.readthedocs.io/)) | [`reference-jahn-brain-book.md`](references/reference-jahn-brain-book.md) |
+| **Nipraxis: Practical Neuroimaging in Python** — Matthew Brett et al. ([textbook.nipraxis.org](https://textbook.nipraxis.org/)) | [`reference-brett-nipraxis.md`](references/reference-brett-nipraxis.md) |
+| **Fundamentals of Brain Network Analysis** — Fornito, Zalesky & Bullmore, Academic Press 2016 | [`reference-fornito-brain-network-analysis.md`](references/reference-fornito-brain-network-analysis.md) |
+| **The Oxford Handbook of Event-Related Potential Components** — Kappenman & Luck (eds.), OUP | [`reference-kappenman-luck-erp-components.md`](references/reference-kappenman-luck-erp-components.md) |
+| **Causal Inference: What If** — Miguel A. Hernán & James M. Robins, February 21, 2020 version | [`reference-hernan-robins-causal-inference.md`](references/reference-hernan-robins-causal-inference.md) |
+| **An Introduction to the Event-Related Potential Technique** — Steven J. Luck, supplied **first edition (2005)** | [`reference-luck-erp-technique.md`](references/reference-luck-erp-technique.md) |
+
+#### Conscious access, cultural learning & number
+
+| Source | Distillation |
+|---|---|
+| **Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts** — Stanislas Dehaene, Viking 2014 | [Conscious access and GNW](references/reference-dehaene-consciousness-brain.md) |
+| **Reading in the Brain: The Science and Evolution of a Human Invention** — Stanislas Dehaene, Viking 2009 | [Reading and neuronal recycling](references/reference-dehaene-reading-brain.md) |
+| **The Number Sense: How the Mind Creates Mathematics** — Stanislas Dehaene, OUP 1997, supplied 1999 paperback | [Numerical representations and arithmetic](references/reference-dehaene-number-sense.md) |
+| **How We Learn: Why Brains Learn Better Than Any Machine … for Now** — Stanislas Dehaene, Viking 2020 | [Learning mechanisms and four pillars](references/reference-dehaene-how-we-learn.md) |
+
+#### Pressure, bodily action & technological demands
+
+| Source | Distillation |
+|---|---|
+| **Choke: What the Secrets of the Brain Reveal About Getting It Right When You Have To** — Sian Beilock, 2010 publication; supplied edition leaf unverified | [Pressure, expertise, and attentional control](references/reference-beilock-choke.md) |
+| **How the Body Knows Its Mind: The Surprising Power of the Physical Environment to Influence How You Think and Feel** — Sian Beilock, copyright 2015; supplied 2017 paperback | [Action, gesture, and material support](references/reference-beilock-body-knows-mind.md) |
+| **The Overflowing Brain: Information Overload and the Limits of Working Memory** — Torkel Klingberg, OUP 2009, translated by Neil Betteridge | [Working-memory demands and training transfer](references/reference-klingberg-overflowing-brain.md) |
+
+#### Neural design & allostasis
+
+| Source | Distillation |
+|---|---|
+| **Principles of Neural Design**, Peter Sterling & Simon Laughlin, MIT Press 2015 | [Information, noise, energy, wiring, and learning costs](references/reference-sterling-laughlin-neural-design.md) |
+| **What Is Health? Allostasis and the Evolution of Human Design**, Peter Sterling, MIT Press, copyright 2020 | [Predictive regulation, adaptation, recovery, and participation](references/reference-sterling-health-allostasis.md) |
+
+## Coverage and validation
+
+### Neural-design and allostasis extension (2026-09-20)
+
+The two Sterling sources listed above extend the library’s explanatory scope from task mechanisms to their resource constraints and the regulation of a living organism.
+
+The core now asks what useful performance costs, traces demands and adaptation across timescales, and considers retained capacities and meaningful participation alongside test outcomes. The health reference preserves the book’s full argumentative arc, including individual differences, art, shared practices, and institutional conditions. Sterling’s strongest claims about optimality, disease, medication, and society remain attributed; selected primary checks constrain clinical overgeneralization and flag a leptin-direction discrepancy in the supplied text.
+
+The existing architecture, all 21 earlier source references, demonstration code, and historical evaluations are preserved. See the [Sterling fidelity ledger](fidelity-ledger/sterling-2026-09-20/README.md) for coverage, source limitations, checks, and evaluation status. Eight new scenarios were frozen before semantic extraction. Their inspection is editorial: fresh-context baseline/core/reference comparisons and behavioral regressions remain **unrun**; no measured gain in reasoning is claimed.
+
+### Situated-cognition extension (2026-09-17)
+
+Three references add a practical diagnostic capability: decide whether improvement calls for further learning, different attentional control, bodily or material support, or a redesigned task environment. The core distinguishes skill gaps, worry competing with deliberate reasoning, and excessive monitoring of practiced movement. It separates environmental demand reduction and external support from capacity training, and assesses transfer independently of practiced-task gains.
+
+Selected primary studies qualify the source-era claims: gesture–speech timing, facial feedback, action–sentence compatibility, warmth priming, power-posing endpoints, expressive writing, latent working-memory representations, and cognitive-training transfer. These are bounded checks, not a comprehensive systematic review. The references label the books' positions, subsequent evidence, and cross-book synthesis separately.
+
+Examples: compare an algebra student's lost intermediate steps with a musician's overmonitored finger movements; design a gesture that represents an equivalence relation; decide whether an interrupted analyst needs more practice, fewer notifications, or a visible resumption cue. Supported performance can be useful without independent capacity growth.
+
+The existing repository architecture, all 18 earlier references, demonstrations, and historical evaluations are preserved. See the [fidelity and validation record](fidelity-ledger/situated-cognition-2026-09-17/README.md). Scenario review is editorial; fresh-context baseline/core/reference behavioral comparisons are **unrun**, so no measured model-performance gain is claimed.
+
+### Dehaene extension (2026-09-15)
+
+Four source-specific references add mechanisms and judgment for conscious access, literacy, numerical cognition, and learning. The core now distinguishes awareness from report, treats neuronal recycling as constrained developmental change, decomposes numerical performance, and separates plausible teaching mechanisms from measured retention, transfer, and intervention effects.
+
+Selected primary research qualifies the book-era accounts: P3b/report dissociations and the 2025 adversarial GNWT/IIT test; connectivity preceding word selectivity and later dyslexia genetics; infant large-number discrimination and parietal task decomposition. These are identified as supplements inside the relevant book references, not counted as additional full-source distillations or a comprehensive literature review. The original Number Sense edition is not silently replaced with its later revision, and How We Learn's AI comparisons are not current rankings.
+
+Examples: explain why a masked word can prime without being consciously reported; compare neuronal recycling with an implemented reading model; design delayed retrieval for a new notation; distinguish number naming, approximate quantity, and arithmetic strategies before interpreting an error. Connections to technological mediation are explicitly editorial hypotheses, not conclusions established by localization.
+
+The existing architecture, 14 prior references, demonstrations, and historical evaluation records are preserved. See the [Dehaene fidelity and validation record](fidelity-ledger/dehaene-2026-09-15/README.md) for source scope, sampled coverage, and the exact extent of behavioral evaluation.
+
+### Four-book extension (2026-09-12)
+
+The extension strengthens four linked capabilities: distinguishing a mechanism sketch from an established biological mechanism; deriving neural coding, dynamics, and learning results with their assumptions; identifying causal effects before estimating them; and tracing ERP conclusions through experimental design, acquisition, preprocessing, and measurement. The core now uses these distinctions in its reasoning, with four new source references and combined-loading guidance.
+
+The source files determine the edition labels. In particular, the provided Luck book is the **2005 first edition**, although the requested capability table names the second edition. No second-edition additions are claimed. Dayan–Abbott is a December 2000 draft rather than a verified final-edition transcription. Equations were reconstructed from imperfect Markdown and checked selectively; chapter/section locators and limitations accompany the methods.
+
+The repository keeps its existing root `SKILL.md` and one canonical reference per source. `.agents/skills/cognitive-neuroscience` points to the root. Existing local demonstrations and maintenance records remain in place; new provenance, coverage, reading, and validation records are in [fidelity-ledger](fidelity-ledger/README.md). The historical [2026-09-12 acceptance report](fidelity-ledger/acceptance-report.md) records fresh-context answers for all 10 prepared cases and two mathematical regressions, with model settings and criterion-level review. All 12 selected answers passed that review. Baseline/core-only comparative arms remain **unrun**, so those results concern the September 12 candidate, not the present extension or measured reasoning improvement.
+
+### What kind of distillation this is
+
+Structure, not summary. Each reference preserves source framework names, defines terms inline, and condenses mechanisms and procedures into worked examples and decision rules. These are editorial syntheses, not authoritative transcriptions of an author's universal advice. Preserve task, model, and measurement conditions when reusing a passage. Corrections distinguish source-specific positions from added methodological evidence; exact source verification remains incomplete for some passages.
+
+Coverage notes and versioned fidelity-ledger records identify what was compressed, qualified, or omitted and why. Runtime references contain the knowledge needed for use; maintainer coverage records remain outside them.
+
+### Verification and maintenance
 
 ```bash
 python -m unittest discover -s tests -v
@@ -197,9 +303,17 @@ Local checks validate links, required provenance fields, and known problematic f
 
 The [maintenance audit](maintenance/audit/README.md) explains the correction process and unresolved source checks. The [validation report](maintenance/validation.md) records executed checks and limitations; [conversation evaluations](maintenance/evaluations/README.md) retain prompts, actual responses, and reviewer assessments. These records are not part of routine domain loading.
 
-## Provenance
+### Provenance
 
 Built with [`books-to-skill-refs`](https://github.com/ariel-lee-1023/Books-to-Skill-Refs), which distills multiple sources in one pass into a single shared, cross-referenced library. Web-hosted sources were fetched and consolidated before extraction; every reference file was checked against the skill's own contract validator and injected-instruction scanner.
+
+## Limits
+
+### Scope
+
+Strong on perception and attention, memory systems, PFC/BG executive function, language, reinforcement learning, sequential-sampling decision models, network/connectome analysis, ERP/EEG temporal dynamics, computational psychiatry, fMRI methodology, mechanistic explanation standards, neural encoding/decoding and information theory, causal identification, ERP acquisition and measurement, neural resource tradeoffs, predictive regulation, and the relation between sustained performance, recovery, and participation.
+
+Thinner on MEG source modelling, naturalistic/large-scale datasets, deep-learning models of cognition beyond classical connectionism, and comprehensive post-2024 work (newest full source is 2024; selected Dehaene-related supplements reach 2025). `SKILL.md` instructs the agent to **name the gap and search rather than extrapolate** when a question falls outside the corpus, and to mark which part of an answer rests on the library versus on retrieval.
 
 ## License
 
