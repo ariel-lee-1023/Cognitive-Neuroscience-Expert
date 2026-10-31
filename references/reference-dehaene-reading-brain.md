@@ -52,7 +52,7 @@ The **visual word form area (VWFA)** is a functionally identified region of left
 ### Chapter 4 — Inventing reading: cultural forms meet neural constraints
 **Locator:** “The Universal Features of Writing Systems,” “Artificial Signs and Natural Shapes,” “From Counting to Writing,” “The Limits of Pictography,” “The Alphabet: A Great Leap Forward.”
 
-Writing systems use manageable combinations of strokes, junctions, and linguistic units. Dehaene argues that some recurring forms fit the visual system's preexisting repertoire and thus survive cultural transmission more readily. Shape similarity between letters and natural contours is a hypothesis about learnability constraints, not proof that a script's entire history was inevitable.
+Writing systems use manageable combinations of strokes, junctions, and linguistic units. Some recurring forms may fit the visual system's preexisting repertoire and thus survive cultural transmission more readily. Shape similarity between letters and natural contours is a hypothesis about learnability constraints, not proof that a script's entire history was inevitable.
 
 **Pictography versus language encoding:** an image can suggest an object, but a productive writing system must support linguistic distinctions and combinations beyond a fixed list of pictured objects. Rebus and sound-based strategies help move beyond pictorial resemblance. Alphabetic organization makes selected sound contrasts explicit; it is not the sole possible route to literacy.
 
@@ -67,14 +67,14 @@ Writing systems use manageable combinations of strokes, junctions, and linguisti
 
 **Orthographic learning and automatization:** repeated accurate decoding builds efficient access to larger familiar units and word forms. Fluency reduces demands on controlled processing, leaving resources for comprehension. This does not mean every skilled reader processes every word at the same speed or that practice automatically transfers to unfamiliar scripts.
 
-**Instructional commitment:** Dehaene argues for explicit teaching of relevant print-to-sound correspondences, particularly in alphabetic learning, and against relying on global word shape or unguided immersion to discover the code. This is not a case for decoding without meaning: his suggestions explicitly include understandable words/sentences and retelling or paraphrase. Match instruction to the script, learner, prior knowledge, and observed errors; the book does not prescribe an entire evidence-certified curriculum.
+**Instructional commitment:** Relevant print-to-sound correspondences should be taught explicitly, particularly in alphabetic learning; global word shape or unguided immersion should not substitute for learning the code. This is not a case for decoding without meaning: the proposed instruction explicitly includes understandable words/sentences and retelling or paraphrase. Match instruction to the script, learner, prior knowledge, and observed errors; the book does not prescribe an entire evidence-certified curriculum.
 
-**Competition and transfer:** recycling can change neighboring functions, but a limited cortical territory is not evidence that every acquired literacy skill causes an equivalent loss elsewhere. The book proposes tests of competition involving nonwritten categories. Hypothesized lost animal-track expertise and broad stories about oral cultures remain conjectures; compare suitably matched groups or longitudinal change before claiming a cost.
+**Competition and transfer:** recycling can change neighboring functions, but a limited cortical territory is not evidence that every acquired literacy skill causes an equivalent loss elsewhere. The proposed tests examine competition involving nonwritten categories. Hypothesized lost animal-track expertise and broad stories about oral cultures remain conjectures; compare suitably matched groups or longitudinal change before claiming a cost.
 
 ### Chapter 6 — The dyslexic brain: hypotheses without biological fatalism
 **Locator:** “What Is Dyslexia?,” “Phonological Trouble,” “The Biological Unity of Dyslexia,” “Neuronal Migrations,” “The Genetics of Dyslexia,” “Overcoming Dyslexia.”
 
-Dehaene emphasizes difficulty in the processes supporting efficient word decoding, particularly phonological processing, while discussing other possible profiles. Poor reading is an outcome with multiple contributing conditions. Word/nonword accuracy, fluency, spelling, oral language, instruction, and developmental history help characterize the problem; one reading score does not identify a neural mechanism.
+Difficulties can affect the processes supporting efficient word decoding, particularly phonological processing; other profiles are also possible. Poor reading is an outcome with multiple contributing conditions. Word/nonword accuracy, fluency, spelling, oral language, instruction, and developmental history help characterize the problem; one reading score does not identify a neural mechanism.
 
 **Developmental evidence:** a precursor measured before formal literacy is more informative about temporal order than a cross-sectional difference between experienced good and poor readers. But a predictor may share causes with later reading; it is not necessarily the mechanism to treat. Acquired alexia and developmental dyslexia are distinct explanatory targets.
 
@@ -96,7 +96,7 @@ The book contrasts ventral identity representations with dorsal spatial/action p
 ### Chapter 8 — Toward a culture of neurons: preserve the bridge
 **Locator:** “Resolving the Reading Paradox,” “Neuronal Recycling and Cerebral Modules,” “Why Are We the Only Cultural Species?,” “Reading Other Minds,” “A Global Neuronal Workspace.”
 
-Dehaene extends recycling toward a theory of cultural acquisition and combines it with ideas about shared intentions and conscious recombination. These broader proposals are less directly constrained than the reading case. Cultural transmission involves goals, interaction, history, and institutions as well as learnable neural representations; the book itself rejects a simple one-gene or one-molecule reduction.
+Recycling extends here toward a theory of cultural acquisition, combined with shared intentions and conscious recombination. These broader proposals are less directly constrained than the reading case. Cultural transmission involves goals, interaction, history, and institutions as well as learnable neural representations; the book itself rejects a simple one-gene or one-molecule reduction.
 
 **Editorial bridge to technological mediation:** use recycling to formulate a biological hypothesis about how a learned tool reorganizes discriminations and actions. Separately examine how the practice changes meaning, attention, or social relations. Neither argument establishes the other. For example, a new notation may alter perceptual fluency without explaining who controls its use or which values its adoption changes. This connection is a synthesis, not an attributed Dehaene–postphenomenology theory.
 

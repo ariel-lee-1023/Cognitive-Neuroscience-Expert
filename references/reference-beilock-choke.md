@@ -54,11 +54,11 @@ The implication is conditional: vulnerability depends on the strategy used and i
 ### Chapter 6 — The choking cure has intervention-specific conditions
 **Locators:** “Writing Can Do Wonders,” “The Calm, Cool, and Collected Brain,” “Thinking Differently,” “Seeing Is Believing.”
 
-**Expressive writing:** the book describes writing privately about thoughts and feelings concerning an upcoming test for about ten minutes before performance. The proposed mechanism is reduced intrusive worry, leaving resources for the task. This differs from writing intermediate answers during the task, and from values affirmation addressing a threat to self-worth. Improvement after writing does not by itself show that working memory mediated the change.
+**Expressive writing:** the reported procedure involves writing privately about thoughts and feelings concerning an upcoming test for about ten minutes before performance. The proposed mechanism is reduced intrusive worry, leaving resources for the task. This differs from writing intermediate answers during the task, and from values affirmation addressing a threat to self-worth. Improvement after writing does not by itself show that working memory mediated the change.
 
 **Later evidence check:** Myers, Davis & Chan (2021) alternated intervention and control tasks across four authentic college exams; expressive writing did not reduce anxiety or improve performance in that setting. Thus a low-cost trial may be reasonable when worry is salient, but guaranteed score gains and the book's categorical cure language are unwarranted. [Primary study](https://doi.org/10.1186/s41235-021-00309-x).
 
-**Reappraisal, meditation, and imagery:** the book proposes changing interpretations of pressure, practicing attentional regulation, and rehearsing success. Distinguish a proposed mechanism, a subjective improvement, and demonstrated task benefit. Do not infer durable attentional capacity from one calmer session, or prescribe the book's clinical analogies as treatment. Establish the task-specific benefit before using a new routine in a consequential performance.
+**Reappraisal, meditation, and imagery:** the proposed practices change interpretations of pressure, train attentional regulation, and rehearse success. Distinguish a proposed mechanism, a subjective improvement, and demonstrated task benefit. Do not infer durable attentional capacity from one calmer session, or prescribe the book's clinical analogies as treatment. Establish the task-specific benefit before using a new routine in a consequential performance.
 
 ### Chapters 7–8 — Protect coordination without abandoning strategic attention
 **Locators:** “Degrees of Freedom,” “When Paying Attention Is a Good Thing”; “Just Do It!,” “Distract Yourself,” “Focus on the Goal.”
@@ -74,7 +74,7 @@ The implication is conditional: vulnerability depends on the strategy used and i
 ### Chapter 7 exception and Chapter 8 teaching boundary
 **Locators:** “The Yips”; “Those Who Can Do Shouldn't Teach.”
 
-The book distinguishes performance-related yips from possible focal dystonia. Preserve that alternative: recurrent involuntary jerks, tremor, or freezing cannot be classified as overthinking from a performance story. Its Type I/II distinction is historical and does not constitute a clinical assessment or exhaust mixed presentations. Persistent movement symptoms warrant appropriate assessment rather than repeated attention experiments alone.
+Performance-related yips differ from possible focal dystonia. Preserve that alternative: recurrent involuntary jerks, tremor, or freezing cannot be classified as overthinking from a performance story. Its Type I/II distinction is historical and does not constitute a clinical assessment or exhaust mixed presentations. Persistent movement symptoms warrant appropriate assessment rather than repeated attention experiments alone.
 
 Verbalizing mechanics can disrupt some expert performances; it does not follow that experts cannot teach. Demonstration, decomposed practice, and feedback can support learning, with detailed analysis separated from the next fluent execution. The provocative chapter heading is not a universal rule about coaching competence.
 

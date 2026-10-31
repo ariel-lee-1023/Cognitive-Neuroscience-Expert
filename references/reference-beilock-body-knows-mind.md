@@ -26,7 +26,7 @@ This table is an **editorial mechanism map**, not the author's named taxonomy. A
 ### Chapter 3 — Enactment links words with events
 **Locator:** Glenberg's “Breakfast on the Farm” study and mathematical story problems.
 
-The book describes children acting out sentences with objects versus rereading them. Enactment can make agents, actions, objects, and causal sequences explicit, supplying a richer event representation for comprehension. The mechanism is more specific than “children learn by moving”: moving a figurine to implement a relation differs from exercising while hearing an unrelated sentence.
+The reported comparison contrasts children acting out sentences with objects and rereading them. Enactment can make agents, actions, objects, and causal sequences explicit, supplying a richer event representation for comprehension. The mechanism is more specific than “children learn by moving”: moving a figurine to implement a relation differs from exercising while hearing an unrelated sentence.
 
 **How to apply:** identify the relation the learner misses; choose an action that represents it; connect action to words/symbols; ask for an explanation; test a new example after removing the props. Material support is useful in its own right when the real task permits it. Removing support tests a different goal—what the learner can now do independently.
 

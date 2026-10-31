@@ -5,7 +5,7 @@
 
 ## Mental Model (read first)
 
-A neural mechanism must perform a useful task using real, noisy components at affordable speed, volume, and energy cost. Sterling and Laughlin ask why a particular organization makes sense under those constraints, tracing dependencies from proteins and synapses to circuits, long connections, learning, and behavior. Their central comparison is the additional useful information or performance obtained for an additional investment, including costs of construction, maintenance, and communication. More accuracy, higher activity, or a larger model is not intrinsically a better design.
+A neural mechanism must perform a useful task using real, noisy components at affordable speed, volume, and energy cost. An organization makes sense under those constraints through dependencies from proteins and synapses to circuits, long connections, learning, and behavior. The central comparison is the additional useful information or performance obtained for an additional investment, including costs of construction, maintenance, and communication. More accuracy, higher activity, or a larger model is not intrinsically a better design.
 
 **Specify before optimizing:** task and user of the signal; environmental statistics; tolerated error and delay; physical components; energy/space budget; and the timescale over which conditions change. Compare feasible alternatives under the same specification. Evidence for efficient local components does not prove a globally optimal brain, and a functional rationale does not establish the actual mechanism or evolutionary history. The authors themselves describe the book as an interpretive reading with selective examples.
 
@@ -131,7 +131,7 @@ A neural mechanism must perform a useful task using real, noisy components at af
 *Printed pp. 323–362; source lines 7314–8058; synthesis at 8038–8058.*
 
 - **Route for use:** selective retinal outputs can guide subcortical behavior; richer outputs preserve distinct channels through the LGN for cortical analysis. “Relay” does not imply a free, passive, or functionless stage.
-- **Recombine where useful:** the authors describe V1 combining selected ON/OFF inputs into oriented filters while preserving other distinctions across layers. Segregation for economical transmission and later combination for computation are compatible.
+- **Recombine where useful:** V1 combines selected ON/OFF inputs into oriented filters while preserving other distinctions across layers in the account presented here. Segregation for economical transmission and later combination for computation are compatible.
 - **From features to useful patterns:** subsequent areas group and segment input for perception/action. Their account motivates checking which operation and consumer justify each transformation, not treating “what/where” streams as complete algorithms.
 - **Store selectively:** some information matters only for current control; other patterns repay storage because they improve later recognition, decisions, and interaction. The present task’s information requirement and the value of future reuse are distinct.
 
@@ -153,7 +153,7 @@ The six **Principles for the design of learning** are: spatial specificity; stor
 - **Many small, noisy synapses:** in the authors’ models, increasing number can be more economical than making each unit highly precise. Sparse activity reduces interference; bounded weights and slower homeostatic regulation help preserve workable activity levels. The calculation depends on coding and noise assumptions.
 - **Forgetting is selective:** limited future usefulness can favor short retention; deeply contextualized experience can continue to guide social judgment even when individual facts appear trivial. Do not turn finite tissue volume into a claim that each new memory deletes one old memory or that skill training necessarily harms every other domain.
 - **Temporal difference model / reward prediction error:** the key teaching signal concerns an outcome relative to expectation and can shift from reward to a predictive cue. The source’s shorthand normalization discussion is not the full temporal-difference update equation; formal applications should pair with Dayan–Abbott’s treatment. Preserve the difference between learning signal, experienced reward, value, and chosen action.
-- **An explicit reward exception:** the authors note that an expected reward can still be enjoyed when the reward-prediction error is zero, suggesting other signaling systems. Thus even their own account does not equate all pleasure with phasic dopamine.
+- **An explicit reward exception:** an expected reward can still be enjoyed when the reward-prediction error is zero, suggesting other signaling systems. This account therefore does not equate all pleasure with phasic dopamine.
 - **Social reach and its limits:** the chapter extends reward learning toward habituation, addiction, varied skill, and opportunities for satisfying activity. These are explanatory proposals beyond the strong sensory-design examples. Neither a generic reinforcement model nor a transient dopamine signal establishes the worth of an activity, causes of all addiction, or the optimal design of education.
 
 ### 15. Summary and Conclusions — how strong is the optimality claim?

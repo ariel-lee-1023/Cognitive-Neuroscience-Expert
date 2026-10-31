@@ -35,7 +35,7 @@ Animal quantity behavior undermines equating every numerical operation with huma
 ### Chapter 2 — Babies who count: early competence and inference limits
 **Locator:** “Baby Building: Piaget's Theory,” “Piaget's Errors,” “Younger and Younger,” “Babies' Power of Abstraction,” “How Much Is 1 plus 1?,” “The Limits of Infant Arithmetic.”
 
-**Competence versus task performance:** failure in a verbal conservation question may depend on language, response interpretation, memory, or inhibition as well as quantity knowledge. Dehaene challenges an interpretation of Piaget that makes young children devoid of numerical competence. Rejecting a demanding task as a pure measure does not establish an adult-like concept in the infant.
+**Competence versus task performance:** failure in a verbal conservation question may depend on language, response interpretation, memory, or inhibition as well as quantity knowledge. These findings challenge an interpretation of Piaget that makes young children devoid of numerical competence. Rejecting a demanding task as a pure measure does not establish an adult-like concept in the infant.
 
 **Habituation/dishabituation:** reduced looking at repeated displays and renewed looking after a change can indicate discrimination. **Violation of expectation:** longer looking at an outcome after hidden additions/removals can constrain expectations about objects or quantities. Neither measure is a spoken assertion of an arithmetic equation. Alternative interpretations include novelty, continuous visual properties, object identity, attention, and memory for individual objects.
 
@@ -46,7 +46,7 @@ The original edition concentrates on small sets and explicitly warns against tur
 ### Chapter 3 — The adult number line: spatial codes and context
 **Locator:** “Reflexive Access to Number Meaning,” “A Sense of Space,” “Do Numbers Have Colors?,” “Intuitions of Number.”
 
-The **SNARC effect — Spatial-Numerical Association of Response Codes** is a relation between numerical magnitude and response side, classically faster left responses for relatively small numbers and right responses for relatively large numbers in some tasks/populations. The book describes effects even when magnitude is not the explicit task, such as parity classification.
+The **SNARC effect — Spatial-Numerical Association of Response Codes** is a relation between numerical magnitude and response side, classically faster left responses for relatively small numbers and right responses for relatively large numbers in some tasks/populations. Reported effects occur even when magnitude is not the explicit task, such as parity classification.
 
 **Relative magnitude matters:** the same digit can act as relatively large in one stimulus range and relatively small in another. **Response location matters:** crossing hands can distinguish a spatial response code from hand identity. **Cultural experience matters:** the book's right-to-left-reading comparison cautions against treating a left-to-right number line as a universal biological constant. The book supports a spatial metaphor; the effect does not locate a literal line of neurons or uniquely settle the source of spatial associations.
 
@@ -74,14 +74,14 @@ The **SNARC effect — Spatial-Numerical Association of Response Codes** is a re
 
 **Meaningful fluency:** Dehaene favors connections among quantities, words, digits, and algorithms. Finger counting and derived-fact strategies can support these links rather than being dismissed as inherently immature. Practicing accurate retrieval can be useful, but mechanically suppressing all alternative strategies can sever computation from meaning.
 
-**Calculator use:** decide what the task is teaching. If the target is interpretation, modeling, or checking a result, a calculator can remove an irrelevant computation burden. If the target is understanding a particular algorithm or building a selected fluent operation, specify what practice must remain. The book argues against treating inherited drill routines as sacred; it does not prove that all fluency practice is harmful or that calculator use has no tradeoffs.
+**Calculator use:** decide what the task is teaching. If the target is interpretation, modeling, or checking a result, a calculator can remove an irrelevant computation burden. If the target is understanding a particular algorithm or building a selected fluent operation, specify what practice must remain. Inherited drill routines should not be treated as sacred; this position does not establish that all fluency practice is harmful or that calculator use has no tradeoffs.
 
 ### Chapter 6 — Geniuses and prodigies: explain expertise locally
 **Locator:** “Is Mathematical Talent a Biological Gift?,” “When Passion Produces Talent,” “Ordinary Parameters for Extraordinary Calculators,” “Recipes for Lightning Calculation,” “Talent and Mathematical Invention.”
 
 Calculating prodigies motivate a distinction between specialized knowledge/strategies and a globally faster mind. A familiar number structure, stored intermediate result, or efficient decomposition can reduce the work a problem requires. Performance may still scale with operation count and memory load. Extraordinary calculation does not entail extraordinary performance on unrelated tasks or mathematical creativity.
 
-The book argues for the importance of sustained engagement and practice without providing a randomized decomposition of every person's talent. Biographical anecdotes cannot settle genetic contribution or promise that an identical regimen produces the same outcome in everyone. Distinguish fast calculation, deep mathematical insight, motivation, and opportunity.
+Sustained engagement and practice matter in this account, but no randomized decomposition of every person's talent is supplied. Biographical anecdotes cannot settle genetic contribution or promise that an identical regimen produces the same outcome in everyone. Distinguish fast calculation, deep mathematical insight, motivation, and opportunity.
 
 ### Chapters 7 and 8 — Dissociations and the computing brain
 **Locator:** Ch 7, “Mr. N, the Approximate Man,” “A Champion in Numerical Non-sense,” “The Multiple Meanings of Numbers,” “The Brain's Numerical Information Highways”; Ch 8, “When the Brain Multiplies or Compares,” “The Limits of Positron Emission Tomography,” “The Brain Electric.”
@@ -108,7 +108,7 @@ Formal proof and psychological plausibility answer different questions. Explaini
 - **Dehaene & Cohen (1997), “Cerebral pathways for calculation”:** two acquired-impairment cases dissociate rote verbal arithmetic knowledge from quantitative operations. This supports distinguishing pathways while leaving lesion specificity and generalization to development open. [Primary abstract](https://pubmed.ncbi.nlm.nih.gov/9220256/). The broader triple-code label is an author-framework cross-reference; see [Dehaene’s account of cerebral calculation bases](https://www.unicog.org/publications/DehaeneS2000CerebralBasesInNeuroscience.pdf).
 
 - **Xu & Spelke (2000), “Large number discrimination in 6-month-old infants”:** infants discriminated 8 from 16 but not 8 from 12 with controls for extraneous variables. This updates the original edition's open question about large numerosities. The result concerns approximate discrimination under that paradigm, not exact symbolic arithmetic or an absolute capacity boundary for all infants. [Primary abstract](https://pubmed.ncbi.nlm.nih.gov/10594312/).
-- **Dehaene, Piazza, Pinel & Cohen (2003), “Three parietal circuits for number processing”:** the authors propose quantity-related horizontal intraparietal cortex, left angular/perisylvian verbal operations, and bilateral posterior superior parietal attentional operations. This is a tentative neural organization, distinct from the three representational codes above. Parietal activation is therefore not automatically evidence for number-specific processing. [Authors' abstract](https://pubmed.ncbi.nlm.nih.gov/20957581/).
+- **Dehaene, Piazza, Pinel & Cohen (2003), “Three parietal circuits for number processing”:** the proposed organization distinguishes quantity-related horizontal intraparietal cortex, left angular/perisylvian verbal operations, and bilateral posterior superior parietal attentional operations. This is a tentative neural organization, distinct from the three representational codes above. Parietal activation is therefore not automatically evidence for number-specific processing. [Authors' abstract](https://pubmed.ncbi.nlm.nih.gov/20957581/).
 
 These are selected checks, not an exhaustive review of contemporary numerical cognition or clinical diagnostic standards.
 

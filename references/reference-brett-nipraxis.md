@@ -51,7 +51,7 @@ The remedy is to build every method from primitives — read the raw bytes of a 
 - **Voxel time courses** (`voxel_time_courses`): the signal at one voxel across the run, the unit the whole model operates on.
 - **Convolution** (`on_convolution`, `convolution_background`, `convolution_matrices`): implemented rather than invoked. The neural event sequence convolved with the hemodynamic response gives the **predicted BOLD time-course** — the regressor. Convolution is also expressible as a **matrix** operation, which is what connects it to the GLM.
 - **Regression** (`on_regression`, `regress_one_voxel`, `regression_notation`) — fit one voxel first, with explicit notation, before generalizing.
-- **The GLM in matrix form** — the notation the book insists you be able to read:
+- **The GLM in matrix form** — the notation needed to inspect the model:
   $$\vec{y} = \boldsymbol{X}\vec{\beta} + \vec{\varepsilon}$$
   where $\vec{y}$ is the data (time-points), $\boldsymbol{X}$ the **design matrix**, $\vec{\beta}$ the parameters, $\vec{\varepsilon}$ the errors.
 - **The t-statistic, written out** — because the point is to know what your software computes:

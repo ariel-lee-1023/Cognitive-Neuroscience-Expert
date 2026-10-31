@@ -40,7 +40,7 @@ Its second discipline is the **null model**: a topological measure has no interp
 
 ### Ch 7: Paths and communication models — what a "short path" presupposes
 - **Walks, trails, paths, cycles**, then **shortest-path routing**, **diffusion processes**, and **navigation**.
-- **The conceptual point that matters for cognitive interpretation**: shortest-path measures (efficiency, characteristic path length) implicitly assume signals travel along *globally optimal* routes — which requires that the system knows the global topology. **Diffusion and navigation models relax that assumption**, and the book treats them as competing models of neural communication rather than as alternative statistics. *Whenever a paper interprets "global efficiency" as communication capacity, it has adopted the shortest-path routing assumption; say so.*
+- **The conceptual point that matters for cognitive interpretation**: shortest-path measures (efficiency, characteristic path length) implicitly assume signals travel along *globally optimal* routes — which requires that the system knows the global topology. **Diffusion and navigation models relax that assumption**, and they are competing models of neural communication rather than merely alternative statistics. *Whenever a paper interprets "global efficiency" as communication capacity, it has adopted the shortest-path routing assumption; say so.*
 - **Path length cannot be computed between disconnected components** — which is why fragmentation (Ch 11) is not merely inconvenient.
 
 ### Ch 8: Motifs, clustering, and small worlds

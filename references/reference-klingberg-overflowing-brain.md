@@ -26,7 +26,7 @@ Working memory is a **mental workbench** for retaining goals and information nee
 ### Chapters 4–5 — Neural models and limits of the workbench
 **Locators:** “Models of Working Memory,” recurrent activity; “The Brain and the Magical Number Seven,” “Mechanisms of Capacity Limitation.”
 
-The book emphasizes recurrent neural activity and distributed frontal/parietal involvement in maintaining information. Recurrent excitation and inhibition provide one candidate mechanism for stable representations. Increasing task load and increasing BOLD responses do not show that blood or oxygen supply is the normal capacity bottleneck, nor does a regional response reveal a fixed number of memory slots.
+Maintaining information can involve recurrent neural activity and distributed frontal/parietal systems. Recurrent excitation and inhibition provide one candidate mechanism for stable representations. Increasing task load and increasing BOLD responses do not show that blood or oxygen supply is the normal capacity bottleneck, nor does a regional response reveal a fixed number of memory slots.
 
 **Later qualification:** Rose and colleagues (2016) used TMS to reactivate decodability of a latent memory representation when it remained potentially relevant later in the trial. This supports alternatives to treating continuous decodable activity as necessary for every retained item. It does not establish absence of all neural activity, uniquely identify synaptic storage, or show that persistent activity never matters. [Primary study](https://doi.org/10.1126/science.aah7011).
 
@@ -64,7 +64,7 @@ The categories can be combined. A tool may reduce memory demand yet introduce se
 
 **Use it or lose it requires specification:** Klingberg explicitly distinguishes low-intensity use from intensive practice and emphasizes that training affects particular functions. His proposal is that sufficiently demanding, repetitive, adaptive practice of shared working-memory processes might generalize more widely than practicing a narrow sensory skill.
 
-**RoboMemo:** the book describes digit/letter and spatial-sequence exercises with changing stimuli, difficulty adapted to performance, and repeated sessions over weeks. It reports early ADHD and adult comparisons with easier training controls, gains on untrained working-memory tests, some reasoning outcomes, and reported everyday changes. This is the author's evidence and interpretation at the time, not a current product evaluation or a dose recommendation.
+**RoboMemo:** the historical program used digit/letter and spatial-sequence exercises with changing stimuli, difficulty adapted to performance, and repeated sessions over weeks. Early ADHD and adult comparisons with easier training controls reported gains on untrained working-memory tests, some reasoning outcomes, and everyday changes. This is the author's evidence and interpretation at the time, not a current product evaluation or a dose recommendation.
 
 **Control quality matters:** easy nonadaptive tasks may differ from adaptive training in challenge, expectations, reward, engagement, and time actually spent. A nominally active control does not automatically equalize these. Parent ratings can have practical value but require attention to awareness of assignment and expectancy. Neural change may reflect strategy, effort, or efficiency as well as a capacity change.
 
@@ -90,7 +90,7 @@ These selected checks constrain the broad transfer claim; they do not exhaust th
 
 **Infostress and sense of control:** perceived demands depend on their meaning, predictability, and controllability as well as volume. Do not convert this into blaming the person for uncontrolled workloads. Distress does not demonstrate brain damage, and attractive challenge is not evidence of beneficial capacity training.
 
-**Flow:** Csíkszentmihályi's high-skill/high-challenge account organizes experience of absorption. Klingberg proposes relating skill to capacity and challenge to information load. This is a heuristic analogy, not a calibrated equation prescribing seven items or a proven optimal training dose. Being absorbed, learning, and performing accurately are separable outcomes.
+**Flow:** Csíkszentmihályi's high-skill/high-challenge account organizes experience of absorption. The proposed analogy relates skill to capacity and challenge to information load. This is a heuristic analogy, not a calibrated equation prescribing seven items or a proven optimal training dose. Being absorbed, learning, and performing accurately are separable outcomes.
 
 ## Worked Example
 **Reconstruction of “A Cognitive Gym”:** a participant becomes extremely good at remembering digits by grouping them with familiar running records, yet performs much less well when the material changes to letters. Long-term knowledge changes the effective chunks. The dramatic digit score does not establish a larger domain-general working-memory store.

@@ -40,7 +40,7 @@ The definitions emphasize complementary aspects of learning, rather than seven m
 ### Chapter 2 — Why our brain learns better than current machines
 **Locator:** Chapter 2, list beginning “Learning abstract concepts,” discussions of hypotheses, social learning, and Sherlock Holmes.
 
-The book emphasizes abstraction, compositional representations, efficient learning from limited examples, uncertainty, exploration, and the use of communicative information. These are comparison dimensions, not a single brain-versus-machine leaderboard. Translate an assertion such as “learns faster” into data efficiency, interaction cost, compute/energy, prior experience, generalization, or robustness under distribution shift.
+Abstraction, compositional representations, efficient learning from limited examples, uncertainty, exploration, and communicative information are central dimensions of learning. These are comparison dimensions, not a single brain-versus-machine leaderboard. Translate an assertion such as “learns faster” into data efficiency, interaction cost, compute/energy, prior experience, generalization, or robustness under distribution shift.
 
 **Abstraction and recombination:** successful recognition of familiar examples need not show that the learner has extracted the rule needed for a new combination. Test novel cases that preserve the relevant relation while changing superficial features. Conversely, success on one transfer task does not establish domain-general reasoning.
 
@@ -51,7 +51,7 @@ The book emphasizes abstraction, compositional representations, efficient learni
 ### Chapter 3 — Babies' invisible knowledge
 **Locator:** “Babies' Invisible Knowledge,” examples involving objects, number, probability, people, and language.
 
-Infants can bring structured expectations to learning before being able to explain them or act fluently. Dehaene argues against an unrestricted blank-slate account. Discrimination, anticipatory looking, habituation, and surprise paradigms reveal different aspects of that competence; they do not show an explicit adult theory in the infant's head.
+Infants can bring structured expectations to learning before being able to explain them or act fluently. An unrestricted blank-slate account cannot explain these structured expectations within this argument. Discrimination, anticipatory looking, habituation, and surprise paradigms reveal different aspects of that competence; they do not show an explicit adult theory in the infant's head.
 
 **Prior knowledge versus prenatal and postnatal experience:** early emergence can constrain how much learning an account requires, but an early response is not by itself a direct genetic assay. Distinguish inherited biases, self-organization, sensory history, and test-specific learning. Likewise, an ability being learnable does not show that the starting architecture is unconstrained.
 
@@ -60,7 +60,7 @@ Infants can bring structured expectations to learning before being able to expla
 ### Chapter 4 — The birth of a brain
 **Locator:** “The Birth of a Brain,” cortical organization, connectivity, and developmental variation.
 
-The book treats brain development as organized construction influenced by genetic programs, local interactions, and developmental conditions. Large-scale architecture and connection patterns constrain subsequent learning. Genes do not contain a verbatim list of learned words, and experience does not redesign every long-distance pathway without constraint.
+Brain development is organized construction influenced by genetic programs, local interactions, and developmental conditions. Large-scale architecture and connection patterns constrain subsequent learning. Genes do not contain a verbatim list of learned words, and experience does not redesign every long-distance pathway without constraint.
 
 **Self-organization:** local interaction rules can produce organized patterns without a detailed blueprint for every element. This is a mechanistic idea to specify, not a replacement for identifying the relevant developmental processes. **Variation** in anatomy and developmental trajectory need not map one-to-one onto a learner's observable performance.
 
@@ -87,7 +87,7 @@ Reading and exact mathematics connect acquired symbols with preexisting visual, 
 ### Chapter 7 — Attention: select the information that should be learned
 **Locator:** “Attention,” Posner's three systems, selective amplification, executive attention, multitasking, and pedagogical cues.
 
-The book distinguishes **alerting** (readiness/when to attend), **orienting** (selection of relevant information), and **executive attention** (control of operations and competing demands). Asking a tired learner to “focus harder” does not identify which function is limiting. Nor does a gaze trace establish what distinction was encoded.
+Attention includes distinct functions: **alerting** (readiness/when to attend), **orienting** (selection of relevant information), and **executive attention** (control of operations and competing demands). Asking a tired learner to “focus harder” does not identify which function is limiting. Nor does a gaze trace establish what distinction was encoded.
 
 **Selection changes learning:** the same display can teach different things depending on the feature attended. State the relevant distinction, use cues that direct processing toward it, and test whether learners can apply it without those cues. A striking but irrelevant animation may absorb attention while leaving the intended rule poorly learned.
 
@@ -98,7 +98,7 @@ The book distinguishes **alerting** (readiness/when to attend), **orienting** (s
 
 **Active inference in learning, in the ordinary sense used here:** make a prediction, choose a response, explain a relation, or test a hypothesis and compare it with the result. This wording does not identify the book with a specific contemporary Active Inference formalism. Physical activity can accompany engagement, but movement or clicking alone does not establish learning of the intended concept.
 
-**Guided activity versus pure discovery:** Dehaene explicitly rejects equating active engagement with leaving novices to rediscover a domain without help. Clear explanation and worked demonstrations can coexist with learner prediction and application. Choose guidance according to prior knowledge, error patterns, and task complexity; do not classify an entire teaching tradition by a single label.
+**Guided activity versus pure discovery:** Active engagement does not require leaving novices to rediscover a domain without help. Clear explanation and worked demonstrations can coexist with learner prediction and application. Choose guidance according to prior knowledge, error patterns, and task complexity; do not classify an entire teaching tradition by a single label.
 
 **Curiosity / expected learning progress:** learners seek information they expect to make sense of. Material can be uninteresting because it is already mastered or because it seems impenetrable. Break an excessive challenge into a tractable question; let a knowledgeable learner progress. This is a mechanism-oriented hypothesis for adapting difficulty, not a calibrated formula prescribing a universal success rate.
 
@@ -127,7 +127,7 @@ The book distinguishes **alerting** (readiness/when to attend), **orienting** (s
 ## Worked Example
 **Reconstruction from Chapter 1, prism adaptation.** A visual displacement makes a reach miss its target. Repeated reaching with information about the error produces compensatory adjustment. After the displacement is removed, an error in the opposite direction reveals that the mapping has changed: the learner was not merely succeeding by the original mapping.
 
-This connects an internal parameter, a perturbation, feedback, and an aftereffect. The book uses it to illustrate model adjustment. The editorial caution is that an aftereffect constrains the explanation but does not identify the exact synapses changed, prove a single learning rate for all tasks, or rule out every explicit strategy. Ask what should generalize to another target or effector before claiming a general learning mechanism.
+This connects an internal parameter, a perturbation, feedback, and an aftereffect. The example illustrates model adjustment. The editorial caution is that an aftereffect constrains the explanation but does not identify the exact synapses changed, prove a single learning rate for all tasks, or rule out every explicit strategy. Ask what should generalize to another target or effector before claiming a general learning mechanism.
 
 ## Decision Rules & Judgment
 

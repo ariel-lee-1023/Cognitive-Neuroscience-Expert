@@ -46,7 +46,7 @@ Dehaene approaches consciousness through **conscious access**: the transition by
 ### Chapter 3 — What is consciousness good for?
 **Locator:** “Unconscious Statistics, Conscious Sampling,” “Lasting Thoughts,” “The Human Turing Machine,” “A Social Sharing Device.”
 
-Dehaene emphasizes a **compact conscious synthesis** of information that can be held stable, routed to different operations, and shared with other people. Such a synthesis trades detail and parallelism for flexible availability. It explains why the consciously experienced interpretation can appear definite despite competing and probabilistic processes underneath.
+A **compact conscious synthesis** of information can be held stable, routed to different operations, and shared with other people within this account. Such a synthesis trades detail and parallelism for flexible availability. It explains why the consciously experienced interpretation can appear definite despite competing and probabilistic processes underneath.
 
 **Lasting thoughts:** access supports maintaining and manipulating information after its source disappears. Contrast transient priming with an explicitly retained intermediate result. This is a proposed functional advantage, not a claim that unconscious learning cannot leave durable synaptic effects or that every form of working memory requires continuous reported awareness.
 
@@ -79,7 +79,7 @@ This is a theory-guided taxonomy, not five clinical diagnoses. Do not identify w
 ### Chapter 6 — The ultimate test: inference when behavior is limited
 **Locator:** “How to Lose Your Mind,” “Cortico Ergo Sum,” “Freeing the Inner Butterfly,” “Conscious Novelty Detection,” “Pinging the Cortex.”
 
-The book distinguishes coma, wakeful unresponsiveness/vegetative-state presentations, minimally conscious states, and locked-in syndrome. The methodological lesson is that **motor output, arousal, comprehension, and awareness can dissociate**. Its historical terminology and diagnostic details are not a current clinical protocol.
+Coma, wakeful unresponsiveness/vegetative-state presentations, minimally conscious states, and locked-in syndrome are distinct conditions. The methodological lesson is that **motor output, arousal, comprehension, and awareness can dissociate**. Its historical terminology and diagnostic details are not a current clinical protocol.
 
 **Command-following imagery:** changing between imagined tennis and spatial navigation in response to an instruction can provide evidence of intentional task performance despite absent overt movement. A positive, reproducible result supports retained capacities; a negative result is inconclusive because hearing, language, attention, fatigue, task comprehension, and measurement sensitivity can fail. It does not independently quantify pain, prognosis, all conscious content, or treatment preferences.
 
@@ -92,7 +92,7 @@ The book distinguishes coma, wakeful unresponsiveness/vegetative-state presentat
 
 Use converging behavior, developmentally appropriate tasks, and neural evidence when verbal reports are unavailable. Similar masking/rivalry patterns and flexible nonverbal reports can strengthen cross-species comparisons. Anatomical homology or mirror recognition alone does not establish the full character of experience. Adult timing thresholds cannot simply be applied to infants.
 
-Dehaene treats self-monitoring and confidence as possible extensions of accessible representations. He argues that a sufficiently organized artificial system could in principle be conscious, while acknowledging the gap between his simulations and such a system. Block's access/phenomenality distinction and Chalmers's explanatory challenge remain genuine disagreements. Explain what GNW claims to explain and what critics think is left out; do not present the book's response as a resolved philosophical theorem.
+Self-monitoring and confidence may extend accessible representations. In the proposed account, a sufficiently organized artificial system could in principle be conscious, but the book’s simulations fall short of such a system. Block's access/phenomenality distinction and Chalmers's explanatory challenge remain genuine disagreements. Explain what GNW claims to explain and what critics think is left out; do not present the book's response as a resolved philosophical theorem.
 
 ## Later evidence and theory boundaries
 
